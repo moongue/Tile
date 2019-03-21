@@ -1,0 +1,122 @@
+#discounts {
+  margin-top: 23px;
+  margin-bottom: 50px;
+  .block-full {
+    flex-basis: 440px;
+    max-width: 460px;
+     .col {
+      height: 580px;
+      justify-content: space-between;
+    }
+  }
+  .container {
+    .block {
+      width: 505px;
+      h1 {
+        span {
+          padding-left: 80px;
+        }
+      }
+      .discount-image {
+        > img {
+          margin-top: 25px;
+          width: 100%;
+          height: auto;
+        }
+      }
+    }
+    .block-slider {
+      max-width: 440px;
+    }
+    .block-product {
+      margin-top: 24px;
+      padding-top: 20px;
+      flex-basis: 160px;
+      position: relative;
+      background: $white;
+      .sale-alert {
+        font-size: 8px;
+        color: $white;
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 3px 15px;
+        background: $blue;
+      }
+      .image-product {
+        display: block;
+        margin: 0 auto;
+      }
+      .name, .materials-block, .block-factory {
+        padding-left: 5px;
+        padding-right: 5px;
+        font-size: 9px;
+        color: $black;
+      }
+      .materials-block, .block-factory {
+        margin-top: 8px;
+        span {
+          font-weight: 600;
+        }
+      }
+      .name {
+        padding: 8px 5px;
+        border-bottom: 2px solid $white-two;
+      }
+      .block-price {
+        margin-top: 15px;
+        font-size: 11px;
+        font-weight: 600;
+        .without-discount {
+          text-decoration: line-through;
+          color: $black;
+          padding: 8px 13px;
+        }
+        .with-discount {
+          padding: 8px 13px;
+          background: $red;
+          color: $white;
+        }
+      }
+      &.bigger {
+        margin-top: 0;
+        flex-basis: 210px;
+        padding-top: 35px;
+        > * {
+          font-size: 12px;
+        }
+        .name, .materials-block, .block-factory {
+          padding-left: 10px;
+          padding-right: 10px;
+        }
+        .name {
+          padding: 25px 10px 8px;
+        }
+        .block-price {
+          margin-top: 17px;
+          font-size: 16px;
+        }
+      }
+    }
+    .slider {
+      .slick-arrow {
+        position: absolute;
+        outline: none;
+        font-size: 0;
+        height: 35px;
+        width: 35px;
+        border: none;
+        &.slick-prev {
+          background: url("../images/icons/icon-arrow-prev.png") no-repeat;
+          left: -10%;
+          top: calc((100% - 35px) / 2);
+        }
+        &.slick-next {
+          background: url("../images/icons/icon-arrow-next.png") no-repeat;
+          right: -10%;
+          top: calc((100% - 35px) / 2);
+        }
+      }
+    }
+  }
+}

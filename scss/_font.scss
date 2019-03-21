@@ -1,0 +1,30 @@
+@font-face {
+  font-family: 'Manrope';
+  src: local('Manrope Medium'), local('Manrope-Medium'), url('../font/manrope/Manropemedium.woff2') format('woff2'), url('../font/manrope/Manropemedium.woff') format('woff'), url('../font/manrope/Manropemedium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Manrope';
+  src: local('Manrope Regular'), local('Manrope-Regular'), url('../font/manrope/Manroperegular.woff2') format('woff2'), url('../font/manrope/Manroperegular.woff') format('woff'), url('../font/manrope/Manroperegular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Manrope';
+  src: local('Manrope Semibold'), local('Manrope-Semibold'), url('../font/manrope/Manropesemibold.woff2') format('woff2'), url('../font/manrope/Manropesemibold.woff') format('woff'), url('../font/manrope/Manropesemibold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: local('Source Sans Pro'), local('SourceSansPro-Regular'), url('../font/sourcesanspro/sourcesanspro.woff2') format('woff2'), url('../font/sourcesanspro/sourcesanspro.woff') format('woff'), url('../font/sourcesanspro/sourcesanspro.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: local('Source Sans Pro Semibold'), local('SourceSansPro-Semibold'), url('../font/sourcesanspro/sourcesansprosemibold.woff2') format('woff2'), url('/font/sourcesanspro/sourcesansprosemibold.woff') format('woff'), url('/font/sourcesanspro/sourcesansprosemibold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}

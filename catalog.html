@@ -1,0 +1,912 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="plugins/slick-slider/slick.min.js"></script>
+    <script src="js/script.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="plugins/slick-slider/slick.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Cafel</title>
+</head>
+<body>
+<!--HEADER-->
+<header id="header">
+    <div class="wrapper-big">
+        <div class="container">
+            <div class="row__aic">
+                <div class="mobile-menu-toggle">
+                    <svg class="ham hamRotate ham-burger" viewBox="0 0 100 100" width="40"
+                         onclick="this.classList.toggle('active')">
+                        <path
+                                class="line top"
+                                d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20"/>
+                        <path
+                                class="line middle"
+                                d="m 30,50 h 40"/>
+                        <path
+                                class="line bottom"
+                                d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20"/>
+                    </svg>
+                </div>
+
+                <nav class="sm-hide">
+                    <ul class="row">
+                        <li><a href="#" class="active">Акции</a></li>
+                        <li><a href="#">Новинки</a></li>
+                        <li><a href="#">Хит</a></li>
+                    </ul>
+                </nav>
+                <div class="menu-chose lg-show">
+                    <ul>
+                        <li><a href="#"><img src="images/icons/icon-personal-area.png" alt="ЛК"> </a>
+                        </li>
+                        <li><a href="#"><img src="images/icons/icon-basket.png" alt="Корзина"></a>
+                        </li>
+                        <li><a href="#"><img src="images/icons/icon-comparison.png" alt="Сравнение"></a></li>
+                        <li class="search"><a href="#" class="show-search-input"><img src="images/icons/icon-search.png"
+                                                                                      alt="Поиск"></a></li>
+                    </ul>
+                    <input type="text" class="search-input" placeholder="Поиск">
+                </div>
+                <div class="drop-menu">
+                    <div class="col">
+                        <div class="row">
+                            <div class="left-block">
+                                <div class="menu-bg">
+
+                                    <div class="row">
+                                        <div class="block-with-menu">
+                                            <ul class="menu">
+                                                <li><a href="#">О компании</a></li>
+                                                <li><a href="#">Каталог</a></li>
+                                                <li><a href="#">Дизайнеры</a></li>
+                                                <li><a href="#">Проекты</a></li>
+                                                <li><a href="#">Оплата и возврат</a></li>
+                                                <li><a href="#">Контакты</a></li>
+                                            </ul>
+                                            <div class="telephone">
+                                                <img src="images/icons/icon-telephone.png" alt="Tel">
+                                                <p>922-56-68</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="description-bg lg-hide">
+
+                                    <div class="description-site">
+                                        <div class="logo">
+                                            <img src="images/icons/icon-logo.png" alt="Logo">
+                                        </div>
+                                        <p> Компания «КафельСклад» - это один из крупнейших поставщиков облицовочной
+                                            плитки в
+                                            Санкт-Петербурге.
+                                            Мы предлагаем современные коллекции керамической плитки и износостойкого
+                                            керамогранита от
+                                            российских, польских, итальянских, испанских и других производителей.</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="right-block sm-hide">
+                                <div class="row">
+                                    <a href="#" class="block-chose">
+                                        <img src="images/images/image-floors.jpg" alt="Полы">
+                                        <div class="name">
+                                            Полы
+                                        </div>
+                                    </a>
+                                    <a href="#" class="block-chose">
+                                        <img src="images/images/image-street.jpg" alt="Улица">
+                                        <div class="name">
+                                            Улица
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="row">
+                                    <a href="" class="block-chose">
+                                        <img src="images/images/image-mosaic.jpg" alt="Мозаика">
+                                        <div class="name">
+                                            Мозаика
+                                        </div>
+                                    </a>
+                                    <a href="#" class="block-chose">
+                                        <img src="images/images/image-related-product.jpg" alt="Сопутствующие товары">
+                                        <div class="name">
+                                            Сопутствующие товары
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="row">
+                                    <a href="#" class="block-chose">
+                                        <img src="images/images/image-steps.jpg" alt="Ступени">
+                                        <div class="name">
+                                            Ступени
+                                        </div>
+                                    </a>
+                                    <a href="#" class="block-chose">
+                                        <img src="images/images/image-walls.jpg" alt="Стены">
+                                        <div class="name">
+                                            Стены
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="description-bg lg-show sm-hide">
+
+                            <div class="description-site">
+                                <div class="logo">
+                                    <img src="images/icons/icon-logo.png" alt="Logo">
+                                </div>
+                                <p> Компания «КафельСклад» - это один из крупнейших поставщиков облицовочной плитки в
+                                    Санкт-Петербурге.
+                                    Мы предлагаем современные коллекции керамической плитки и износостойкого
+                                    керамогранита от
+                                    российских, польских, итальянских, испанских и других производителей.</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="menu-header sm-hide">
+                <div class="col">
+                    <div class="description-bg">
+
+                        <div class="description-site">
+                            <div class="logo">
+                                <img src="images/icons/icon-logo.png" alt="Logo">
+                            </div>
+                            <p> Компания «КафельСклад» - это один из крупнейших поставщиков облицовочной
+                                плитки в
+                                Санкт-Петербурге.
+                                Мы предлагаем современные коллекции керамической плитки и износостойкого
+                                керамогранита от
+                                российских, польских, итальянских, испанских и других производителей.</p>
+                        </div>
+
+                    </div>
+                    <div class="right-block">
+                        <div class="row">
+                            <a href="#" class="block-chose">
+                                <img src="images/images/image-floors.jpg" alt="Полы">
+                                <div class="name">
+                                    Полы
+                                </div>
+                            </a>
+                            <a href="#" class="block-chose">
+                                <img src="images/images/image-street.jpg" alt="Улица">
+                                <div class="name">
+                                    Улица
+                                </div>
+                            </a>
+                        </div>
+                        <div class="row">
+                            <a href="" class="block-chose">
+                                <img src="images/images/image-mosaic.jpg" alt="Мозаика">
+                                <div class="name">
+                                    Мозаика
+                                </div>
+                            </a>
+                            <a href="#" class="block-chose">
+                                <img src="images/images/image-related-product.jpg" alt="Сопутствующие товары">
+                                <div class="name fz-less">
+                                    Сопутствующие товары
+                                </div>
+                            </a>
+                        </div>
+                        <div class="row">
+                            <a href="#" class="block-chose">
+                                <img src="images/images/image-steps.jpg" alt="Ступени">
+                                <div class="name">
+                                    Ступени
+                                </div>
+                            </a>
+                            <a href="#" class="block-chose">
+                                <img src="images/images/image-walls.jpg" alt="Стены">
+                                <div class="name">
+                                    Стены
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</header>
+<!--END HEADER-->
+
+<!--CATALOG-->
+<section id="catalog">
+    <div class="wrapper">
+        <div class="container">
+            <h1>Каталог</h1>
+            <div class="bg">
+                <p class="max-width-690">
+                    <span class="bold">Отличительная особенность нашей компании – <br/>действительно большой выбор плитки и керамогранита,</span>
+                    который удивит любого покупателя. Каталог включает в себя 1500 коллекций для кухни, ванной и
+                    улицы,
+                    в том числе напольную и настенную плитку, декор и стильную мозаику для отделки просторных
+                    помещений.
+                </p>
+            </div>
+            <div class="row__aic margin-fix">
+                <img class="sm-hide" src="images/images/images-tile-catalog.png" alt="Плитка" style="max-width: 324px">
+                <p class="max-width-630">
+                    <span class="bold">  <img class="sm-show" src="images/images/images-tile-catalog.png" align="right"
+                                              alt="Плитка" style="max-width: 115px">Вы можете заказать плитку любой длины и ширины</span>,
+                    керамогранит с имитацией
+                    натурального камня или
+                    дерева, однотонные модели, изделия пастельных или ярких цветов. <br/>
+                    Благодаря такому разнообразию
+                    вы можете оформить интерьер в модном направлении лофт, в современном или нестареющем
+                    коассическом
+                    стиле.
+                </p>
+            </div>
+
+            <div class="bg-two">
+                <p class="max-width-760">
+                    <span class="bold"> Удобный поиск по параметрам</span> позволяет подобрать материал без лишних
+                    потерь времени: вы сможете
+                    выбрать страну-производителя, цвтовую гамму, размеры.
+                </p>
+                <p class="max-width-640 sm-hide">
+                    Большинство коллекций имеется в наличии, поэтому вы можете заказать их доставку или забрать
+                    самостоятельно в ближайшее время.
+                </p>
+            </div>
+
+            <div class="filter-product">
+                <h2 class="sm-hide">
+                    Каталог по странам
+                </h2>
+                <div class="block-filter row">
+                    <div class="catalog-filter">
+                        <div class="btn-show-filter sm-show">Каталог по странам</div>
+                        <ul class="filter">
+                            <li>Египет</li>
+                            <li class="active">Испания</li>
+                            <li>Италия</li>
+                            <li>Китай</li>
+                            <li>Польша</li>
+                            <li>Португалия</li>
+                            <li>Россия</li>
+                            <li>Турция</li>
+                            <li>Хорватия</li>
+                        </ul>
+                    </div>
+                    <div class="block-filter-word">
+                        <div class="block-one-word">
+                            <div class="word-filter">
+                                G
+                            </div>
+                            <ul>
+                                <li><a href="#">Gemma</a></li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="block-filter-word active">
+                        <div class="row">
+                            <div class="block-one-word">
+                                <div class="word-filter">
+                                    A
+                                </div>
+                                <ul>
+                                    <li><a href="#">Absolut</a></li>
+                                    <li><a href="#">Alaplana</a></li>
+                                    <li><a href="#">Alcor</a></li>
+                                    <li><a href="#">AlmeraCeramica</a></li>
+                                    <li><a href="#">Altoglass</a></li>
+                                    <li><a href="#">Amadis</a></li>
+                                    <li><a href="#">Aparici</a></li>
+                                    <li><a href="#">APE</a></li>
+                                    <li><a href="#">Arcana Ceramica</a></li>
+                                    <li><a href="#">Argenta</a></li>
+                                    <li><a href="#">Azteca</a></li>
+                                    <li><a href="#">Azulejo</a></li>
+                                    <li><a href="#">Azulejos Benadresa</a></li>
+                                    <li><a href="#">Azulev</a></li>
+                                    <li><a href="#">Azuliber</a></li>
+                                    <li><a href="#">Azulindus & Marti</a></li>
+                                    <li><a href="#">Azuvi</a></li>
+                                </ul>
+                            </div>
+                            <div class="block-one-word">
+                                <div class="word-filter">
+                                    B
+                                </div>
+                                <ul>
+                                    <li><a href="#">Baldocer</a></li>
+                                    <li><a href="#">Barro-co</a></li>
+                                    <li><a href="#">Bela Vista</a></li>
+                                    <li><a href="#">Benadresa</a></li>
+                                </ul>
+                            </div>
+                            <div class="block-one-word">
+                                <div class="word-filter">
+                                    C
+                                </div>
+                                <ul>
+                                    <li><a href="#">Cas Ceramica</a></li>
+                                    <li><a href="#">Cerpa</a></li>
+                                    <li><a href="#">Ceracasa</a></li>
+                                    <li><a href="#">Ceramica Gomez</a></li>
+                                    <li><a href="#">Ceramiche Brennero</a></li>
+                                    <li><a href="#">Ceranosa</a></li>
+                                    <li><a href="#">Cicogres</a></li>
+                                    <li><a href="#">Cifle</a></li>
+                                    <li><a href="#">Cobsa</a></li>
+                                    <li><a href="#">Codicer</a></li>
+                                    <li><a href="#">Colorker</a></li>
+                                    <li><a href="#">Cristacer</a></li>
+                                    <li><a href="#">Cristal Ceramica</a></li>
+                                </ul>
+                            </div>
+                            <div class="block-one-word">
+                                <div class="word-filter">
+                                    D
+                                </div>
+                                <ul>
+                                    <li><a href="#">Dual Gres</a></li>
+                                    <li><a href="#">Durstone</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="block-one-word">
+                                <div class="word-filter">
+                                    E
+                                </div>
+                                <ul>
+                                    <li><a href="#">Ecoceramic</a></li>
+                                    <li><a href="#">El Molino</a></li>
+                                    <li><a href="#">Emigres</a></li>
+                                    <li><a href="#">Emotion Ceramics</a></li>
+                                    <li><a href="#">Exagress</a></li>
+                                </ul>
+                            </div>
+                            <div class="block-one-word">
+                                <div class="word-filter">
+                                    F
+                                </div>
+                                <ul>
+                                    <li><a href="#">Fabresa</a></li>
+                                    <li><a href="#">Fanal</a></li>
+                                </ul>
+                            </div>
+                            <div class="block-one-word">
+                                <div class="word-filter">
+                                    G
+                                </div>
+                                <ul>
+                                    <li><a href="#">Gaya</a></li>
+                                    <li><a href="#">Geotiles</a></li>
+                                    <li><a href="#">Goldencer</a></li>
+                                    <li><a href="#">Gres de Aragon</a></li>
+                                    <li><a href="#">Gres de Breda</a></li>
+                                    <li><a href="#">Gresmanc</a></li>
+                                </ul>
+                            </div>
+                            <div class="block-one-word">
+                                <div class="word-filter">
+                                    H
+                                </div>
+                                <ul>
+                                    <li><a href="#">Halcon</a></li>
+                                    <li><a href="#">HDC</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="block-one-word">
+                                <div class="word-filter">
+                                    I
+                                </div>
+                                <ul>
+                                    <li><a href="#">Ibero</a></li>
+                                    <li><a href="#">Imex</a></li>
+                                    <li><a href="#">ITT Ceramic</a></li>
+                                </ul>
+                            </div>
+                            <div class="block-one-word">
+                                <div class="word-filter">
+                                    K
+                                </div>
+                                <ul>
+                                    <li><a href="#">Kavarti</a></li>
+                                    <li><a href="#">Keraben</a></li>
+                                    <li><a href="#">Kerasol</a></li>
+                                    <li><a href="#">Keratile</a></li>
+                                    <li><a href="#">Kerlife</a></li>
+                                    <li><a href="#">Keros</a></li>
+                                    <li><a href="#">Klinker Greco</a></li>
+                                </ul>
+                            </div>
+                            <div class="block-one-word">
+                                <div class="word-filter">
+                                    L
+                                </div>
+                                <ul>
+                                    <li><a href="#">La Platera</a></li>
+                                    <li><a href="#">Latina</a></li>
+                                </ul>
+                            </div>
+                            <div class="block-one-word">
+                                <div class="word-filter">
+                                    M
+                                </div>
+                                <ul>
+                                    <li><a href="#">Mainzu</a></li>
+                                    <li><a href="#">Mapisa</a></li>
+                                    <li><a href="#">Mercury</a></li>
+                                    <li><a href="#">Mijares</a></li>
+                                    <li><a href="#">Monopole</a></li>
+                                    <li><a href="#">Mykonos</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="block-one-word">
+                                <div class="word-filter">
+                                    N
+                                </div>
+                                <ul>
+                                    <li><a href="#">Navarti</a></li>
+                                    <li><a href="#">Newker</a></li>
+                                    <li><a href="#">Novogres</a></li>
+                                </ul>
+                            </div>
+                            <div class="block-one-word">
+                                <div class="word-filter">
+                                    O
+                                </div>
+                                <ul>
+                                    <li><a href="#">Oset</a></li>
+                                </ul>
+                            </div>
+                            <div class="block-one-word">
+                                <div class="word-filter">
+                                    P
+                                </div>
+                                <ul>
+                                    <li><a href="#">Pamesa</a></li>
+                                    <li><a href="#">Plaza</a></li>
+                                    <li><a href="#">Porcelanite DOS</a></li>
+                                    <li><a href="#">Porcelanosa</a></li>
+                                    <li><a href="#">Porsixty</a></li>
+                                    <li><a href="#">Prissmacer</a></li>
+                                </ul>
+                            </div>
+                            <div class="block-one-word">
+                                <div class="word-filter">
+                                    R
+                                </div>
+                                <ul>
+                                    <li><a href="#">Realistik</a></li>
+                                    <li><a href="#">Realonda</a></li>
+                                    <li><a href="#">Ribesables</a></li>
+                                    <li><a href="#">Roca</a></li>
+                                    <li><a href="#">Roca Ceramica</a></li>
+                                    <li><a href="#">Rocersa</a></li>
+                                    <li><a href="#">Rosa Gres</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="block-one-word">
+                                <div class="word-filter">
+                                    S
+                                </div>
+                                <ul>
+                                    <li><a href="#">Saloni</a></li>
+                                    <li><a href="#">Sierragres</a></li>
+                                    <li><a href="#">STN</a></li>
+                                </ul>
+                            </div>
+                            <div class="block-one-word">
+                                <div class="word-filter">
+                                    T
+                                </div>
+                                <ul>
+                                    <li><a href="#">TAU</a></li>
+                                    <li><a href="#">Tecniceramica</a></li>
+                                </ul>
+                            </div>
+                            <div class="block-one-word">
+                                <div class="word-filter">
+                                    U
+                                </div>
+                                <ul>
+                                    <li><a href="#">Undefasa</a></li>
+                                    <li><a href="#">Unicer</a></li>
+                                </ul>
+                            </div>
+                            <div class="block-one-word">
+                                <div class="word-filter">
+                                    U
+                                </div>
+                                <ul>
+                                    <li><a href="#">Vennato</a></li>
+                                    <li><a href="#">Venis</a></li>
+                                    <li><a href="#">Venus</a></li>
+                                    <li><a href="#">Vidrepur</a></li>
+                                    <li><a href="#">VIVES</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="block-filter-word">
+                        <div class="row">
+                            <div class="block-one-word">
+                                <div class="word-filter">
+                                    A
+                                </div>
+                                <ul>
+                                    <li><a href="#">Alta Ceramica</a></li>
+                                    <li><a href="#">ArtiCer</a></li>
+                                </ul>
+                            </div>
+                            <div class="block-one-word">
+                                <div class="word-filter">
+                                    C
+                                </div>
+                                <ul>
+                                    <li><a href="#">Cerdomus</a></li>
+                                </ul>
+                            </div>
+                            <div class="block-one-word">
+                                <div class="word-filter">
+                                    D
+                                </div>
+                                <ul>
+                                    <li><a href="#">Dado Ceramica</a></li>
+                                    <li><a href="#">Del Conca</a></li>
+                                    <li><a href="#">Domus Linea</a></li>
+                                </ul>
+                            </div>
+                            <div class="block-one-word">
+                                <div class="word-filter">
+                                    E
+                                </div>
+                                <ul>
+                                    <li><a href="#">Elios</a></li>
+                                    <li><a href="#">Exe Activity</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="block-one-word">
+                                <div class="word-filter">
+                                    F
+                                </div>
+                                <ul>
+                                    <li><a href="#">Fly Zone</a></li>
+                                </ul>
+                            </div>
+                            <div class="block-one-word">
+                                <div class="word-filter">
+                                    G
+                                </div>
+                                <ul>
+                                    <li><a href="#">Gambarelli</a></li>
+                                </ul>
+                            </div>
+                            <div class="block-one-word">
+                                <div class="word-filter">
+                                    I
+                                </div>
+                                <ul>
+                                    <li><a href="#">Italon</a></li>
+                                </ul>
+                            </div>
+                            <div class="block-one-word">
+                                <div class="word-filter">
+                                    P
+                                </div>
+                                <ul>
+                                    <li><a href="#">Pastorelli</a></li>
+                                    <li><a href="#">Polis Ceramiche</a></li>
+                                    <li><a href="#">Progress Profiles</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="block-one-word">
+                                <div class="word-filter">
+                                    R
+                                </div>
+                                <ul>
+                                    <li><a href="#">Ragno</a></li>
+                                    <li><a href="#">Rondine Group</a></li>
+                                </ul>
+                            </div>
+                            <div class="block-one-word">
+                                <div class="word-filter">
+                                    S
+                                </div>
+                                <ul>
+                                    <li><a href="#">Savoia</a></li>
+                                    <li><a href="#">Serenissima&Cir</a></li>
+                                    <li><a href="#">Sintesi</a></li>
+                                </ul>
+                            </div>
+                            <div class="block-one-word">
+                                <div class="word-filter">
+                                    T
+                                </div>
+                                <ul>
+                                    <li><a href="#">Tonalite</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block-filter-word">
+                        <div class="row">
+                            <div class="block-one-word">
+                                <div class="word-filter">
+                                    B
+                                </div>
+                                <ul>
+                                    <li><a href="#">Bode</a></li>
+                                </ul>
+                            </div>
+                            <div class="block-one-word">
+                                <div class="word-filter">
+                                    C
+                                </div>
+                                <ul>
+                                    <li><a href="#">Caramelle</a></li>
+                                </ul>
+                            </div>
+                            <div class="block-one-word">
+                                <div class="word-filter">
+                                    F
+                                </div>
+                                <ul>
+                                    <li><a href="#">Finezza</a></li>
+                                </ul>
+                            </div>
+                            <div class="block-one-word">
+                                <div class="word-filter">
+                                    I
+                                </div>
+                                <ul>
+                                    <li><a href="#">Infinity Ceramic</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="block-one-word">
+                                <div class="word-filter">
+                                    L
+                                </div>
+                                <ul>
+                                    <li><a href="#">Lightgres</a></li>
+                                </ul>
+                            </div>
+                            <div class="block-one-word">
+                                <div class="word-filter">
+                                    R
+                                </div>
+                                <ul>
+                                    <li><a href="#">Romario Ceramics</a></li>
+                                </ul>
+                            </div>
+                            <div class="block-one-word">
+                                <div class="word-filter">
+                                    T
+                                </div>
+                                <ul>
+                                    <li><a href="#">TGT</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block-filter-word">
+                        <div class="row">
+                            <div class="block-one-word">
+                                <div class="word-filter">
+                                    C
+                                </div>
+                                <ul>
+                                    <li><a href="#">Ceramika-Konskie</a></li>
+                                    <li><a href="#">Cerrad</a></li>
+                                    <li><a href="#">Cerrol</a></li>
+                                </ul>
+                            </div>
+                            <div class="block-one-word">
+                                <div class="word-filter">
+                                    O
+                                </div>
+                                <ul>
+                                    <li><a href="#">Opoczno</a></li>
+                                </ul>
+                            </div>
+                            <div class="block-one-word">
+                                <div class="word-filter">
+                                    P
+                                </div>
+                                <ul>
+                                    <li><a href="#">Paradyz</a></li>
+                                    <li><a href="#">Polcolorit</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block-filter-word">
+                        <div class="row">
+                            <div class="block-one-word">
+                                <div class="word-filter">
+                                    G
+                                </div>
+                                <ul>
+                                    <li><a href="#">Gresart</a></li>
+                                </ul>
+                            </div>
+                            <div class="block-one-word">
+                                <div class="word-filter">
+                                    K
+                                </div>
+                                <ul>
+                                    <li><a href="#">Kerion</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block-filter-word">
+                        <div class="row">
+                            <div class="block-one-word">
+                                <div class="word-filter">
+                                    A
+                                </div>
+                                <ul>
+                                    <li><a href="#">AltaCera</a></li>
+                                    <li><a href="#">Atlas Concorde Russia</a></li>
+                                </ul>
+                            </div>
+                            <div class="block-one-word">
+                                <div class="word-filter">
+                                    C
+                                </div>
+                                <ul>
+                                    <li><a href="#">Cersanit</a></li>
+                                </ul>
+                            </div>
+                            <div class="block-one-word">
+                                <div class="word-filter">
+                                    E
+                                </div>
+                                <ul>
+                                    <li><a href="#">ESTIMA</a></li>
+                                </ul>
+                            </div>
+                            <div class="block-one-word">
+                                <div class="word-filter">
+                                    G
+                                </div>
+                                <ul>
+                                    <li><a href="#">Grasaro</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="block-one-word">
+                                <div class="word-filter">
+                                    I
+                                </div>
+                                <ul>
+                                    <li><a href="#">Imagine</a></li>
+                                </ul>
+                            </div>
+                            <div class="block-one-word">
+                                <div class="word-filter">
+                                    K
+                                </div>
+                                <ul>
+                                    <li><a href="#">KERAMA MARAZZI</a></li>
+                                    <li><a href="#">Kerranova</a></li>
+                                </ul>
+                            </div>
+                            <div class="block-one-word">
+                                <div class="word-filter">
+                                    R
+                                </div>
+                                <ul>
+                                    <li><a href="#">Rodnoe</a></li>
+                                </ul>
+                            </div>
+                            <div class="block-one-word">
+                                <div class="word-filter">
+                                    Д
+                                </div>
+                                <ul>
+                                    <li><a href="#">ДСТ</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="block-one-word">
+                                <div class="word-filter">
+                                    К
+                                </div>
+                                <ul>
+                                    <li><a href="#">КЕРАМИКА БУДУЩЕГО</a></li>
+                                </ul>
+                            </div>
+                            <div class="block-one-word">
+                                <div class="word-filter">
+                                    Т
+                                </div>
+                                <ul>
+                                    <li><a href="#">Тономозаика</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block-filter-word">
+                        <div class="row">
+                            <div class="block-one-word">
+                                <div class="word-filter">
+                                    D
+                                </div>
+                                <ul>
+                                    <li><a href="#">Decovita</a></li>
+                                </ul>
+                            </div>
+                            <div class="block-one-word">
+                                <div class="word-filter">
+                                    K
+                                </div>
+                                <ul>
+                                    <li><a href="#">Kaledobur</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="block-one-word">
+                            <div class="word-filter">
+                                Q
+                            </div>
+                            <ul>
+                                <li><a href="#">QUA Granite</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="block-filter-word">
+                        <div class="row">
+                            <div class="block-one-word">
+                                <div class="word-filter">
+                                    K
+                                </div>
+                                <ul>
+                                    <li><a href="#">Keramika Modus </a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</section>
+<!--END CATALOG-->
+
+
+</body>
+</html>

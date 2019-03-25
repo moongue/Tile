@@ -18,6 +18,12 @@
 }
 @font-face {
   font-family: 'Source Sans Pro';
+  src: local('Source Sans Pro Light'), local('SourceSansPro-Light'), url('../font/sourcesanspro/sourcesansprolight.woff2') format('woff2'), url('../font/sourcesanspro/sourcesansprolight.woff') format('woff'), url('../font/sourcesanspro/sourcesansprolight.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Source Sans Pro';
   src: local('Source Sans Pro'), local('SourceSansPro-Regular'), url('../font/sourcesanspro/sourcesanspro.woff2') format('woff2'), url('../font/sourcesanspro/sourcesanspro.woff') format('woff'), url('../font/sourcesanspro/sourcesanspro.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;

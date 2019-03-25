@@ -16,8 +16,11 @@ var settings = {
         fields: '30px' /* side fields */
     },
     breakPoints: {
+        fix: {
+          width: '1160px'
+        },
         lg: {
-            width: '1100px', /* -> @media (max-width: 1100px) */
+            width: '1100px' /* -> @media (max-width: 1100px) */
         },
         md: {
             width: '960px'

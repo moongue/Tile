@@ -36,6 +36,40 @@ h1 {
   font-size: 24px;
   line-height: 24px;
   color: $black-two;
+
+  @include xs(font-size, 16px)
+}
+
+h2 {
+  font-size: 24px;
+  color: $black;
+  line-height: 30px;
+}
+
+.bg-grey {
+  background: $grey;
+}
+
+.lg-hide {
+  @include lg(display, none)
+}
+
+.lg-show {
+  display: none;
+  @include lg(display, block)
+}
+
+.md-hide {
+  @include md(display, none !important)
+}
+
+.sm-hide {
+  @include sm(display, none !important)
+}
+
+.sm-show {
+  display: none;
+  @include sm(display, block);
 }
 
 .row {
@@ -52,6 +86,8 @@ h1 {
   display: flex;
   flex-direction: column;
   &__aic {
+    display: flex;
+    flex-direction: column;
     align-items: center;
   }
 }
@@ -60,6 +96,7 @@ h1 {
   position: fixed;
   left: 140px;
   top: 170px;
+
   ul {
     display: flex;
     flex-direction: column;
@@ -77,7 +114,6 @@ h1 {
           box-sizing: border-box;
           height: 40px;
           width: 100px;
-          background: $white;
           align-items: center;
           justify-content: center;
           color: $black;

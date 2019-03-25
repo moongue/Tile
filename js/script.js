@@ -1,20 +1,32 @@
-function menuLogic () {
-    var $header = $('#header');
-    var $mobileMenuTrigger = $('.mobile-menu-toggle', $header);
-    var $menuBlock = $('.drop-menu', $header);
-    var openClass = 'is-open';
-
-    // Toggle main menu.
-    $mobileMenuTrigger.on('click', function(e) {
-        e.preventDefault();
-        $menuBlock.toggleClass(openClass);
-    });
-}
 
 function smoothMenu() {
     $(".mobile-menu-toggle").click(function () {
         $(".drop-menu").slideToggle(400);
     });
+}
+
+function showFilterCountry() {
+   $('.btn-show-filter').click(function () {
+       $('.filter').slideToggle(400, function () {
+           $(this).toggleClass('showing');
+       });
+       $('.btn-show-filter').toggleClass('transform-class');
+   }) ;
+}
+
+function showSearchInput() {
+    $(".show-search-input").click(function () {
+        $(".search-input").slideToggle(400);
+    });
+}
+
+function tabs() {
+    $('ul.filter').on('click', 'li:not(.active)', function() {
+        $(this)
+            .addClass('active').siblings().removeClass('active')
+            .closest('div.filter-product').find('div.block-filter-word').removeClass('active').eq($(this).index()).addClass('active');
+    });
+
 }
 
 function activeInput() {
@@ -44,4 +56,7 @@ $(window).on('load', function() {
     activeInput();
     smoothMenu();
     slider();
+    showSearchInput();
+    showFilterCountry();
+    tabs();
 });

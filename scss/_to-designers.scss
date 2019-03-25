@@ -1,0 +1,108 @@
+#to-designers {
+  background: #fff;
+  padding-top: 15px;
+  .container {
+    h1 {
+      padding: 4px;
+      border: 1px solid $grey;
+    }
+    p {
+      max-width: 660px;
+      font-size: 18px;
+      line-height: 30px;
+      color: $black;
+      font-weight: 300;
+      .bold {
+        font-weight: 600;
+      }
+
+      @include xs-block() {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 20px;
+      }
+    }
+    .block-descr {
+      margin-top: 40px;
+      padding-bottom: 20px;
+      z-index: 1;
+    }
+    .row__aic {
+      position: relative;
+    }
+    .image-bg {
+      @include md-block() {
+        position: absolute;
+        opacity: .4;
+        right: 0;
+        z-index: 0;
+      }
+    }
+    .question {
+      text-align: center;
+      line-height: 30px;
+      font-size: 20px;
+      margin-top: 35px;
+      margin-bottom: 30px;
+
+      @include xs(margin-top, 15px);
+      p {
+        margin: 10px auto 0;
+        max-width: 940px;
+
+        @include xs(max-width, 244px)
+      }
+    }
+    .adaptive-img {
+      width: 100%;
+      height: auto;
+      max-width: 470px;
+    }
+    .form-feedback {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-bottom: 28px;
+      margin: 0 15px;
+      .title {
+        font-size: 24px;
+        font-weight: 600;
+        margin-top: 15px;
+
+        @include xs(font-size, 16px);
+      }
+      .styles-input {
+        width: 100%;
+        max-width: 567px;
+        height: 40px;
+        background: $white;
+        font-size: 24px;
+        padding: 0 20px;
+        margin-top: 12px;
+        border: none;
+        color: $black;
+
+        @include xs-block() {
+          height: 30px;
+          font-size: 16px;
+          max-width: 244px;
+        }
+      }
+      .styles-button {
+        width: 257px;
+        height: 40px;
+        margin-top: 30px;
+        font-size: 24px;
+        color: $white;
+        border: none;
+        background: $red;
+
+        @include xs-block() {
+          margin-top: 12px;
+          width: 190px;
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}

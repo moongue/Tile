@@ -1,10 +1,25 @@
 #header {
   position: relative;
   background: $grey;
+
+  @include sm(background, $bg);
   .container {
     padding: 10px 0;
+
+    @include sm(padding, 0);
     .row__aic {
       justify-content: flex-start;
+      @include sm-block() {
+        justify-content: space-between;
+        position: fixed;
+        top: 0;
+        left: 0;
+        padding: 10px 15px;
+        width: 100%;
+        box-sizing: border-box;
+        z-index: 9;
+        background: $grey;
+      }
     }
     .mobile-menu-toggle {
       width: 40px;
@@ -12,7 +27,7 @@
       box-sizing: border-box;
       border: 1px solid $black;
       background: $white;
-      z-index: 3;
+      z-index: 4;
       //HAMBURGER BUTTON
       .ham {
         cursor: pointer;
@@ -64,6 +79,30 @@
       }
       //END HAMBURGER BUTTON
     }
+    .menu-chose {
+      z-index: 4;
+      ul {
+        display: flex;
+        align-items: center;
+        li {
+          padding-left: 8px;
+        }
+      }
+      .search-input {
+        width: 100%;
+        position: absolute;
+        top: 62px;
+        height: 40px;
+        left: 0;
+        display: none;
+        box-sizing: border-box;
+        padding:0 15px;
+        border: none;
+        border-top: 1px solid $bg;
+        background: $grey;
+        font-size: 14px;
+      }
+    }
     nav {
       z-index: 3;
       ul {
@@ -89,15 +128,24 @@
   }
 }
 
-.drop-menu {
+.drop-menu, .menu-header {
   position: absolute;
   display: none;
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 2;
+  z-index: 3;
   background: $grey;
-  box-shadow: 3px 66px 124px -7px rgba(0,0,0,0.59);
+  box-shadow: 3px 66px 124px -7px rgba(0, 0, 0, 0.59);
+  &.menu-header {
+    @include sm-block() {
+      display: block;
+      position: inherit;
+      box-shadow: none;
+      background: $bg;
+      margin-top: 64px;
+    }
+  }
   &.is-open {
     display: block;
 
@@ -122,6 +170,9 @@
       padding-bottom: 40px;
       padding-left: 140px;
       width: 100%;
+
+      @include md(padding-left, 32px);
+      @include sm(padding-left, 15px);
       .menu {
         display: flex;
         flex-direction: column;
@@ -151,20 +202,45 @@
         }
       }
     }
-    .description-site {
-      padding-left: 140px;
-      padding-bottom: 50px;
-      padding-top: 10px;
-      max-width: 550px;
-      p {
-        margin-top: 20px;
-        font-size: 16px;
-        line-height: 24px;
-        max-width: 428px;
+  }
+  .description-site {
+    padding-left: 140px;
+    padding-bottom: 50px;
+    padding-top: 10px;
+    max-width: 550px;
+
+    @include lg-block() {
+      text-align: center;
+      margin: 0 auto;
+      padding-left: 0;
+      padding-bottom: 15px;
+    }
+    .logo {
+      @include xs-block() {
+        max-width: 160px;
+        height: auto;
+      }
+    }
+    p {
+      margin-top: 20px;
+      font-size: 16px;
+      line-height: 24px;
+      max-width: 428px;
+
+      @include lg-block() {
+        text-align: center;
+        max-width: 100%;
+      }
+      @include xs-block() {
+        text-align: left;
+        font-size: 10px;
       }
     }
   }
   .right-block {
+
+    @include lg(margin-top, 60px);
+    @include xs(margin-top, 0);
     .block-chose {
       position: relative;
       > img {
@@ -180,7 +256,16 @@
         font-weight: 600;
         font-size: 24px;
         color: $white;
+        &.fz-less {
+          @include xs(font-size, 11px);
+        }
+        @include lg-block() {
+          left: 7px;
+          font-size: 20px;
+        }
+        @include xs(font-size, 14px);
       }
     }
   }
+
 }

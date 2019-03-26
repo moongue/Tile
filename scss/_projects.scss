@@ -1,0 +1,108 @@
+#projects {
+  padding-top: 15px;
+  background: $white;
+  padding-bottom: 90px;
+
+  @include sm(padding-top, 80px);
+
+  .container {
+    h1 {
+      font-family: 'Roboto', sans-serif;
+      padding: 4px;
+      border: 1px solid $grey;
+      @include xs-block() {
+        font-weight: 600;
+        border: none;
+        border-bottom: 1px solid $grey;
+      }
+    }
+    p {
+      font-size: 18px;
+      line-height: 30px;
+      max-width: 778px;
+      font-weight: 300;
+      margin-top: 30px;
+
+      @include xs-block() {
+        font-size: 14px;
+        line-height: 20px;
+        margin-top: 15px;
+      }
+    }
+    .slider-projects  {
+      position: relative;
+      max-width: 900px;
+      margin: 30px auto 70px;
+      background: $bg;
+      @include xs-block {
+        margin: 15px auto 50px;
+      }
+      .slide {
+        @include md(padding, 0 15px);
+        .row {
+          justify-content: space-around;
+          .col {
+            justify-content: space-between;
+            @include sm(padding-right, 15px);
+            .small-adaptive-img {
+              @include xs-block() {
+                max-width: 38px;
+                max-height: 38px;
+              }
+            }
+            &.non {
+              justify-content: flex-start;
+              img {
+                &:nth-child(2) {
+                  margin-top: 20px;
+                }
+              }
+            }
+          }
+          .big-adaptive-img {
+            @include xs-block() {
+              width: 130px;
+              height: 172px;
+            }
+          }
+          p {
+            font-weight: 600;
+            padding-left: 15px;
+            padding-right: 15px;
+            @include xs-block() {
+              font-size: 10px;
+              line-height: 14px;
+            }
+          }
+        }
+      }
+      .slick-arrow {
+        position: absolute;
+        outline: none;
+        font-size: 0;
+        height: 35px;
+        width: 35px;
+        border: none;
+        bottom: -60px;
+        z-index: 2;
+
+        @include xs(bottom, -40px);
+        &.slick-prev {
+          background: url("../images/icons/icon-arrow-prev.png") no-repeat;
+          left: 44%;
+          @include sm(left, 41%);
+          @include xs(left, 36%);
+        }
+        &.slick-next {
+          background: url("../images/icons/icon-arrow-next.png") no-repeat;
+          right: 46%;
+          @include sm(right, 43%);
+          @include xs(right, 38%);
+        }
+      }
+    }
+    .form-feedback {
+      margin-top: 25px;
+    }
+  }
+}

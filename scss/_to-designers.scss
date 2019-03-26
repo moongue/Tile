@@ -58,51 +58,5 @@
       height: auto;
       max-width: 470px;
     }
-    .form-feedback {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding-bottom: 28px;
-      margin: 0 15px;
-      .title {
-        font-size: 24px;
-        font-weight: 600;
-        margin-top: 15px;
-
-        @include xs(font-size, 16px);
-      }
-      .styles-input {
-        width: 100%;
-        max-width: 567px;
-        height: 40px;
-        background: $white;
-        font-size: 24px;
-        padding: 0 20px;
-        margin-top: 12px;
-        border: none;
-        color: $black;
-
-        @include xs-block() {
-          height: 30px;
-          font-size: 16px;
-          max-width: 244px;
-        }
-      }
-      .styles-button {
-        width: 257px;
-        height: 40px;
-        margin-top: 30px;
-        font-size: 24px;
-        color: $white;
-        border: none;
-        background: $red;
-
-        @include xs-block() {
-          margin-top: 12px;
-          width: 190px;
-          font-size: 16px;
-        }
-      }
-    }
   }
 }

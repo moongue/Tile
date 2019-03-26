@@ -1,0 +1,943 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="plugins/slick-slider/slick.min.js"></script>
+    <script src="js/script.js"></script>
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="plugins/slick-slider/slick.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Cafel</title>
+</head>
+<body>
+<!--HEADER-->
+<header id="header">
+    <div class="wrapper-big">
+        <div class="container">
+            <div class="row__aic">
+                <div class="mobile-menu-toggle">
+                    <svg class="ham hamRotate ham-burger" viewBox="0 0 100 100" width="40"
+                         onclick="this.classList.toggle('active')">
+                        <path
+                                class="line top"
+                                d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20"/>
+                        <path
+                                class="line middle"
+                                d="m 30,50 h 40"/>
+                        <path
+                                class="line bottom"
+                                d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20"/>
+                    </svg>
+                </div>
+
+                <nav class="sm-hide">
+                    <ul class="row">
+                        <li><a href="#" class="active">Акции</a></li>
+                        <li><a href="#">Новинки</a></li>
+                        <li><a href="#">Хит</a></li>
+                    </ul>
+                </nav>
+                <div class="menu-chose lg-show">
+                    <ul>
+                        <li><a href="#"><img src="images/icons/icon-personal-area.png" alt="ЛК"> </a>
+                        </li>
+                        <li><a href="#"><img src="images/icons/icon-basket.png" alt="Корзина"></a>
+                        </li>
+                        <li><a href="#"><img src="images/icons/icon-comparison.png" alt="Сравнение"></a></li>
+                        <li class="search"><a href="#" class="show-search-input"><img src="images/icons/icon-search.png"
+                                                                                      alt="Поиск"></a></li>
+                    </ul>
+                    <input type="text" class="search-input" placeholder="Поиск">
+                </div>
+                <div class="drop-menu">
+                    <div class="col">
+                        <div class="row">
+                            <div class="left-block">
+                                <div class="menu-bg">
+
+                                    <div class="row">
+                                        <div class="block-with-menu">
+                                            <ul class="menu">
+                                                <li><a href="#">О компании</a></li>
+                                                <li><a href="#">Каталог</a></li>
+                                                <li><a href="#">Дизайнеры</a></li>
+                                                <li><a href="#">Проекты</a></li>
+                                                <li><a href="#">Оплата и возврат</a></li>
+                                                <li><a href="#">Контакты</a></li>
+                                            </ul>
+                                            <div class="telephone">
+                                                <img src="images/icons/icon-telephone.png" alt="Tel">
+                                                <p>922-56-68</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="description-bg lg-hide">
+
+                                    <div class="description-site">
+                                        <div class="logo">
+                                            <img src="images/icons/icon-logo.png" alt="Logo">
+                                        </div>
+                                        <p> Компания «КафельСклад» - это один из крупнейших поставщиков облицовочной
+                                            плитки в
+                                            Санкт-Петербурге.
+                                            Мы предлагаем современные коллекции керамической плитки и износостойкого
+                                            керамогранита от
+                                            российских, польских, итальянских, испанских и других производителей.</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="right-block sm-hide">
+                                <div class="row">
+                                    <a href="#" class="block-chose">
+                                        <img src="images/images/image-floors.jpg" alt="Полы">
+                                        <div class="name">
+                                            Полы
+                                        </div>
+                                    </a>
+                                    <a href="#" class="block-chose">
+                                        <img src="images/images/image-street.jpg" alt="Улица">
+                                        <div class="name">
+                                            Улица
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="row">
+                                    <a href="" class="block-chose">
+                                        <img src="images/images/image-mosaic.jpg" alt="Мозаика">
+                                        <div class="name">
+                                            Мозаика
+                                        </div>
+                                    </a>
+                                    <a href="#" class="block-chose">
+                                        <img src="images/images/image-related-product.jpg" alt="Сопутствующие товары">
+                                        <div class="name">
+                                            Сопутствующие товары
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="row">
+                                    <a href="#" class="block-chose">
+                                        <img src="images/images/image-steps.jpg" alt="Ступени">
+                                        <div class="name">
+                                            Ступени
+                                        </div>
+                                    </a>
+                                    <a href="#" class="block-chose">
+                                        <img src="images/images/image-walls.jpg" alt="Стены">
+                                        <div class="name">
+                                            Стены
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="description-bg lg-show sm-hide">
+
+                            <div class="description-site">
+                                <div class="logo">
+                                    <img src="images/icons/icon-logo.png" alt="Logo">
+                                </div>
+                                <p> Компания «КафельСклад» - это один из крупнейших поставщиков облицовочной плитки в
+                                    Санкт-Петербурге.
+                                    Мы предлагаем современные коллекции керамической плитки и износостойкого
+                                    керамогранита от
+                                    российских, польских, итальянских, испанских и других производителей.</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="menu-header sm-hide">
+                <div class="col">
+                    <div class="description-bg">
+
+                        <div class="description-site">
+                            <div class="logo">
+                                <img src="images/icons/icon-logo.png" alt="Logo">
+                            </div>
+                            <p> Компания «КафельСклад» - это один из крупнейших поставщиков облицовочной
+                                плитки в
+                                Санкт-Петербурге.
+                                Мы предлагаем современные коллекции керамической плитки и износостойкого
+                                керамогранита от
+                                российских, польских, итальянских, испанских и других производителей.</p>
+                        </div>
+
+                    </div>
+                    <div class="right-block">
+                        <div class="row">
+                            <a href="#" class="block-chose">
+                                <img src="images/images/image-floors.jpg" alt="Полы">
+                                <div class="name">
+                                    Полы
+                                </div>
+                            </a>
+                            <a href="#" class="block-chose">
+                                <img src="images/images/image-street.jpg" alt="Улица">
+                                <div class="name">
+                                    Улица
+                                </div>
+                            </a>
+                        </div>
+                        <div class="row">
+                            <a href="" class="block-chose">
+                                <img src="images/images/image-mosaic.jpg" alt="Мозаика">
+                                <div class="name">
+                                    Мозаика
+                                </div>
+                            </a>
+                            <a href="#" class="block-chose">
+                                <img src="images/images/image-related-product.jpg" alt="Сопутствующие товары">
+                                <div class="name fz-less">
+                                    Сопутствующие товары
+                                </div>
+                            </a>
+                        </div>
+                        <div class="row">
+                            <a href="#" class="block-chose">
+                                <img src="images/images/image-steps.jpg" alt="Ступени">
+                                <div class="name">
+                                    Ступени
+                                </div>
+                            </a>
+                            <a href="#" class="block-chose">
+                                <img src="images/images/image-walls.jpg" alt="Стены">
+                                <div class="name">
+                                    Стены
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</header>
+<!--END HEADER-->
+
+<div class="sidebar lg-hide">
+    <ul>
+        <li><a href="#"><img src="images/icons/icon-personal-area.png" alt="ЛК"> <span class="description">Личный кабинет</span></a>
+        </li>
+        <li><a href="#"><img src="images/icons/icon-basket.png" alt="Корзина"> <span class="description">Корзина</span></a>
+        </li>
+        <li><a href="#"><img src="images/icons/icon-comparison.png" alt="Сравнение"> <span
+                class="description">Сравнение</span></a></li>
+        <li class="search"><a href="#"><img src="images/icons/icon-search.png" alt="Поиск"><span
+                class="description hide-click"><input
+                type="text" class="search-area" placeholder="Поиск"></span></a></li>
+    </ul>
+</div>
+
+<section id="factory-collections">
+    <img src="images/icons/icon-arrow-up.png" alt="Верх" class="arrow-up">
+    <div class="wrapper">
+        <div class="container">
+            <h1>
+                Керамическая плитка фабрики ABSOLUT
+            </h1>
+            <div class="way">
+                <a href="#"> Каталог</a> <a href="#">/ Испания</a> <a href="#">/ Absolut</a>
+            </div>
+            <div class="blocks-factory">
+                <div class="slide">
+                    <a href="#" class="one-block-factory">
+                        <img src="images/images/image-factory.jpg" alt="Плитка">
+                        <ul class="description-factory">
+                            <li>
+                                <p>Коллекция: <span>Aure Leopard</span></p>
+                            </li>
+                            <li>
+                                <p>Фабрика: <span>Absolut</span></p>
+                            </li>
+                            <li>
+                                <p>Состав коллекции: <span>8 позиций</span></p>
+                            </li>
+                            <li>
+                                <p>Цена от: <span>3 500 руб.</span></p>
+                            </li>
+                        </ul>
+                    </a>
+                    <a href="#" class="one-block-factory">
+                        <img src="images/images/image-factory.jpg" alt="Плитка">
+                        <ul class="description-factory">
+                            <li>
+                                <p>Коллекция: <span>Aure Leopard</span></p>
+                            </li>
+                            <li>
+                                <p>Фабрика: <span>Absolut</span></p>
+                            </li>
+                            <li>
+                                <p>Состав коллекции: <span>8 позиций</span></p>
+                            </li>
+                            <li>
+                                <p>Цена от: <span>3 500 руб.</span></p>
+                            </li>
+                        </ul>
+                    </a>
+                    <a href="#" class="one-block-factory">
+                        <img src="images/images/image-factory.jpg" alt="Плитка">
+                        <ul class="description-factory">
+                            <li>
+                                <p>Коллекция: <span>Aure Leopard</span></p>
+                            </li>
+                            <li>
+                                <p>Фабрика: <span>Absolut</span></p>
+                            </li>
+                            <li>
+                                <p>Состав коллекции: <span>8 позиций</span></p>
+                            </li>
+                            <li>
+                                <p>Цена от: <span>3 500 руб.</span></p>
+                            </li>
+                        </ul>
+                    </a>
+                    <a href="#" class="one-block-factory">
+                        <img src="images/images/image-factory.jpg" alt="Плитка">
+                        <ul class="description-factory">
+                            <li>
+                                <p>Коллекция: <span>Aure Leopard</span></p>
+                            </li>
+                            <li>
+                                <p>Фабрика: <span>Absolut</span></p>
+                            </li>
+                            <li>
+                                <p>Состав коллекции: <span>8 позиций</span></p>
+                            </li>
+                            <li>
+                                <p>Цена от: <span>3 500 руб.</span></p>
+                            </li>
+                        </ul>
+                    </a>
+                    <a href="#" class="one-block-factory">
+                        <img src="images/images/image-factory.jpg" alt="Плитка">
+                        <ul class="description-factory">
+                            <li>
+                                <p>Коллекция: <span>Aure Leopard</span></p>
+                            </li>
+                            <li>
+                                <p>Фабрика: <span>Absolut</span></p>
+                            </li>
+                            <li>
+                                <p>Состав коллекции: <span>8 позиций</span></p>
+                            </li>
+                            <li>
+                                <p>Цена от: <span>3 500 руб.</span></p>
+                            </li>
+                        </ul>
+                    </a>
+                    <a href="#" class="one-block-factory">
+                        <img src="images/images/image-factory.jpg" alt="Плитка">
+                        <ul class="description-factory">
+                            <li>
+                                <p>Коллекция: <span>Aure Leopard</span></p>
+                            </li>
+                            <li>
+                                <p>Фабрика: <span>Absolut</span></p>
+                            </li>
+                            <li>
+                                <p>Состав коллекции: <span>8 позиций</span></p>
+                            </li>
+                            <li>
+                                <p>Цена от: <span>3 500 руб.</span></p>
+                            </li>
+                        </ul>
+                    </a>
+                    <a href="#" class="one-block-factory">
+                        <img src="images/images/image-factory.jpg" alt="Плитка">
+                        <ul class="description-factory">
+                            <li>
+                                <p>Коллекция: <span>Aure Leopard</span></p>
+                            </li>
+                            <li>
+                                <p>Фабрика: <span>Absolut</span></p>
+                            </li>
+                            <li>
+                                <p>Состав коллекции: <span>8 позиций</span></p>
+                            </li>
+                            <li>
+                                <p>Цена от: <span>3 500 руб.</span></p>
+                            </li>
+                        </ul>
+                    </a>
+                    <a href="#" class="one-block-factory">
+                        <img src="images/images/image-factory.jpg" alt="Плитка">
+                        <ul class="description-factory">
+                            <li>
+                                <p>Коллекция: <span>Aure Leopard</span></p>
+                            </li>
+                            <li>
+                                <p>Фабрика: <span>Absolut</span></p>
+                            </li>
+                            <li>
+                                <p>Состав коллекции: <span>8 позиций</span></p>
+                            </li>
+                            <li>
+                                <p>Цена от: <span>3 500 руб.</span></p>
+                            </li>
+                        </ul>
+                    </a>
+                    <a href="#" class="one-block-factory sm-hide">
+                        <img src="images/images/image-factory.jpg" alt="Плитка">
+                        <ul class="description-factory">
+                            <li>
+                                <p>Коллекция: <span>Aure Leopard</span></p>
+                            </li>
+                            <li>
+                                <p>Фабрика: <span>Absolut</span></p>
+                            </li>
+                            <li>
+                                <p>Состав коллекции: <span>8 позиций</span></p>
+                            </li>
+                            <li>
+                                <p>Цена от: <span>3 500 руб.</span></p>
+                            </li>
+                        </ul>
+                    </a>
+                    <a href="#" class="one-block-factory sm-hide">
+                        <img src="images/images/image-factory.jpg" alt="Плитка">
+                        <ul class="description-factory">
+                            <li>
+                                <p>Коллекция: <span>Aure Leopard</span></p>
+                            </li>
+                            <li>
+                                <p>Фабрика: <span>Absolut</span></p>
+                            </li>
+                            <li>
+                                <p>Состав коллекции: <span>8 позиций</span></p>
+                            </li>
+                            <li>
+                                <p>Цена от: <span>3 500 руб.</span></p>
+                            </li>
+                        </ul>
+                    </a>
+                    <a href="#" class="one-block-factory sm-hide">
+                        <img src="images/images/image-factory.jpg" alt="Плитка">
+                        <ul class="description-factory">
+                            <li>
+                                <p>Коллекция: <span>Aure Leopard</span></p>
+                            </li>
+                            <li>
+                                <p>Фабрика: <span>Absolut</span></p>
+                            </li>
+                            <li>
+                                <p>Состав коллекции: <span>8 позиций</span></p>
+                            </li>
+                            <li>
+                                <p>Цена от: <span>3 500 руб.</span></p>
+                            </li>
+                        </ul>
+                    </a>
+                    <a href="#" class="one-block-factory sm-hide">
+                        <img src="images/images/image-factory.jpg" alt="Плитка">
+                        <ul class="description-factory">
+                            <li>
+                                <p>Коллекция: <span>Aure Leopard</span></p>
+                            </li>
+                            <li>
+                                <p>Фабрика: <span>Absolut</span></p>
+                            </li>
+                            <li>
+                                <p>Состав коллекции: <span>8 позиций</span></p>
+                            </li>
+                            <li>
+                                <p>Цена от: <span>3 500 руб.</span></p>
+                            </li>
+                        </ul>
+                    </a>
+                    <a href="#" class="one-block-factory sm-hide">
+                        <img src="images/images/image-factory.jpg" alt="Плитка">
+                        <ul class="description-factory">
+                            <li>
+                                <p>Коллекция: <span>Aure Leopard</span></p>
+                            </li>
+                            <li>
+                                <p>Фабрика: <span>Absolut</span></p>
+                            </li>
+                            <li>
+                                <p>Состав коллекции: <span>8 позиций</span></p>
+                            </li>
+                            <li>
+                                <p>Цена от: <span>3 500 руб.</span></p>
+                            </li>
+                        </ul>
+                    </a>
+                    <a href="#" class="one-block-factory sm-hide">
+                        <img src="images/images/image-factory.jpg" alt="Плитка">
+                        <ul class="description-factory">
+                            <li>
+                                <p>Коллекция: <span>Aure Leopard</span></p>
+                            </li>
+                            <li>
+                                <p>Фабрика: <span>Absolut</span></p>
+                            </li>
+                            <li>
+                                <p>Состав коллекции: <span>8 позиций</span></p>
+                            </li>
+                            <li>
+                                <p>Цена от: <span>3 500 руб.</span></p>
+                            </li>
+                        </ul>
+                    </a>
+                    <a href="#" class="one-block-factory sm-hide">
+                        <img src="images/images/image-factory.jpg" alt="Плитка">
+                        <ul class="description-factory">
+                            <li>
+                                <p>Коллекция: <span>Aure Leopard</span></p>
+                            </li>
+                            <li>
+                                <p>Фабрика: <span>Absolut</span></p>
+                            </li>
+                            <li>
+                                <p>Состав коллекции: <span>8 позиций</span></p>
+                            </li>
+                            <li>
+                                <p>Цена от: <span>3 500 руб.</span></p>
+                            </li>
+                        </ul>
+                    </a>
+                    <a href="#" class="one-block-factory sm-hide">
+                        <img src="images/images/image-factory.jpg" alt="Плитка">
+                        <ul class="description-factory">
+                            <li>
+                                <p>Коллекция: <span>Aure Leopard</span></p>
+                            </li>
+                            <li>
+                                <p>Фабрика: <span>Absolut</span></p>
+                            </li>
+                            <li>
+                                <p>Состав коллекции: <span>8 позиций</span></p>
+                            </li>
+                            <li>
+                                <p>Цена от: <span>3 500 руб.</span></p>
+                            </li>
+                        </ul>
+                    </a>
+                    <a href="#" class="one-block-factory sm-hide">
+                        <img src="images/images/image-factory.jpg" alt="Плитка">
+                        <ul class="description-factory">
+                            <li>
+                                <p>Коллекция: <span>Aure Leopard</span></p>
+                            </li>
+                            <li>
+                                <p>Фабрика: <span>Absolut</span></p>
+                            </li>
+                            <li>
+                                <p>Состав коллекции: <span>8 позиций</span></p>
+                            </li>
+                            <li>
+                                <p>Цена от: <span>3 500 руб.</span></p>
+                            </li>
+                        </ul>
+                    </a>
+                    <a href="#" class="one-block-factory sm-hide">
+                        <img src="images/images/image-factory.jpg" alt="Плитка">
+                        <ul class="description-factory">
+                            <li>
+                                <p>Коллекция: <span>Aure Leopard</span></p>
+                            </li>
+                            <li>
+                                <p>Фабрика: <span>Absolut</span></p>
+                            </li>
+                            <li>
+                                <p>Состав коллекции: <span>8 позиций</span></p>
+                            </li>
+                            <li>
+                                <p>Цена от: <span>3 500 руб.</span></p>
+                            </li>
+                        </ul>
+                    </a>
+                    <a href="#" class="one-block-factory sm-hide">
+                        <img src="images/images/image-factory.jpg" alt="Плитка">
+                        <ul class="description-factory">
+                            <li>
+                                <p>Коллекция: <span>Aure Leopard</span></p>
+                            </li>
+                            <li>
+                                <p>Фабрика: <span>Absolut</span></p>
+                            </li>
+                            <li>
+                                <p>Состав коллекции: <span>8 позиций</span></p>
+                            </li>
+                            <li>
+                                <p>Цена от: <span>3 500 руб.</span></p>
+                            </li>
+                        </ul>
+                    </a>
+                    <a href="#" class="one-block-factory sm-hide">
+                        <img src="images/images/image-factory.jpg" alt="Плитка">
+                        <ul class="description-factory">
+                            <li>
+                                <p>Коллекция: <span>Aure Leopard</span></p>
+                            </li>
+                            <li>
+                                <p>Фабрика: <span>Absolut</span></p>
+                            </li>
+                            <li>
+                                <p>Состав коллекции: <span>8 позиций</span></p>
+                            </li>
+                            <li>
+                                <p>Цена от: <span>3 500 руб.</span></p>
+                            </li>
+                        </ul>
+                    </a>
+                </div>
+                <div class="slide">
+                    <a href="#" class="one-block-factory">
+                        <img src="images/images/image-factory.jpg" alt="Плитка">
+                        <ul class="description-factory">
+                            <li>
+                                <p>Коллекция: <span>Aure Leopard</span></p>
+                            </li>
+                            <li>
+                                <p>Фабрика: <span>Absolut</span></p>
+                            </li>
+                            <li>
+                                <p>Состав коллекции: <span>8 позиций</span></p>
+                            </li>
+                            <li>
+                                <p>Цена от: <span>3 500 руб.</span></p>
+                            </li>
+                        </ul>
+                    </a>
+                    <a href="#" class="one-block-factory">
+                        <img src="images/images/image-factory.jpg" alt="Плитка">
+                        <ul class="description-factory">
+                            <li>
+                                <p>Коллекция: <span>Aure Leopard</span></p>
+                            </li>
+                            <li>
+                                <p>Фабрика: <span>Absolut</span></p>
+                            </li>
+                            <li>
+                                <p>Состав коллекции: <span>8 позиций</span></p>
+                            </li>
+                            <li>
+                                <p>Цена от: <span>3 500 руб.</span></p>
+                            </li>
+                        </ul>
+                    </a>
+                    <a href="#" class="one-block-factory">
+                        <img src="images/images/image-factory.jpg" alt="Плитка">
+                        <ul class="description-factory">
+                            <li>
+                                <p>Коллекция: <span>Aure Leopard</span></p>
+                            </li>
+                            <li>
+                                <p>Фабрика: <span>Absolut</span></p>
+                            </li>
+                            <li>
+                                <p>Состав коллекции: <span>8 позиций</span></p>
+                            </li>
+                            <li>
+                                <p>Цена от: <span>3 500 руб.</span></p>
+                            </li>
+                        </ul>
+                    </a>
+                    <a href="#" class="one-block-factory">
+                        <img src="images/images/image-factory.jpg" alt="Плитка">
+                        <ul class="description-factory">
+                            <li>
+                                <p>Коллекция: <span>Aure Leopard</span></p>
+                            </li>
+                            <li>
+                                <p>Фабрика: <span>Absolut</span></p>
+                            </li>
+                            <li>
+                                <p>Состав коллекции: <span>8 позиций</span></p>
+                            </li>
+                            <li>
+                                <p>Цена от: <span>3 500 руб.</span></p>
+                            </li>
+                        </ul>
+                    </a>
+                    <a href="#" class="one-block-factory">
+                        <img src="images/images/image-factory.jpg" alt="Плитка">
+                        <ul class="description-factory">
+                            <li>
+                                <p>Коллекция: <span>Aure Leopard</span></p>
+                            </li>
+                            <li>
+                                <p>Фабрика: <span>Absolut</span></p>
+                            </li>
+                            <li>
+                                <p>Состав коллекции: <span>8 позиций</span></p>
+                            </li>
+                            <li>
+                                <p>Цена от: <span>3 500 руб.</span></p>
+                            </li>
+                        </ul>
+                    </a>
+                    <a href="#" class="one-block-factory">
+                        <img src="images/images/image-factory.jpg" alt="Плитка">
+                        <ul class="description-factory">
+                            <li>
+                                <p>Коллекция: <span>Aure Leopard</span></p>
+                            </li>
+                            <li>
+                                <p>Фабрика: <span>Absolut</span></p>
+                            </li>
+                            <li>
+                                <p>Состав коллекции: <span>8 позиций</span></p>
+                            </li>
+                            <li>
+                                <p>Цена от: <span>3 500 руб.</span></p>
+                            </li>
+                        </ul>
+                    </a>
+                    <a href="#" class="one-block-factory">
+                        <img src="images/images/image-factory.jpg" alt="Плитка">
+                        <ul class="description-factory">
+                            <li>
+                                <p>Коллекция: <span>Aure Leopard</span></p>
+                            </li>
+                            <li>
+                                <p>Фабрика: <span>Absolut</span></p>
+                            </li>
+                            <li>
+                                <p>Состав коллекции: <span>8 позиций</span></p>
+                            </li>
+                            <li>
+                                <p>Цена от: <span>3 500 руб.</span></p>
+                            </li>
+                        </ul>
+                    </a>
+                    <a href="#" class="one-block-factory">
+                        <img src="images/images/image-factory.jpg" alt="Плитка">
+                        <ul class="description-factory">
+                            <li>
+                                <p>Коллекция: <span>Aure Leopard</span></p>
+                            </li>
+                            <li>
+                                <p>Фабрика: <span>Absolut</span></p>
+                            </li>
+                            <li>
+                                <p>Состав коллекции: <span>8 позиций</span></p>
+                            </li>
+                            <li>
+                                <p>Цена от: <span>3 500 руб.</span></p>
+                            </li>
+                        </ul>
+                    </a>
+                    <a href="#" class="one-block-factory sm-hide">
+                        <img src="images/images/image-factory.jpg" alt="Плитка">
+                        <ul class="description-factory">
+                            <li>
+                                <p>Коллекция: <span>Aure Leopard</span></p>
+                            </li>
+                            <li>
+                                <p>Фабрика: <span>Absolut</span></p>
+                            </li>
+                            <li>
+                                <p>Состав коллекции: <span>8 позиций</span></p>
+                            </li>
+                            <li>
+                                <p>Цена от: <span>3 500 руб.</span></p>
+                            </li>
+                        </ul>
+                    </a>
+                    <a href="#" class="one-block-factory sm-hide">
+                        <img src="images/images/image-factory.jpg" alt="Плитка">
+                        <ul class="description-factory">
+                            <li>
+                                <p>Коллекция: <span>Aure Leopard</span></p>
+                            </li>
+                            <li>
+                                <p>Фабрика: <span>Absolut</span></p>
+                            </li>
+                            <li>
+                                <p>Состав коллекции: <span>8 позиций</span></p>
+                            </li>
+                            <li>
+                                <p>Цена от: <span>3 500 руб.</span></p>
+                            </li>
+                        </ul>
+                    </a>
+                    <a href="#" class="one-block-factory sm-hide">
+                        <img src="images/images/image-factory.jpg" alt="Плитка">
+                        <ul class="description-factory">
+                            <li>
+                                <p>Коллекция: <span>Aure Leopard</span></p>
+                            </li>
+                            <li>
+                                <p>Фабрика: <span>Absolut</span></p>
+                            </li>
+                            <li>
+                                <p>Состав коллекции: <span>8 позиций</span></p>
+                            </li>
+                            <li>
+                                <p>Цена от: <span>3 500 руб.</span></p>
+                            </li>
+                        </ul>
+                    </a>
+                    <a href="#" class="one-block-factory sm-hide">
+                        <img src="images/images/image-factory.jpg" alt="Плитка">
+                        <ul class="description-factory">
+                            <li>
+                                <p>Коллекция: <span>Aure Leopard</span></p>
+                            </li>
+                            <li>
+                                <p>Фабрика: <span>Absolut</span></p>
+                            </li>
+                            <li>
+                                <p>Состав коллекции: <span>8 позиций</span></p>
+                            </li>
+                            <li>
+                                <p>Цена от: <span>3 500 руб.</span></p>
+                            </li>
+                        </ul>
+                    </a>
+                    <a href="#" class="one-block-factory sm-hide">
+                        <img src="images/images/image-factory.jpg" alt="Плитка">
+                        <ul class="description-factory">
+                            <li>
+                                <p>Коллекция: <span>Aure Leopard</span></p>
+                            </li>
+                            <li>
+                                <p>Фабрика: <span>Absolut</span></p>
+                            </li>
+                            <li>
+                                <p>Состав коллекции: <span>8 позиций</span></p>
+                            </li>
+                            <li>
+                                <p>Цена от: <span>3 500 руб.</span></p>
+                            </li>
+                        </ul>
+                    </a>
+                    <a href="#" class="one-block-factory sm-hide">
+                        <img src="images/images/image-factory.jpg" alt="Плитка">
+                        <ul class="description-factory">
+                            <li>
+                                <p>Коллекция: <span>Aure Leopard</span></p>
+                            </li>
+                            <li>
+                                <p>Фабрика: <span>Absolut</span></p>
+                            </li>
+                            <li>
+                                <p>Состав коллекции: <span>8 позиций</span></p>
+                            </li>
+                            <li>
+                                <p>Цена от: <span>3 500 руб.</span></p>
+                            </li>
+                        </ul>
+                    </a>
+                    <a href="#" class="one-block-factory sm-hide">
+                        <img src="images/images/image-factory.jpg" alt="Плитка">
+                        <ul class="description-factory">
+                            <li>
+                                <p>Коллекция: <span>Aure Leopard</span></p>
+                            </li>
+                            <li>
+                                <p>Фабрика: <span>Absolut</span></p>
+                            </li>
+                            <li>
+                                <p>Состав коллекции: <span>8 позиций</span></p>
+                            </li>
+                            <li>
+                                <p>Цена от: <span>3 500 руб.</span></p>
+                            </li>
+                        </ul>
+                    </a>
+                    <a href="#" class="one-block-factory sm-hide">
+                        <img src="images/images/image-factory.jpg" alt="Плитка">
+                        <ul class="description-factory">
+                            <li>
+                                <p>Коллекция: <span>Aure Leopard</span></p>
+                            </li>
+                            <li>
+                                <p>Фабрика: <span>Absolut</span></p>
+                            </li>
+                            <li>
+                                <p>Состав коллекции: <span>8 позиций</span></p>
+                            </li>
+                            <li>
+                                <p>Цена от: <span>3 500 руб.</span></p>
+                            </li>
+                        </ul>
+                    </a>
+                    <a href="#" class="one-block-factory sm-hide">
+                        <img src="images/images/image-factory.jpg" alt="Плитка">
+                        <ul class="description-factory">
+                            <li>
+                                <p>Коллекция: <span>Aure Leopard</span></p>
+                            </li>
+                            <li>
+                                <p>Фабрика: <span>Absolut</span></p>
+                            </li>
+                            <li>
+                                <p>Состав коллекции: <span>8 позиций</span></p>
+                            </li>
+                            <li>
+                                <p>Цена от: <span>3 500 руб.</span></p>
+                            </li>
+                        </ul>
+                    </a>
+                    <a href="#" class="one-block-factory sm-hide">
+                        <img src="images/images/image-factory.jpg" alt="Плитка">
+                        <ul class="description-factory">
+                            <li>
+                                <p>Коллекция: <span>Aure Leopard</span></p>
+                            </li>
+                            <li>
+                                <p>Фабрика: <span>Absolut</span></p>
+                            </li>
+                            <li>
+                                <p>Состав коллекции: <span>8 позиций</span></p>
+                            </li>
+                            <li>
+                                <p>Цена от: <span>3 500 руб.</span></p>
+                            </li>
+                        </ul>
+                    </a>
+                    <a href="#" class="one-block-factory sm-hide">
+                        <img src="images/images/image-factory.jpg" alt="Плитка">
+                        <ul class="description-factory">
+                            <li>
+                                <p>Коллекция: <span>Aure Leopard</span></p>
+                            </li>
+                            <li>
+                                <p>Фабрика: <span>Absolut</span></p>
+                            </li>
+                            <li>
+                                <p>Состав коллекции: <span>8 позиций</span></p>
+                            </li>
+                            <li>
+                                <p>Цена от: <span>3 500 руб.</span></p>
+                            </li>
+                        </ul>
+                    </a>
+                    <a href="#" class="one-block-factory sm-hide">
+                        <img src="images/images/image-factory.jpg" alt="Плитка">
+                        <ul class="description-factory">
+                            <li>
+                                <p>Коллекция: <span>Aure Leopard</span></p>
+                            </li>
+                            <li>
+                                <p>Фабрика: <span>Absolut</span></p>
+                            </li>
+                            <li>
+                                <p>Состав коллекции: <span>8 позиций</span></p>
+                            </li>
+                            <li>
+                                <p>Цена от: <span>3 500 руб.</span></p>
+                            </li>
+                        </ul>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

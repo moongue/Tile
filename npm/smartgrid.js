@@ -16,6 +16,9 @@ var settings = {
         fields: '30px' /* side fields */
     },
     breakPoints: {
+        menu: {
+          width: '1456px'
+        },
         fix: {
           width: '1160px'
         },

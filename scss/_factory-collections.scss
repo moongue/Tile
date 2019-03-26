@@ -1,0 +1,111 @@
+#factory-collections {
+  padding-top: 15px;
+  padding-bottom: 90px;
+  @include sm(padding-top, 80px);
+  @include xs(background, $white);
+  .arrow-up {
+    position: fixed;
+    bottom: 10px;
+    right: 70px;
+    z-index: 9;
+    @include md(right, 10px);
+  }
+  .container {
+    h1 {
+      font-family: 'Roboto', sans-serif;
+      padding: 4px;
+      border: 1px solid $grey;
+      @include xs-block() {
+        font-weight: 600;
+        border: none;
+        border-bottom: 1px solid $grey;
+      }
+    }
+    .way {
+      font-family: 'Roboto', sans-serif;
+      font-size: 12px;
+      font-weight: 300;
+      margin-top: 10px;
+      a {
+        color: $grey-two;
+      }
+    }
+    .blocks-factory {
+      position: relative;
+      .slide {
+        display: flex !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        @include row-flex();
+        justify-content: space-between;
+        @include md-block() {
+          justify-content: space-around;
+        }
+        @include xs-block() {
+          justify-content: space-between;
+        }
+        .one-block-factory {
+          @include col();
+          @include size(3);
+          @include size-md(5);
+          @include size-xs(6);
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          background: $white-four;
+          margin-top: 30px;
+          img {
+            padding: 15px 15px 0;
+            @include xs-block() {
+              max-height: 84px;
+              max-width: 112px;
+              padding: 15px 0 0;
+              margin: 0 auto;
+            }
+          }
+          .description-factory {
+            margin-top: 15px;
+            padding: 20px 15px 15px;
+            border-top: 1px solid $grey;
+            li {
+              p {
+                font-size: 12px;
+                line-height: 18px;
+                color: $black;
+                span {
+                  font-weight: 600;
+                }
+                @include xs-block() {
+                  font-size: 8px;
+                  line-height: 12px;
+                }
+              }
+            }
+          }
+        }
+      }
+      .slick-arrow {
+        position: absolute;
+        outline: none;
+        font-size: 0;
+        height: 35px;
+        width: 35px;
+        border: none;
+        bottom: -60px;
+        z-index: 2;
+        &.slick-prev {
+          background: url("../images/icons/icon-arrow-prev.png") no-repeat;
+          left: 44%;
+          @include sm(left, 41%);
+          @include xs(left, 36%);
+        }
+        &.slick-next {
+          background: url("../images/icons/icon-arrow-next.png") no-repeat;
+          right: 46%;
+          @include sm(right, 43%);
+          @include xs(right, 38%);
+        }
+      }
+    }
+  }
+}

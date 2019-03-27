@@ -105,11 +105,24 @@ h2 {
     flex-direction: column;
     align-items: center;
   }
+  &.aic_xs {
+    @include xs(align-items, center);
+  }
+}
+
+.way {
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  font-weight: 300;
+  margin-top: 10px;
+  a {
+    color: $grey-two;
+  }
 }
 
 .sidebar {
   position: fixed;
-  left: 140px;
+  left: 109px;
   top: 170px;
   z-index: 2;
   @include menu(left, 10px);
@@ -121,13 +134,14 @@ h2 {
       z-index: 9;
       &.search {
         margin-top: 70px;
+        .description:hover {
+          display: flex;
+        }
       }
       a {
         display: flex;
         .description {
-          display: flex;
-          opacity: 0;
-          overflow: hidden;
+          display: none;
           box-sizing: border-box;
           height: 40px;
           width: 100px;
@@ -145,10 +159,13 @@ h2 {
             }
           }
         }
-        &:hover .description {
-          transition: all .5s;
-          opacity: 1;
-          overflow: visible;
+        .description:hover {
+          display: flex;
+        }
+        img {
+          &:hover + .description {
+            display: flex;
+          }
         }
       }
     }
@@ -204,3 +221,38 @@ h2 {
   }
 }
 //END FROM FEEDBACK
+
+.quantity {
+  display: flex;
+  .styles-btn-quantity {
+    height: 40px;
+    width: 32px;
+    box-sizing: border-box;
+    background: $white;
+    color: $black;
+    font-size: 22px;
+    border: 1px solid $black;
+
+    @include xs-block() {
+      width: 24px;
+      height: 30px;
+    }
+  }
+  .styles-input-quantity {
+    text-align: center;
+    background: $white-three;
+    border: 1px solid $black;
+    border-left: none;
+    box-sizing: border-box;
+    border-right: none;
+    outline: none;
+    font-size: 22px;
+    width: 106px;
+
+    @include xs-block() {
+      width: 34px;
+      height: 30px;
+      font-size: 18px;
+    }
+  }
+}

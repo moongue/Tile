@@ -69,14 +69,14 @@ function smoothJumpUp() {
 
 function activeInput() {
     $(".search-area").hover(function () {
-        $(".hide-click").css("opacity", "1");
+        $(".hide-click").css("display", "flex");
     });
 
     $(document).mouseup(function (e) { // событие клика по веб-документу
         var div = $(".hide-click"); // тут указываем ID элемента
         if (!div.is(e.target) // если клик был не по нашему блоку
             && div.has(e.target).length === 0) { // и не по его дочерним элементам
-            div.css("opacity", "0"); // скрываем его
+            div.css("display", "none"); // скрываем его
         }
     })
 }

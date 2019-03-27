@@ -13,15 +13,7 @@
       padding: 4px;
       border: 1px solid $grey;
     }
-    .way {
-      font-family: 'Roboto', sans-serif;
-      font-size: 12px;
-      font-weight: 300;
-      margin-top: 10px;
-      a {
-        color: $grey-two;
-      }
-    }
+
     .content-card {
       margin-top: 55px;
 
@@ -66,40 +58,6 @@
         color: $grey-two;
         font-size: 12px;
         margin-top: 10px;
-      }
-      .quantity {
-        display: flex;
-        .styles-btn-quantity {
-          height: 40px;
-          width: 32px;
-          box-sizing: border-box;
-          background: $white;
-          color: $black;
-          font-size: 22px;
-          border: 1px solid $black;
-
-          @include xs-block() {
-            width: 24px;
-            height: 30px;
-          }
-        }
-        .styles-input-quantity {
-          text-align: center;
-          background: $white-three;
-          border: 1px solid $black;
-          border-left: none;
-          box-sizing: border-box;
-          border-right: none;
-          outline: none;
-          font-size: 22px;
-          width: 106px;
-
-          @include xs-block() {
-            width: 34px;
-            height: 30px;
-            font-size: 18px;
-          }
-        }
       }
       .quantity-p {
         font-size: 12px;

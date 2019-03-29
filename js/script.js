@@ -28,6 +28,189 @@ function tabs() {
 
 }
 
+function dropdown() {
+    $('.show-purpose').click(function () {
+        $('.show-purpose + ul').slideToggle(400, function () {
+            $(this).toggleClass('showing');
+        });
+        $('.show-purpose').parents('li').toggleClass('active');
+    });
+
+    $('.show-type').click(function () {
+        $('.show-type + ul').slideToggle(400, function () {
+            $(this).toggleClass('showing');
+        });
+        $('.show-type').parents('li').toggleClass('active');
+    });
+
+    $('.show-materials').click(function () {
+        $('.show-materials + ul').slideToggle(400, function () {
+            $(this).toggleClass('showing');
+        });
+        $('.show-materials').parents('li').toggleClass('active');
+    });
+
+    $('.show-size').click(function () {
+        $('.show-size + ul').slideToggle(400, function () {
+            $(this).toggleClass('showing');
+        });
+        $('.show-size').parents('li').toggleClass('active');
+    });
+
+    $('.show-color').click(function () {
+        $('.show-color + ul').slideToggle(400, function () {
+            $(this).toggleClass('showing');
+        });
+        $('.show-color').parents('li').toggleClass('active');
+    });
+
+    $('.show-surface').click(function () {
+        $('.show-surface + ul').slideToggle(400, function () {
+            $(this).toggleClass('showing');
+        });
+        $('.show-surface').parents('li').toggleClass('active');
+    });
+
+    $('.show-style').click(function () {
+        $('.show-style + ul').slideToggle(400, function () {
+            $(this).toggleClass('showing');
+        });
+        $('.show-style').parents('li').toggleClass('active');
+    });
+
+    $('.show-frost-resistance').click(function () {
+        $('.show-frost-resistance + ul').slideToggle(400, function () {
+            $(this).toggleClass('showing');
+        });
+        $('.show-frost-resistance').parents('li').toggleClass('active');
+    });
+
+    $('.show-edge-processing').click(function () {
+        $('.show-edge-processing + ul').slideToggle(400, function () {
+            $(this).toggleClass('showing');
+        });
+        $('.show-edge-processing').parents('li').toggleClass('active');
+    });
+
+    $('.show-price').click(function () {
+        $('.show-price + ul').slideToggle(400, function () {
+            $(this).toggleClass('showing');
+        });
+        $('.show-price').parents('li').toggleClass('active');
+    });
+
+    $('.show-exhibition').click(function () {
+        $('.show-exhibition + ul').slideToggle(400, function () {
+            $(this).toggleClass('showing');
+        });
+        $('.show-exhibition').parents('li').toggleClass('active');
+    });
+}
+
+function select() {
+    $('.select').each(function () {
+        // Variables
+        var $this = $(this),
+            selectOption = $this.find('option'),
+            selectOptionLength = selectOption.length,
+            dur = 500;
+
+        $this.hide();
+        // Wrap all in select box
+        $this.wrap('<div class="select"></div>');
+        // Style box
+        $('<div>', {
+            class: 'select__gap',
+            text: 'цене'
+        }).insertAfter($this);
+
+        var selectGap = $this.next('.select__gap'),
+            caret = selectGap.find('.caret');
+        // Add ul list
+        $('<ul>', {
+            class: 'select__list'
+        }).insertAfter(selectGap);
+
+        var selectList = selectGap.next('.select__list');
+        // Add li - option items
+        for (var i = 0; i < selectOptionLength; i++) {
+            $('<li>', {
+                class: 'select__item',
+                html: $('<span>', {
+                    text: selectOption.eq(i).text()
+                })
+            })
+                .attr('data-value', selectOption.eq(i).val())
+                .appendTo(selectList);
+        }
+        // Find all items
+        var selectItem = selectList.find('li');
+
+        selectList.slideUp(0);
+        selectGap.on('click', function () {
+            if (!$(this).hasClass('on')) {
+                $(this).addClass('on');
+                selectList.slideDown(dur);
+
+                selectItem.on('click', function () {
+                    var chooseItem = $(this).data('value');
+
+                    $('select').val(chooseItem).attr('selected', 'selected');
+                    selectGap.text($(this).find('span').text());
+
+                    selectList.slideUp(dur);
+                    selectGap.removeClass('on');
+                });
+
+            } else {
+                $(this).removeClass('on');
+                selectList.slideUp(dur);
+            }
+        });
+
+    });
+}
+
+function showMoreInf() {
+    var showMoreInf = $('.show-more-inf');
+    var hideInf = $('.hide-inf');
+
+    showMoreInf.click(function () {
+        hideInf.slideToggle(400)
+    })
+}
+
+function popup() {
+    $('.open-registration').magnificPopup({
+        type: 'inline',
+        midClick: true // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
+    });
+    $('.open-complete-registration').magnificPopup({
+        type: 'inline',
+        midClick: true // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
+    });
+    $('.open-calc').magnificPopup({
+        type: 'inline',
+        midClick: true // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
+    });
+    $('.open-quick-order').magnificPopup({
+        type: 'inline',
+        midClick: true
+    })
+    $('.open-checkout').magnificPopup({
+        type: 'inline',
+        midClick: true
+    })
+    $('.open-thanks').magnificPopup({
+        type: 'inline',
+        midClick: true
+    })
+    $('.forget-password').magnificPopup({
+        type: 'inline',
+        midClick: true
+    })
+}
+
 function sliderFactory() {
     var slider = $('.blocks-factory');
 
@@ -52,17 +235,45 @@ function sliderProjects() {
     }
 }
 
+function activeScript() {
+
+    if (document.documentElement.clientWidth < 960) {
+
+        $('.cap-filter').click(function () {
+            $('.dropdown').slideToggle(400, function () {
+                $(this).toggleClass('showing');
+            });
+            $('.block-button').slideToggle(400, function () {
+                $(this).toggleClass('showing');
+            });
+            $('.cap-filter').parents('li').toggleClass('active');
+        });
+    }
+}
+
+function sliderProducts() {
+    var slider = $('.list-products');
+
+    if (slider.length) {
+        slider.slick({
+            infinity: true,
+            dots: false,
+            arrows: true
+        })
+    }
+}
+
 function smoothJumpUp() {
-    $(window).scroll(function() {
-        if($(this).scrollTop() !== 0) {
+    $(window).scroll(function () {
+        if ($(this).scrollTop() !== 0) {
             $('.arrow-up').fadeIn();
         } else {
             $('.arrow-up').fadeOut();
         }
     });
 
-    $('.arrow-up').click(function() {
-        $('body,html').animate({scrollTop:0},800);
+    $('.arrow-up').click(function () {
+        $('body,html').animate({scrollTop: 0}, 800);
     });
 }
 
@@ -95,10 +306,16 @@ $(window).on('load', function () {
     activeInput();
     smoothMenu();
     slider();
+    sliderProducts();
     showSearchInput();
     showFilterCountry();
     tabs();
     sliderFactory();
     smoothJumpUp();
     sliderProjects();
+    dropdown();
+    activeScript();
+    select();
+    popup();
+    showMoreInf();
 });

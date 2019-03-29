@@ -1,0 +1,1086 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="plugins/slick-slider/slick.min.js"></script>
+    <script src="js/script.js"></script>
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="plugins/slick-slider/slick.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Cafel</title>
+</head>
+<body>
+<!--HEADER-->
+<header id="header">
+    <div class="wrapper-big">
+        <div class="container">
+            <div class="row__aic">
+                <div class="mobile-menu-toggle">
+                    <svg class="ham hamRotate ham-burger" viewBox="0 0 100 100" width="40"
+                         onclick="this.classList.toggle('active')">
+                        <path
+                                class="line top"
+                                d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20"/>
+                        <path
+                                class="line middle"
+                                d="m 30,50 h 40"/>
+                        <path
+                                class="line bottom"
+                                d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20"/>
+                    </svg>
+                </div>
+
+                <nav class="sm-hide">
+                    <ul class="row">
+                        <li><a href="#" class="active">Акции</a></li>
+                        <li><a href="#">Новинки</a></li>
+                        <li><a href="#">Хит</a></li>
+                    </ul>
+                </nav>
+                <div class="menu-chose lg-show">
+                    <ul>
+                        <li><a href="#"><img src="images/icons/icon-personal-area.png" alt="ЛК"> </a>
+                        </li>
+                        <li><a href="#"><img src="images/icons/icon-basket.png" alt="Корзина"></a>
+                        </li>
+                        <li><a href="#"><img src="images/icons/icon-comparison.png" alt="Сравнение"></a></li>
+                        <li class="search"><a href="#" class="show-search-input"><img src="images/icons/icon-search.png"
+                                                                                      alt="Поиск"></a></li>
+                    </ul>
+                    <input type="text" class="search-input" placeholder="Поиск">
+                </div>
+                <div class="drop-menu">
+                    <div class="col">
+                        <div class="row">
+                            <div class="left-block">
+                                <div class="menu-bg">
+
+                                    <div class="row">
+                                        <div class="block-with-menu">
+                                            <ul class="menu">
+                                                <li><a href="#">О компании</a></li>
+                                                <li><a href="#">Каталог</a></li>
+                                                <li><a href="#">Дизайнеры</a></li>
+                                                <li><a href="#">Проекты</a></li>
+                                                <li><a href="#">Оплата и возврат</a></li>
+                                                <li><a href="#">Контакты</a></li>
+                                            </ul>
+                                            <div class="telephone">
+                                                <img src="images/icons/icon-telephone.png" alt="Tel">
+                                                <p>922-56-68</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="description-bg lg-hide">
+
+                                    <div class="description-site">
+                                        <div class="logo">
+                                            <img src="images/icons/icon-logo.png" alt="Logo">
+                                        </div>
+                                        <p> Компания «КафельСклад» - это один из крупнейших поставщиков облицовочной
+                                            плитки в
+                                            Санкт-Петербурге.
+                                            Мы предлагаем современные коллекции керамической плитки и износостойкого
+                                            керамогранита от
+                                            российских, польских, итальянских, испанских и других производителей.</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="right-block sm-hide">
+                                <div class="row">
+                                    <a href="#" class="block-chose">
+                                        <img src="images/images/image-floors.jpg" alt="Полы">
+                                        <div class="name">
+                                            Полы
+                                        </div>
+                                    </a>
+                                    <a href="#" class="block-chose">
+                                        <img src="images/images/image-street.jpg" alt="Улица">
+                                        <div class="name">
+                                            Улица
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="row">
+                                    <a href="" class="block-chose">
+                                        <img src="images/images/image-mosaic.jpg" alt="Мозаика">
+                                        <div class="name">
+                                            Мозаика
+                                        </div>
+                                    </a>
+                                    <a href="#" class="block-chose">
+                                        <img src="images/images/image-related-product.jpg" alt="Сопутствующие товары">
+                                        <div class="name">
+                                            Сопутствующие товары
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="row">
+                                    <a href="#" class="block-chose">
+                                        <img src="images/images/image-steps.jpg" alt="Ступени">
+                                        <div class="name">
+                                            Ступени
+                                        </div>
+                                    </a>
+                                    <a href="#" class="block-chose">
+                                        <img src="images/images/image-walls.jpg" alt="Стены">
+                                        <div class="name">
+                                            Стены
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="description-bg lg-show sm-hide">
+
+                            <div class="description-site">
+                                <div class="logo">
+                                    <img src="images/icons/icon-logo.png" alt="Logo">
+                                </div>
+                                <p> Компания «КафельСклад» - это один из крупнейших поставщиков облицовочной плитки в
+                                    Санкт-Петербурге.
+                                    Мы предлагаем современные коллекции керамической плитки и износостойкого
+                                    керамогранита от
+                                    российских, польских, итальянских, испанских и других производителей.</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="menu-header sm-hide">
+                <div class="col">
+                    <div class="description-bg">
+
+                        <div class="description-site">
+                            <div class="logo">
+                                <img src="images/icons/icon-logo.png" alt="Logo">
+                            </div>
+                            <p> Компания «КафельСклад» - это один из крупнейших поставщиков облицовочной
+                                плитки в
+                                Санкт-Петербурге.
+                                Мы предлагаем современные коллекции керамической плитки и износостойкого
+                                керамогранита от
+                                российских, польских, итальянских, испанских и других производителей.</p>
+                        </div>
+
+                    </div>
+                    <div class="right-block">
+                        <div class="row">
+                            <a href="#" class="block-chose">
+                                <img src="images/images/image-floors.jpg" alt="Полы">
+                                <div class="name">
+                                    Полы
+                                </div>
+                            </a>
+                            <a href="#" class="block-chose">
+                                <img src="images/images/image-street.jpg" alt="Улица">
+                                <div class="name">
+                                    Улица
+                                </div>
+                            </a>
+                        </div>
+                        <div class="row">
+                            <a href="" class="block-chose">
+                                <img src="images/images/image-mosaic.jpg" alt="Мозаика">
+                                <div class="name">
+                                    Мозаика
+                                </div>
+                            </a>
+                            <a href="#" class="block-chose">
+                                <img src="images/images/image-related-product.jpg" alt="Сопутствующие товары">
+                                <div class="name fz-less">
+                                    Сопутствующие товары
+                                </div>
+                            </a>
+                        </div>
+                        <div class="row">
+                            <a href="#" class="block-chose">
+                                <img src="images/images/image-steps.jpg" alt="Ступени">
+                                <div class="name">
+                                    Ступени
+                                </div>
+                            </a>
+                            <a href="#" class="block-chose">
+                                <img src="images/images/image-walls.jpg" alt="Стены">
+                                <div class="name">
+                                    Стены
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</header>
+<!--END HEADER-->
+
+<div class="sidebar lg-hide">
+    <ul>
+        <li><a href="#"><img src="images/icons/icon-personal-area.png" alt="ЛК"> <span class="description">Личный кабинет</span></a>
+        </li>
+        <li><a href="#"><img src="images/icons/icon-basket.png" alt="Корзина"> <span class="description">Корзина</span></a>
+        </li>
+        <li><a href="#"><img src="images/icons/icon-comparison.png" alt="Сравнение"> <span
+                class="description">Сравнение</span></a></li>
+        <li class="search"><a href="#"><img src="images/icons/icon-search.png" alt="Поиск"><span
+                class="description hide-click"><input
+                type="text" class="search-area" placeholder="Поиск"></span></a></li>
+    </ul>
+</div>
+
+<section id="products">
+    <div class="wrapper">
+        <div class="container">
+            <h1>Товары в категории</h1>
+            <div class="way">
+                <a href="#">Полы </a><a href="#">/ Ванная</a>
+            </div>
+            <div class="filter-products md-show">
+                <ul>
+                    <li><a href="#">Акции</a></li>
+                    <li><a href="#">Новинки</a></li>
+                    <li><a href="#">Хит</a></li>
+                </ul>
+            </div>
+            <div class="content-products row">
+                <div class="filter">
+                    <div class="cap-filter">
+                        Фильтры
+                    </div>
+                    <ul class="dropdown">
+                        <li>
+                            <div class="show-purpose">Назначение</div>
+                            <ul class="hide">
+                                <li><input type="checkbox" id="check" name="check"/>
+                                    <label for="check">Стена</label>
+                                </li>
+                                <li><input type="checkbox" id="check1" name="check"/>
+                                    <label for="check1">Ступени</label>
+                                </li>
+                                <li><input type="checkbox" id="check2" name="check"/>
+                                    <label for="check2">Мозаика</label>
+                                </li>
+                                <li><input type="checkbox" id="check3" name="check"/>
+                                    <label for="check3">Сопутствующие</label>
+                                </li>
+                                <li><input type="checkbox" id="check4" name="check"/>
+                                    <label for="check4">Полы</label>
+                                </li>
+                                <li><input type="checkbox" id="check5" name="check"/>
+                                    <label for="check5">Улица</label>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <div class="show-type">Тип</div>
+                            <ul class="hide">
+                                <li><input type="checkbox" id="check6" name="check"/>
+                                    <label for="check6">Кухня</label>
+                                </li>
+                                <li><input type="checkbox" id="check7" name="check"/>
+                                    <label for="check7">Ванная</label>
+                                </li>
+                                <li><input type="checkbox" id="check8" name="check"/>
+                                    <label for="check8">Коридор</label>
+                                </li>
+                                <li><input type="checkbox" id="check9" name="check"/>
+                                    <label for="check9">Улица</label>
+                                </li>
+                                <li><input type="checkbox" id="check10" name="check"/>
+                                    <label for="check10">Баня/Хаммам</label>
+                                </li>
+                                <li><input type="checkbox" id="check11" name="check"/>
+                                    <label for="check11">Керамогранит</label>
+                                </li>
+                                <li><input type="checkbox" id="check12" name="check"/>
+                                    <label for="check12">Балкон</label>
+                                </li>
+                                <li><input type="checkbox" id="check13" name="check"/>
+                                    <label for="check12">Фасад</label>
+                                </li>
+                                <li><input type="checkbox" id="check14" name="check"/>
+                                    <label for="check14">Крыльцо/Терасса</label>
+                                </li>
+                                <li><input type="checkbox" id="check15" name="check"/>
+                                    <label for="check15">Гараж</label>
+                                </li>
+                                <li><input type="checkbox" id="check16" name="check"/>
+                                    <label for="check16">Растяжки</label>
+                                </li>
+                                <li><input type="checkbox" id="check17" name="check"/>
+                                    <label for="check17">Панно</label>
+                                </li>
+                                <li><input type="checkbox" id="check18" name="check"/>
+                                    <label for="check18">Бассейн</label>
+                                </li>
+                                <li><input type="checkbox" id="check19" name="check"/>
+                                    <label for="check19">Напольная</label>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <div class="show-materials">Материал</div>
+                            <ul class="hide">
+                                <li><input type="checkbox" id="check20" name="check"/>
+                                    <label for="check20">Керамогранит</label>
+                                </li>
+                                <li><input type="checkbox" id="check21" name="check"/>
+                                    <label for="check21">Мраморная крошка</label>
+                                </li>
+                                <li><input type="checkbox" id="check22" name="check"/>
+                                    <label for="check22">Керамическая плитка</label>
+                                </li>
+                                <li><input type="checkbox" id="check23" name="check"/>
+                                    <label for="check23">Стекло</label>
+                                </li>
+                                <li><input type="checkbox" id="check24" name="check"/>
+                                    <label for="check24">Композит</label>
+                                </li>
+                                <li><input type="checkbox" id="check25" name="check"/>
+                                    <label for="check25">Клинкер</label>
+                                </li>
+                                <li><input type="checkbox" id="check26" name="check"/>
+                                    <label for="check26">Метал</label>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <div class="show-size">Размер</div>
+                            <ul class="hide">
+                                <li class="col">
+                                    <div class="block-input-number row__aic">
+                                        <input type="number" class="styles-input-number" placeholder="от">
+                                        <p>-</p><input type="number" class="styles-input-number" placeholder="до">
+                                        <p>x</p><input type="number" class="styles-input-number" placeholder="от">
+                                        <p>-</p><input type="number" class="styles-input-number" placeholder="до">
+                                    </div>
+                                    <div class="row">
+                                        <p>Длина (см) </p>
+                                        <p>Ширина (см)</p>
+                                    </div>
+                                </li>
+                                <li><input type="checkbox" id="check27" name="check"/>
+                                    <label for="check1">до 20 см</label>
+                                </li>
+                                <li><input type="checkbox" id="check28" name="check"/>
+                                    <label for="check28">от 20 см до 40 см</label>
+                                </li>
+                                <li><input type="checkbox" id="check29" name="check"/>
+                                    <label for="check29">от 40 см до 60 см</label>
+                                </li>
+                                <li><input type="checkbox" id="check30" name="check"/>
+                                    <label for="check30">от 60</label>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <div class="show-color">Цвет</div>
+                            <ul class="hide">
+                                <li><input type="checkbox" id="check31" name="check"/>
+                                    <label for="check31">Белый</label>
+                                </li>
+                                <li><input type="checkbox" id="check32" name="check"/>
+                                    <label for="check32">Черный</label>
+                                </li>
+                                <li><input type="checkbox" id="check33" name="check"/>
+                                    <label for="check33">Черно-белый</label>
+                                </li>
+                                <li><input type="checkbox" id="check34" name="check"/>
+                                    <label for="check34">Серый</label>
+                                </li>
+                                <li><input type="checkbox" id="check35" name="check"/>
+                                    <label for="check35">Желтый</label>
+                                </li>
+                                <li><input type="checkbox" id="check36" name="check"/>
+                                    <label for="check36">Оранжевый</label>
+                                </li>
+                                <li><input type="checkbox" id="check37" name="check"/>
+                                    <label for="check37">Красный</label>
+                                </li>
+                                <li><input type="checkbox" id="check38" name="check"/>
+                                    <label for="check38">Коричневый</label>
+                                </li>
+                                <li><input type="checkbox" id="check39" name="check"/>
+                                    <label for="check39">Бежевый</label>
+                                </li>
+                                <li><input type="checkbox" id="check40" name="check"/>
+                                    <label for="check40">Зеленый</label>
+                                </li>
+                                <li><input type="checkbox" id="check41" name="check"/>
+                                    <label for="check41">Голубой</label>
+                                </li>
+                                <li><input type="checkbox" id="check42" name="check"/>
+                                    <label for="check42">Синий</label>
+                                </li>
+                                <li><input type="checkbox" id="check43" name="check"/>
+                                    <label for="check43">Бирюзовый</label>
+                                </li>
+                                <li><input type="checkbox" id="check44" name="check"/>
+                                    <label for="check44">Сиреневый</label>
+                                </li>
+                                <li><input type="checkbox" id="check45" name="check"/>
+                                    <label for="check45">Фиолетовый</label>
+                                </li>
+                                <li><input type="checkbox" id="check46" name="check"/>
+                                    <label for="check46">Розовый</label>
+                                </li>
+                                <li><input type="checkbox" id="check47" name="check"/>
+                                    <label for="check47">Серебряный</label>
+                                </li>
+                                <li><input type="checkbox" id="check48" name="check"/>
+                                    <label for="check48">Бронзовый</label>
+                                </li>
+                                <li><input type="checkbox" id="check49" name="check"/>
+                                    <label for="check49">Золотой</label>
+                                </li>
+                                <li><input type="checkbox" id="check50" name="check"/>
+                                    <label for="check50">Мультиколор</label>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <div class="show-surface">Поверхность</div>
+                            <ul class="hide">
+                                <li><input type="checkbox" id="check51" name="check"/>
+                                    <label for="check51">Глянцевая</label>
+                                </li>
+                                <li><input type="checkbox" id="check52" name="check"/>
+                                    <label for="check52">Лаппатированная</label>
+                                </li>
+                                <li><input type="checkbox" id="check53" name="check"/>
+                                    <label for="check53">Матовая</label>
+                                </li>
+                                <li><input type="checkbox" id="check54" name="check"/>
+                                    <label for="check54">Рельефная</label>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <div class="show-style">Стиль</div>
+                            <ul class="hide">
+                                <li><input type="checkbox" id="check55" name="check"/>
+                                    <label for="check55">Классика</label>
+                                </li>
+                                <li><input type="checkbox" id="check56" name="check"/>
+                                    <label for="check56">Современный</label>
+                                </li>
+                                <li><input type="checkbox" id="check57" name="check"/>
+                                    <label for="check57">Лофт</label>
+                                </li>
+                                <li><input type="checkbox" id="check58" name="check"/>
+                                    <label for="check58">Винтаж</label>
+                                </li>
+                                <li><input type="checkbox" id="check59" name="check"/>
+                                    <label for="check59">Средиземноморский</label>
+                                </li>
+                                <li><input type="checkbox" id="check60" name="check"/>
+                                    <label for="check60">Под дерево</label>
+                                </li>
+                                <li><input type="checkbox" id="check61" name="check"/>
+                                    <label for="check61">Под камень</label>
+                                </li>
+                                <li><input type="checkbox" id="check62" name="check"/>
+                                    <label for="check62">Под бетон</label>
+                                </li>
+                                <li><input type="checkbox" id="check63" name="check"/>
+                                    <label for="check63">Под ткань</label>
+                                </li>
+                                <li><input type="checkbox" id="check64" name="check"/>
+                                    <label for="check64">Геометрия</label>
+                                </li>
+                                <li><input type="checkbox" id="check65" name="check"/>
+                                    <label for="check65">Узор</label>
+                                </li>
+                                <li><input type="checkbox" id="check66" name="check"/>
+                                    <label for="check66">Пэчворк</label>
+                                </li>
+                                <li><input type="checkbox" id="check67" name="check"/>
+                                    <label for="check67">Хайтек</label>
+                                </li>
+                                <li><input type="checkbox" id="check68" name="check"/>
+                                    <label for="check68">Под мрамор</label>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <div class="show-frost-resistance">Морозоустойчивость</div>
+                            <ul class="hide">
+                                <li><input type="checkbox" id="check69" name="check"/>
+                                    <label for="check69">Да</label>
+                                </li>
+                                <li><input type="checkbox" id="check70" name="check"/>
+                                    <label for="check70">Нет</label>
+                                </li>
+                            </ul>
+                        </li>
+                        </li>
+                        <li>
+                            <div class="show-edge-processing">Обработка края</div>
+                            <ul class="hide">
+                                <li><input type="checkbox" id="check71" name="check"/>
+                                    <label for="check71">Ректификат</label>
+                                </li>
+                                <li><input type="checkbox" id="check72" name="check"/>
+                                    <label for="check72">Неректификат</label>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <div class="show-price">Цена</div>
+                            <ul class="hide">
+                                <li><input type="number" class="styles-input-number input-price" placeholder="от">
+                                    <input type="number" class="styles-input-number input-price" placeholder="до">
+                                </li>
+                                <li><input type="checkbox" id="check73" name="check"/>
+                                    <label for="check73">до 1400 р./м2</label>
+                                </li>
+                                <li><input type="checkbox" id="check74" name="check"/>
+                                    <label for="check74">1400-2000 р./м2</label>
+                                </li>
+                                <li><input type="checkbox" id="check75" name="check"/>
+                                    <label for="check75">2000-3500 р./м2</label>
+                                </li>
+                                <li><input type="checkbox" id="check76" name="check"/>
+                                    <label for="check76">от 3500 р./м2</label>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <div class="show-exhibition">Выставка</div>
+                            <ul class="hide">
+                                <li><input type="checkbox" id="check77" name="check"/>
+                                    <label for="check77">В салоне</label>
+                                </li>
+                                <li><input type="checkbox" id="check78" name="check"/>
+                                    <label for="check78">На складе</label>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="block-button">
+                        <input class="styles-button" type="button" value="Применить">
+                    </div>
+                </div>
+                <div class="products">
+                    <div class="cap-products row__aic md-hide">
+                        <div class="filter-products">
+                            <ul>
+                                <li><a href="#">Акции</a></li>
+                                <li><a href="#">Новинки</a></li>
+                                <li><a href="#">Хит</a></li>
+                            </ul>
+                        </div>
+                        <div class="sorting-by row__aic">
+                            <p>Сортировать по:</p>
+                            <select name="select-box" id="selectId" class="select">
+                                <option value="item-1" name="value" selected="selected">цене</option>
+                                <option value="item-2" name="value">наличию</option>
+                                <option value="item-2" name="value">названию</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="list-products">
+                        <div class="slide row">
+                            <a href="#" class="block-product bigger main-page">
+                                <img src="images/images/image-product-two.jpg" alt="Фото продукта"
+                                     class="image-product">
+                                <div class="name">
+                                    Бордюр Cenefa Delis Blanco Silver
+                                </div>
+                                <div class="block-type">
+                                    <p>Тип: <span>Бордюр</span></p>
+                                </div>
+                                <div class="materials-block">
+                                    <p>Материал: <span>Керамогранит</span></p>
+                                </div>
+                                <div class="block-factory">
+                                    <p>Фабрика: <span>Aparici/Испания</span></p>
+                                </div>
+                            </a>
+                            <a href="#" class="block-product bigger main-page">
+                                <img src="images/images/image-product-two.jpg" alt="Фото продукта"
+                                     class="image-product">
+                                <div class="name">
+                                    Бордюр Cenefa Delis Blanco Silver
+                                </div>
+                                <div class="block-type">
+                                    <p>Тип: <span>Бордюр</span></p>
+                                </div>
+                                <div class="materials-block">
+                                    <p>Материал: <span>Керамогранит</span></p>
+                                </div>
+                                <div class="block-factory">
+                                    <p>Фабрика: <span>Aparici/Испания</span></p>
+                                </div>
+                            </a>
+                            <a href="#" class="block-product bigger main-page">
+                                <img src="images/images/image-product-two.jpg" alt="Фото продукта"
+                                     class="image-product">
+                                <div class="name">
+                                    Бордюр Cenefa Delis Blanco Silver
+                                </div>
+                                <div class="block-type">
+                                    <p>Тип: <span>Бордюр</span></p>
+                                </div>
+                                <div class="materials-block">
+                                    <p>Материал: <span>Керамогранит</span></p>
+                                </div>
+                                <div class="block-factory">
+                                    <p>Фабрика: <span>Aparici/Испания</span></p>
+                                </div>
+                            </a>
+                            <a href="#" class="block-product bigger main-page">
+                                <img src="images/images/image-product-two.jpg" alt="Фото продукта"
+                                     class="image-product">
+                                <div class="name">
+                                    Бордюр Cenefa Delis Blanco Silver
+                                </div>
+                                <div class="block-type">
+                                    <p>Тип: <span>Бордюр</span></p>
+                                </div>
+                                <div class="materials-block">
+                                    <p>Материал: <span>Керамогранит</span></p>
+                                </div>
+                                <div class="block-factory">
+                                    <p>Фабрика: <span>Aparici/Испания</span></p>
+                                </div>
+                            </a>
+                            <a href="#" class="block-product bigger main-page">
+                                <img src="images/images/image-product-two.jpg" alt="Фото продукта"
+                                     class="image-product">
+                                <div class="name">
+                                    Бордюр Cenefa Delis Blanco Silver
+                                </div>
+                                <div class="block-type">
+                                    <p>Тип: <span>Бордюр</span></p>
+                                </div>
+                                <div class="materials-block">
+                                    <p>Материал: <span>Керамогранит</span></p>
+                                </div>
+                                <div class="block-factory">
+                                    <p>Фабрика: <span>Aparici/Испания</span></p>
+                                </div>
+                            </a>
+                            <a href="#" class="block-product bigger main-page">
+                                <img src="images/images/image-product-two.jpg" alt="Фото продукта"
+                                     class="image-product">
+                                <div class="name">
+                                    Бордюр Cenefa Delis Blanco Silver
+                                </div>
+                                <div class="block-type">
+                                    <p>Тип: <span>Бордюр</span></p>
+                                </div>
+                                <div class="materials-block">
+                                    <p>Материал: <span>Керамогранит</span></p>
+                                </div>
+                                <div class="block-factory">
+                                    <p>Фабрика: <span>Aparici/Испания</span></p>
+                                </div>
+                            </a>
+                            <a href="#" class="block-product bigger main-page">
+                                <img src="images/images/image-product-two.jpg" alt="Фото продукта"
+                                     class="image-product">
+                                <div class="name">
+                                    Бордюр Cenefa Delis Blanco Silver
+                                </div>
+                                <div class="block-type">
+                                    <p>Тип: <span>Бордюр</span></p>
+                                </div>
+                                <div class="materials-block">
+                                    <p>Материал: <span>Керамогранит</span></p>
+                                </div>
+                                <div class="block-factory">
+                                    <p>Фабрика: <span>Aparici/Испания</span></p>
+                                </div>
+                            </a>
+                            <a href="#" class="block-product bigger main-page">
+                                <img src="images/images/image-product-two.jpg" alt="Фото продукта"
+                                     class="image-product">
+                                <div class="name">
+                                    Бордюр Cenefa Delis Blanco Silver
+                                </div>
+                                <div class="block-type">
+                                    <p>Тип: <span>Бордюр</span></p>
+                                </div>
+                                <div class="materials-block">
+                                    <p>Материал: <span>Керамогранит</span></p>
+                                </div>
+                                <div class="block-factory">
+                                    <p>Фабрика: <span>Aparici/Испания</span></p>
+                                </div>
+                            </a>
+                            <a href="#" class="block-product bigger main-page xs-hide">
+                                <img src="images/images/image-product-two.jpg" alt="Фото продукта"
+                                     class="image-product">
+                                <div class="name">
+                                    Бордюр Cenefa Delis Blanco Silver
+                                </div>
+                                <div class="block-type">
+                                    <p>Тип: <span>Бордюр</span></p>
+                                </div>
+                                <div class="materials-block">
+                                    <p>Материал: <span>Керамогранит</span></p>
+                                </div>
+                                <div class="block-factory">
+                                    <p>Фабрика: <span>Aparici/Испания</span></p>
+                                </div>
+                            </a>
+                            <a href="#" class="block-product bigger main-page xs-hide">
+                                <img src="images/images/image-product-two.jpg" alt="Фото продукта"
+                                     class="image-product">
+                                <div class="name">
+                                    Бордюр Cenefa Delis Blanco Silver
+                                </div>
+                                <div class="block-type">
+                                    <p>Тип: <span>Бордюр</span></p>
+                                </div>
+                                <div class="materials-block">
+                                    <p>Материал: <span>Керамогранит</span></p>
+                                </div>
+                                <div class="block-factory">
+                                    <p>Фабрика: <span>Aparici/Испания</span></p>
+                                </div>
+                            </a>
+                            <a href="#" class="block-product bigger main-page xs-hide">
+                                <img src="images/images/image-product-two.jpg" alt="Фото продукта"
+                                     class="image-product">
+                                <div class="name">
+                                    Бордюр Cenefa Delis Blanco Silver
+                                </div>
+                                <div class="block-type">
+                                    <p>Тип: <span>Бордюр</span></p>
+                                </div>
+                                <div class="materials-block">
+                                    <p>Материал: <span>Керамогранит</span></p>
+                                </div>
+                                <div class="block-factory">
+                                    <p>Фабрика: <span>Aparici/Испания</span></p>
+                                </div>
+                            </a>
+                            <a href="#" class="block-product bigger main-page xs-hide">
+                                <img src="images/images/image-product-two.jpg" alt="Фото продукта"
+                                     class="image-product">
+                                <div class="name">
+                                    Бордюр Cenefa Delis Blanco Silver
+                                </div>
+                                <div class="block-type">
+                                    <p>Тип: <span>Бордюр</span></p>
+                                </div>
+                                <div class="materials-block">
+                                    <p>Материал: <span>Керамогранит</span></p>
+                                </div>
+                                <div class="block-factory">
+                                    <p>Фабрика: <span>Aparici/Испания</span></p>
+                                </div>
+                            </a>
+                            <a href="#" class="block-product bigger main-page xs-hide">
+                                <img src="images/images/image-product-two.jpg" alt="Фото продукта"
+                                     class="image-product">
+                                <div class="name">
+                                    Бордюр Cenefa Delis Blanco Silver
+                                </div>
+                                <div class="block-type">
+                                    <p>Тип: <span>Бордюр</span></p>
+                                </div>
+                                <div class="materials-block">
+                                    <p>Материал: <span>Керамогранит</span></p>
+                                </div>
+                                <div class="block-factory">
+                                    <p>Фабрика: <span>Aparici/Испания</span></p>
+                                </div>
+                            </a>
+                            <a href="#" class="block-product bigger main-page xs-hide">
+                                <img src="images/images/image-product-two.jpg" alt="Фото продукта"
+                                     class="image-product">
+                                <div class="name">
+                                    Бордюр Cenefa Delis Blanco Silver
+                                </div>
+                                <div class="block-type">
+                                    <p>Тип: <span>Бордюр</span></p>
+                                </div>
+                                <div class="materials-block">
+                                    <p>Материал: <span>Керамогранит</span></p>
+                                </div>
+                                <div class="block-factory">
+                                    <p>Фабрика: <span>Aparici/Испания</span></p>
+                                </div>
+                            </a>
+                            <a href="#" class="block-product bigger main-page xs-hide">
+                                <img src="images/images/image-product-two.jpg" alt="Фото продукта"
+                                     class="image-product">
+                                <div class="name">
+                                    Бордюр Cenefa Delis Blanco Silver
+                                </div>
+                                <div class="block-type">
+                                    <p>Тип: <span>Бордюр</span></p>
+                                </div>
+                                <div class="materials-block">
+                                    <p>Материал: <span>Керамогранит</span></p>
+                                </div>
+                                <div class="block-factory">
+                                    <p>Фабрика: <span>Aparici/Испания</span></p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="slide row">
+                            <a href="#" class="block-product bigger main-page">
+                                <img src="images/images/image-product-two.jpg" alt="Фото продукта"
+                                     class="image-product">
+                                <div class="name">
+                                    Бордюр Cenefa Delis Blanco Silver
+                                </div>
+                                <div class="block-type">
+                                    <p>Тип: <span>Бордюр</span></p>
+                                </div>
+                                <div class="materials-block">
+                                    <p>Материал: <span>Керамогранит</span></p>
+                                </div>
+                                <div class="block-factory">
+                                    <p>Фабрика: <span>Aparici/Испания</span></p>
+                                </div>
+                            </a>
+                            <a href="#" class="block-product bigger main-page">
+                                <img src="images/images/image-product-two.jpg" alt="Фото продукта"
+                                     class="image-product">
+                                <div class="name">
+                                    Бордюр Cenefa Delis Blanco Silver
+                                </div>
+                                <div class="block-type">
+                                    <p>Тип: <span>Бордюр</span></p>
+                                </div>
+                                <div class="materials-block">
+                                    <p>Материал: <span>Керамогранит</span></p>
+                                </div>
+                                <div class="block-factory">
+                                    <p>Фабрика: <span>Aparici/Испания</span></p>
+                                </div>
+                            </a>
+                            <a href="#" class="block-product bigger main-page">
+                                <img src="images/images/image-product-two.jpg" alt="Фото продукта"
+                                     class="image-product">
+                                <div class="name">
+                                    Бордюр Cenefa Delis Blanco Silver
+                                </div>
+                                <div class="block-type">
+                                    <p>Тип: <span>Бордюр</span></p>
+                                </div>
+                                <div class="materials-block">
+                                    <p>Материал: <span>Керамогранит</span></p>
+                                </div>
+                                <div class="block-factory">
+                                    <p>Фабрика: <span>Aparici/Испания</span></p>
+                                </div>
+                            </a>
+                            <a href="#" class="block-product bigger main-page">
+                                <img src="images/images/image-product-two.jpg" alt="Фото продукта"
+                                     class="image-product">
+                                <div class="name">
+                                    Бордюр Cenefa Delis Blanco Silver
+                                </div>
+                                <div class="block-type">
+                                    <p>Тип: <span>Бордюр</span></p>
+                                </div>
+                                <div class="materials-block">
+                                    <p>Материал: <span>Керамогранит</span></p>
+                                </div>
+                                <div class="block-factory">
+                                    <p>Фабрика: <span>Aparici/Испания</span></p>
+                                </div>
+                            </a>
+                            <a href="#" class="block-product bigger main-page">
+                                <img src="images/images/image-product-two.jpg" alt="Фото продукта"
+                                     class="image-product">
+                                <div class="name">
+                                    Бордюр Cenefa Delis Blanco Silver
+                                </div>
+                                <div class="block-type">
+                                    <p>Тип: <span>Бордюр</span></p>
+                                </div>
+                                <div class="materials-block">
+                                    <p>Материал: <span>Керамогранит</span></p>
+                                </div>
+                                <div class="block-factory">
+                                    <p>Фабрика: <span>Aparici/Испания</span></p>
+                                </div>
+                            </a>
+                            <a href="#" class="block-product bigger main-page">
+                                <img src="images/images/image-product-two.jpg" alt="Фото продукта"
+                                     class="image-product">
+                                <div class="name">
+                                    Бордюр Cenefa Delis Blanco Silver
+                                </div>
+                                <div class="block-type">
+                                    <p>Тип: <span>Бордюр</span></p>
+                                </div>
+                                <div class="materials-block">
+                                    <p>Материал: <span>Керамогранит</span></p>
+                                </div>
+                                <div class="block-factory">
+                                    <p>Фабрика: <span>Aparici/Испания</span></p>
+                                </div>
+                            </a>
+                            <a href="#" class="block-product bigger main-page">
+                                <img src="images/images/image-product-two.jpg" alt="Фото продукта"
+                                     class="image-product">
+                                <div class="name">
+                                    Бордюр Cenefa Delis Blanco Silver
+                                </div>
+                                <div class="block-type">
+                                    <p>Тип: <span>Бордюр</span></p>
+                                </div>
+                                <div class="materials-block">
+                                    <p>Материал: <span>Керамогранит</span></p>
+                                </div>
+                                <div class="block-factory">
+                                    <p>Фабрика: <span>Aparici/Испания</span></p>
+                                </div>
+                            </a>
+                            <a href="#" class="block-product bigger main-page">
+                                <img src="images/images/image-product-two.jpg" alt="Фото продукта"
+                                     class="image-product">
+                                <div class="name">
+                                    Бордюр Cenefa Delis Blanco Silver
+                                </div>
+                                <div class="block-type">
+                                    <p>Тип: <span>Бордюр</span></p>
+                                </div>
+                                <div class="materials-block">
+                                    <p>Материал: <span>Керамогранит</span></p>
+                                </div>
+                                <div class="block-factory">
+                                    <p>Фабрика: <span>Aparici/Испания</span></p>
+                                </div>
+                            </a>
+                            <a href="#" class="block-product bigger main-page xs-hide">
+                                <img src="images/images/image-product-two.jpg" alt="Фото продукта"
+                                     class="image-product">
+                                <div class="name">
+                                    Бордюр Cenefa Delis Blanco Silver
+                                </div>
+                                <div class="block-type">
+                                    <p>Тип: <span>Бордюр</span></p>
+                                </div>
+                                <div class="materials-block">
+                                    <p>Материал: <span>Керамогранит</span></p>
+                                </div>
+                                <div class="block-factory">
+                                    <p>Фабрика: <span>Aparici/Испания</span></p>
+                                </div>
+                            </a>
+                            <a href="#" class="block-product bigger main-page xs-hide">
+                                <img src="images/images/image-product-two.jpg" alt="Фото продукта"
+                                     class="image-product">
+                                <div class="name">
+                                    Бордюр Cenefa Delis Blanco Silver
+                                </div>
+                                <div class="block-type">
+                                    <p>Тип: <span>Бордюр</span></p>
+                                </div>
+                                <div class="materials-block">
+                                    <p>Материал: <span>Керамогранит</span></p>
+                                </div>
+                                <div class="block-factory">
+                                    <p>Фабрика: <span>Aparici/Испания</span></p>
+                                </div>
+                            </a>
+                            <a href="#" class="block-product bigger main-page xs-hide">
+                                <img src="images/images/image-product-two.jpg" alt="Фото продукта"
+                                     class="image-product">
+                                <div class="name">
+                                    Бордюр Cenefa Delis Blanco Silver
+                                </div>
+                                <div class="block-type">
+                                    <p>Тип: <span>Бордюр</span></p>
+                                </div>
+                                <div class="materials-block">
+                                    <p>Материал: <span>Керамогранит</span></p>
+                                </div>
+                                <div class="block-factory">
+                                    <p>Фабрика: <span>Aparici/Испания</span></p>
+                                </div>
+                            </a>
+                            <a href="#" class="block-product bigger main-page xs-hide">
+                                <img src="images/images/image-product-two.jpg" alt="Фото продукта"
+                                     class="image-product">
+                                <div class="name">
+                                    Бордюр Cenefa Delis Blanco Silver
+                                </div>
+                                <div class="block-type">
+                                    <p>Тип: <span>Бордюр</span></p>
+                                </div>
+                                <div class="materials-block">
+                                    <p>Материал: <span>Керамогранит</span></p>
+                                </div>
+                                <div class="block-factory">
+                                    <p>Фабрика: <span>Aparici/Испания</span></p>
+                                </div>
+                            </a>
+                            <a href="#" class="block-product bigger main-page xs-hide">
+                                <img src="images/images/image-product-two.jpg" alt="Фото продукта"
+                                     class="image-product">
+                                <div class="name">
+                                    Бордюр Cenefa Delis Blanco Silver
+                                </div>
+                                <div class="block-type">
+                                    <p>Тип: <span>Бордюр</span></p>
+                                </div>
+                                <div class="materials-block">
+                                    <p>Материал: <span>Керамогранит</span></p>
+                                </div>
+                                <div class="block-factory">
+                                    <p>Фабрика: <span>Aparici/Испания</span></p>
+                                </div>
+                            </a>
+                            <a href="#" class="block-product bigger main-page xs-hide">
+                                <img src="images/images/image-product-two.jpg" alt="Фото продукта"
+                                     class="image-product">
+                                <div class="name">
+                                    Бордюр Cenefa Delis Blanco Silver
+                                </div>
+                                <div class="block-type">
+                                    <p>Тип: <span>Бордюр</span></p>
+                                </div>
+                                <div class="materials-block">
+                                    <p>Материал: <span>Керамогранит</span></p>
+                                </div>
+                                <div class="block-factory">
+                                    <p>Фабрика: <span>Aparici/Испания</span></p>
+                                </div>
+                            </a>
+                            <a href="#" class="block-product bigger main-page xs-hide">
+                                <img src="images/images/image-product-two.jpg" alt="Фото продукта"
+                                     class="image-product">
+                                <div class="name">
+                                    Бордюр Cenefa Delis Blanco Silver
+                                </div>
+                                <div class="block-type">
+                                    <p>Тип: <span>Бордюр</span></p>
+                                </div>
+                                <div class="materials-block">
+                                    <p>Материал: <span>Керамогранит</span></p>
+                                </div>
+                                <div class="block-factory">
+                                    <p>Фабрика: <span>Aparici/Испания</span></p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

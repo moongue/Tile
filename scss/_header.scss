@@ -165,13 +165,13 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 52%;
+    width: 50%;
 
     @include xs(width, 100%);
     .block-with-menu {
       font-family: 'Manrope';
       padding-bottom: 40px;
-      padding-left: 140px;
+      padding-left: 110px;
       width: 100%;
 
       @include md(padding-left, 32px);
@@ -207,7 +207,7 @@
     }
   }
   .description-site {
-    padding-left: 140px;
+    padding-left: 110px;
     padding-bottom: 50px;
     padding-top: 10px;
     max-width: 550px;
@@ -244,6 +244,17 @@
 
     @include lg(margin-top, 60px);
     @include xs(margin-top, 0);
+    .row {
+      &:nth-child(1) {
+        max-height: 206px;
+      }
+      &:nth-child(2) {
+        max-height: 190px;
+      }
+      &:nth-child(3) {
+        max-height: 216px;
+      }
+    }
     .block-chose {
       position: relative;
       > img {

@@ -7,10 +7,13 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="js/jquery-1.12.4.min.js"></script>
     <script src="plugins/slick-slider/slick.min.js"></script>
+    <script src="plugins/magnific-popup/jquery.magnific-popup.min.js"></script>
     <script src="js/script.js"></script>
 
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="plugins/slick-slider/slick.css">
+    <link rel="stylesheet" href="plugins/magnific-popup/magnific-popup.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <title>Cafel</title>
 </head>
@@ -255,8 +258,12 @@
                             Сумма заказа 3 800 руб.
                         </div>
                         <div class="col">
-                            <input type="button" value="Оформить заказ" class="style-btn-basket">
-                            <input type="button" value="Быстрый заказ" class="style-btn-basket bg-red">
+                            <a href="#checkout-modal" class="open-checkout">
+                                <input type="button" value="Оформить заказ" class="style-btn-basket">
+                            </a>
+                            <a href="#quick-order" class="open-quick-order">
+                                <input type="button" value="Быстрый заказ" class="style-btn-basket bg-red">
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -356,5 +363,93 @@
         </div>
     </div>
 </section>
+
+<!--POPUP-->
+<div id="quick-order" class="white-popup mfp-hide">
+    <div class="title-popup">
+        Быстрый заказ
+    </div>
+    <div class="form">
+        <div class="one-input">
+            <p>Телефон</p>
+            <input type="tel" class="styles-modal-input">
+        </div>
+        <div class="one-input">
+            <p>Комментарий к заказу</p>
+            <textarea name="comment" cols="30" rows="10">
+
+            </textarea>
+        </div>
+        <div class="block-checkbox">
+            <input type="checkbox" id="check100" name="check"/>
+            <label for="check100">Я согласен на обработку персональных данных</label>
+        </div>
+        <a href="#thanks" class="open-thanks">
+        <input class="styles-button" type="button" value="Отправить">
+        </a>
+    </div>
+</div>
+
+<div id="checkout-modal" class="white-popup mfp-hide">
+    <div class="title-popup">
+        Данные покупателя
+    </div>
+    <div class="form">
+        <div class="row">
+            <div class="one-input">
+                <p>Имя</p>
+                <input type="text" class="styles-modal-input">
+            </div>
+            <div class="one-input">
+                <p>Фамилия</p>
+                <input type="text" class="styles-modal-input">
+            </div>
+        </div>
+        <div class="one-input">
+            <p>Комментарий</p>
+            <input type="text" class="styles-modal-input">
+        </div>
+        <div class="one-input">
+            <p>Электронная почта</p>
+            <input type="email" class="styles-modal-input">
+        </div>
+        <div class="one-input">
+            <p>Контактный номер</p>
+            <input type="text" class="styles-modal-input">
+        </div>
+        <div class="block-checkbox">
+            <input type="checkbox" id="check74" name="check">
+            <label class="show-more-inf" for="check74">Ввест данные человека, <br>
+            который заберет заказ вместо вас</label>
+        </div>
+        <div class="hide-inf">
+            <div class="row">
+                <div class="one-input">
+                    <p>Имя</p>
+                    <input type="text" class="styles-modal-input">
+                </div>
+                <div class="one-input">
+                    <p>Фамилия</p>
+                    <input type="text" class="styles-modal-input">
+                </div>
+            </div>
+            <div class="one-input">
+                <p>Контактный номер</p>
+                <input type="text" class="styles-modal-input">
+            </div>
+        </div>
+        <a href="#thanks" class="open-thanks">
+        <input class="styles-button" type="button" value="Оформить заказ">
+        </a>
+    </div>
+</div>
+
+<div id="thanks" class="white-popup mfp-hide">
+    <div class="title-popup">
+        Спасибо за обращение!
+    </div>
+    <p>Наши специалисты скоро с вами свяжутся</p>
+</div>
+<!--END POPUP-->
 </body>
 </html>

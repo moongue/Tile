@@ -1,0 +1,45 @@
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+.select {
+  display: inline-block;
+  vertical-align: top;
+  max-width: 245px;
+  padding-right: 100px;
+  padding-left: 10px;
+}
+
+
+.select__gap {
+  background: transparent;
+  color: $red;
+  font-size: 18px;
+  cursor: pointer;
+  position: relative;
+}
+
+
+.select__list {
+  background: transparent;
+  border: 1px solid $grey;
+}
+
+.select__list.on {
+  display: block;
+}
+
+.select__item span {
+  display: block;
+  padding: 10px 15px;
+  cursor: pointer;
+  color: #333;
+}
+
+.select__item.selected,
+.select__item span:hover {
+  color: $red;
+}
+

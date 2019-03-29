@@ -7,11 +7,13 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="js/jquery-1.12.4.min.js"></script>
     <script src="plugins/slick-slider/slick.min.js"></script>
+    <script src="plugins/magnific-popup/jquery.magnific-popup.min.js"></script>
     <script src="js/script.js"></script>
 
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900" rel="stylesheet">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="plugins/slick-slider/slick.css">
+    <link rel="stylesheet" href="plugins/magnific-popup/magnific-popup.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Cafel</title>
 </head>
@@ -254,7 +256,8 @@
                 <a href="#"> / Decor (composicion) Set Aroma Fosker</a>
             </div>
             <div class="content-card row">
-                <img src="images/images/image-product-card.jpg" alt="Картинка продукта" style="max-height: 314px; max-width: 314px" class="adaptive-img">
+                <img src="images/images/image-product-card.jpg" alt="Картинка продукта"
+                     style="max-height: 314px; max-width: 314px" class="adaptive-img">
                 <div class="col">
                     <div class="title">
                         ALABASTER BEIGE НАПОЛЬНАЯ 33
@@ -270,7 +273,9 @@
                                 <input type="button" value="+" class="styles-btn-quantity">
                             </div>
                             <p class="quantity-p">шт.</p>
-                            <input type="button" value="Калькулятор (м2)" class="styles-btn-card">
+                            <a href="#calc" class="open-calc">
+                                <input type="button" value="Калькулятор (м2)" class="styles-btn-card">
+                            </a>
                         </div>
                         <div class="col__aic order">
                             <div class="price-block">
@@ -346,10 +351,10 @@
                         <ul>
                             <li>
                                 <p>Объем: <span>20кг</span></p>
-                                </li>
+                            </li>
                             <li>
                                 <p>Производитель: <span>KIILTO (Kesto)</span></p>
-                                </li>
+                            </li>
                         </ul>
                     </div>
                 </a>
@@ -362,10 +367,10 @@
                         <ul>
                             <li>
                                 <p>Объем: <span>20кг</span></p>
-                                </li>
+                            </li>
                             <li>
                                 <p>Производитель: <span>Butech/Испания</span></p>
-                                </li>
+                            </li>
                         </ul>
                     </div>
                 </a>
@@ -378,18 +383,18 @@
                         <ul>
                             <li>
                                 <p>Тип: <span>Бордюр</span></p>
-                                </li>
+                            </li>
                             <li>
                                 <p>Материал: <span>Керамогранит</span></p>
-                                </li>
+                            </li>
                             <li>
                                 <p>Фабрика: <span>Almera Ceramica/Испания</span></p>
-                                </li>
+                            </li>
                         </ul>
                     </div>
                 </a>
                 <a href="#" class="one-block sm-hide">
-                    <img src="images/images/image-product-two.jpg" alt="Картинка" class="align-center"  >
+                    <img src="images/images/image-product-two.jpg" alt="Картинка" class="align-center">
                     <div class="title-product offset-top">
                         Бордюр Cenefa Delis Blanco Silver
                     </div>
@@ -397,13 +402,13 @@
                         <ul>
                             <li>
                                 <p>Тип: <span>Бордюр</span></p>
-                                </li>
+                            </li>
                             <li>
                                 <p>Материал: <span>Керамогранит</span></p>
-                                </li>
+                            </li>
                             <li>
                                 <p>Фабрика: <span>Almera Ceramica/Испания</span></p>
-                                </li>
+                            </li>
                         </ul>
                     </div>
                 </a>
@@ -413,5 +418,30 @@
 </section>
 <!--END CARD PRODUCT-->
 
+
+<!--POPUP-->
+<div id="calc" class="white-popup mfp-hide">
+    <div class="title-popup">
+        Калькулятор
+    </div>
+    <p>
+        Рассчет м2
+    </p>
+    <p class="tac">Введите необходимое количество м2</p>
+    <div class="calc">
+        <div class="quantity">
+            <input type="button" value="-" class="styles-btn-quantity">
+            <input type="number" value="1" class="styles-input-quantity">
+            <input type="button" value="+" class="styles-btn-quantity">
+        </div>
+        <p class="quantity-p">м2</p>
+        <div class="price">
+            1500 руб/м2
+        </div>
+    </div>
+    <input class="styles-button" type="button" value="Подтвердить">
+
+</div>
+<!--END POPUP-->
 </body>
 </html>

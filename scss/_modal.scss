@@ -1,0 +1,136 @@
+.white-popup {
+  position: relative;
+  background: #FFF;
+  padding: 20px;
+  width: auto;
+  max-width: 500px;
+  margin: 20px auto;
+  .title-popup {
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+  }
+  p {
+    font-size: 12px;
+    line-height: 14px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    padding-top: 13px;
+    &.tac {
+      text-align: center;
+    }
+  }
+  .form {
+    margin-top: 20px;
+    .one-input {
+      margin-top: 10px;
+      p {
+        font-size: 16px;
+
+      }
+      input {
+        box-sizing: border-box;
+        padding: 0 15px;
+        margin-top: 5px;
+        height: 30px;
+        width: 295px;
+        border: 1px solid $black;
+
+        @include xs(width, 240px)
+      }
+      textarea {
+        box-sizing: border-box;
+        width: 295px;
+        height: 198px;
+        margin-top: 5px;
+        @include xs(width, 240px)
+      }
+    }
+    .block-checkbox {
+      margin-top: 25px;
+      label {
+        font-size: 10px;
+        font-weight: 300;
+      }
+    }
+  }
+  .calc {
+    text-align: center;
+    display: table;
+    flex-direction: column;
+    margin: 20px auto 0;
+    padding: 23px 75px;
+    border: 2px solid $white-four;
+    .quantity {
+      justify-content: center;
+      .quantity-p {
+        font-size: 12px;
+        padding-top: 4px;
+      }
+    }
+    .price {
+      margin-top: 20px;
+      font-size: 24px;
+      font-weight: 600;
+    }
+  }
+  .styles-button {
+    margin-top: 23px;
+    width: 218px;
+  }
+}
+
+#checkout-modal {
+  width: 420px;
+  padding: 40px 35px 50px;
+  background: $grey-three;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  .title-popup {
+    margin-bottom: 15px;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  .form {
+    .row {
+      .styles-modal-input {
+        width: 160px !important;
+      }
+    }
+    .one-input {
+      p {
+        font-size: 16px;
+        font-weight: 300;
+      }
+      .styles-modal-input {
+        height: 28px;
+        width: 100%;
+        border: none;
+        background: #fff;
+      }
+    }
+    .block-checkbox {
+      position: relative;
+      padding-left: 30px;
+
+      label {
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 18px;
+        &:before {
+          width: 20px;
+          height: 20px;
+          position: absolute;
+          left: 0;
+          top: 12px;
+          border: none;
+          font-size: 20px;
+          line-height: 21px;
+        }
+      }
+    }
+    .hide-inf {
+      display: none;
+    }
+  }
+}

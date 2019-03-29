@@ -7,10 +7,12 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="js/jquery-1.12.4.min.js"></script>
     <script src="plugins/slick-slider/slick.min.js"></script>
+    <script src="plugins/magnific-popup/jquery.magnific-popup.min.js"></script>
     <script src="js/script.js"></script>
 
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="plugins/slick-slider/slick.css">
+    <link rel="stylesheet" href="plugins/magnific-popup/magnific-popup.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Cafel</title>
 </head>
@@ -277,7 +279,7 @@
                                         <label for="check2">Я согласен на обработку персональных данных</label>
                                     </div>
                                     <input type="button" class="styles-button" value="Войти">
-                                    <a href="#" class="forget-password sm-show">
+                                    <a href="#forget-password" class="forget-password sm-show">
                                         Забыли пароль?
                                     </a>
                                 </div>
@@ -286,10 +288,12 @@
                                         Если вы впервые на сайте и хотите, чтобы мы вас помнили, и все ваши заказы
                                         сохранялись, заполните регистрационную форму.
                                     </div>
-                                    <input type="button" class="styles-button" value="Регистрация">
+                                    <a href="#registration" class="open-registration">
+                                        <input type="button" class="styles-button" value="Регистрация">
+                                    </a>
                                 </div>
                             </div>
-                            <a href="#" class="forget-password sm-hide">
+                            <a href="#forget-password" class="forget-password sm-hide">
                                 Забыли пароль?
                             </a>
                             <div class="checkbox margin-top sm-hide">
@@ -358,5 +362,81 @@
         </div>
     </div>
 </section>
+
+<!--POPUP-->
+<div id="registration" class="white-popup mfp-hide">
+    <div class="title-popup">
+        Регистрация
+    </div>
+    <p>
+        После регистрации на сайте вам будет доступно отслеживание состояниия заказов, личный кабинет и другие новые
+        возможности.
+    </p>
+    <div class="form">
+        <div class="one-input">
+            <p>ФИО</p>
+            <input type="text" class="styles-modal-input">
+        </div>
+        <div class="one-input">
+            <p>E-mail</p>
+            <input type="text" class="styles-modal-input">
+        </div>
+        <div class="one-input">
+            <p>Телефон</p>
+            <input type="text" class="styles-modal-input">
+        </div>
+        <div class="one-input">
+            <p>Пароль</p>
+            <input type="text" class="styles-modal-input">
+        </div>
+        <div class="one-input">
+            <p>Потверждение пароля</p>
+            <input type="text" class="styles-modal-input">
+        </div>
+        <div class="one-input">
+            <p>Введите код</p>
+            <input type="text" class="styles-modal-input">
+        </div>
+        <div class="block-checkbox">
+            <input type="checkbox" id="check74" name="check"/>
+            <label for="check74">Я согласен на обработку персональных данных</label>
+        </div>
+        <a href="#complete-registration" class="open-complete-registration">
+            <input class="styles-button" type="button" value="Зарегестрироваться">
+        </a>
+    </div>
+</div>
+
+<div id="complete-registration" class="white-popup mfp-hide">
+    <div class="title-popup">
+        Вы успешно зарегестрированны на сайте
+    </div>
+    <p>
+        Контрольная строка для подтверждения регистрации отправлена вам по E-mail
+    </p>
+</div>
+
+<div id="forget-password" class="white-popup mfp-hide">
+    <div class="title-popup">
+        Забыли пароль?
+    </div>
+    <p>
+        Если вы забыли пароль, введите логин или E-Mail. <br>
+        Контролная строка для смены пароля, а также ваши регистрационные данные, будут высланы вам по E-mail.
+    </p>
+    <div class="form">
+        <div class="one-input">
+            <p>E-mail</p>
+            <input type="email" class="styles-modal-input">
+        </div>
+        <input class="styles-button" type="button" value="Восстановить">
+    </div>
+    <p>
+        Ошибка авторизации зарегистрированного пользователя: <br>
+        вы еще не подтвердили решистрацию по E-mail (письмо было отправленно на адрес dasha@rcaa.ru).<br>
+        Повторно запросить письмо вы можете на форме восстановления пароля.
+    </p>
+</div>
+<!--END POPUP-->
 </body>
 </html>

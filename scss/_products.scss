@@ -1,0 +1,244 @@
+#products {
+  padding-top: 15px;
+  background: $white;
+  color: $black;
+  padding-bottom: 80px;
+
+  @include sm(padding-top, 62px);
+  .wrapper {
+    @include xs-block() {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+  .container {
+    h1 {
+      font-family: 'Roboto', sans-serif;
+      font-weight: 600;
+      padding: 4px;
+      border: 1px solid $grey;
+
+      @include xs-block() {
+        border: none;
+        border-bottom: 1px solid $grey;
+        padding: 15px;
+        background: $bg;
+      }
+    }
+    .way {
+      @include sm(display, none);
+    }
+    .content-products {
+      margin-top: 35px;
+      @include md-block() {
+        flex-direction: column;
+        align-items: center;
+      }
+      @include xs(margin-top, 0);
+      .filter {
+        flex-basis: 300px;
+
+        @include md-block() {
+          width: 100%;
+          flex-basis: 100%  ;
+        }
+        .cap-filter {
+          font-size: 24px;
+          line-height: 30px;
+          font-weight: 300;
+          position: relative;
+          @include md-block() {
+            background: $grey;
+            padding: 10px;
+            margin-bottom: 1px;
+          }
+          @include xs(text-align, center);
+          &:after {
+            @include md-block() {
+
+              content: '';
+              background: url("../images/icons/icon-arrow-catalog.png") no-repeat;
+              width: 7px;
+              height: 14px;
+              position: absolute;
+              top: 18px;
+              transform: rotate(270deg);
+              right: 17px;
+            }
+          }
+        }
+        .dropdown {
+          @include md(display, none);
+        }
+        ul {
+          &.hide {
+            display: none;
+          }
+          li {
+            margin-bottom: 1px;
+            display: block;
+            box-sizing: border-box;
+            width: 100%;
+            font-size: 16px;
+            color: $black;
+            background: $grey;
+            position: relative;
+            > div {
+              font-weight: 600;
+              padding: 10px 0 10px 20px;
+            }
+            &.hide {
+              display: none;
+            }
+            &.active {
+              border-left: 11px solid $red-two;
+              transition: all .4s ease-in-out;
+              &:after {
+                transform: rotate(90deg);
+                transition: all .4s ease-in-out;
+              }
+            }
+            &:after {
+              content: '';
+              background: url("../images/icons/icon-arrow-catalog.png") no-repeat;
+              width: 7px;
+              height: 14px;
+              position: absolute;
+              top: 10px;
+              transform: rotate(270deg);
+              right: 17px;
+            }
+            > ul {
+              padding-top: 8px;
+              li {
+                display: flex;
+                align-items: center;
+                padding: 6px 10px;
+                &.col {
+                  align-items: flex-start !important;
+                  .row {
+                    padding-top: 10px;
+                    p {
+                      font-size: 12px;
+                      font-weight: 400;
+                      &:nth-child(2) {
+                        padding: 0 0 0 40px;
+                      }
+                    }
+                  }
+                }
+                .styles-input-number {
+                  height: 28px;
+                  width: 40px;
+                  box-sizing: border-box;
+                  border: 2px solid $black;
+                  outline: none;
+                  padding: 0 4px;
+                  color: $black;
+                  font-size: 12px;
+                  background: $white;
+                  &::-webkit-inner-spin-button {
+                    -webkit-appearance: none;
+                    margin: 0;
+                  }
+                  &.input-price {
+                    width: 85px;
+                    &:nth-child(2) {
+                      margin-left: 20px;
+                    }
+                  }
+                }
+                p {
+                  padding: 0 2px;
+                }
+
+                &:after {
+                  display: none;
+                }
+              }
+            }
+          }
+        }
+        .block-button {
+          background: $grey;
+          margin-top: 1px;
+          padding: 32px 0 58px;
+          @include md(display, none);
+        }
+      }
+      .products {
+        flex-basis: 725px;
+        padding-left: 15px;
+        @include md-block() {
+          margin-top: 10px;
+          padding-left: 0;
+        }
+        @include sm-block() {
+          width: 100%;
+        }
+      }
+      .slick-slider {
+        max-width: 725px;
+      }
+      .list-products {
+        .slide {
+          flex-wrap: wrap;
+          display: flex !important;
+          @include sm-block() {
+            justify-content: space-around;
+          }
+        }
+        .slick-arrow {
+          position: absolute;
+          outline: none;
+          font-size: 0;
+          height: 35px;
+          width: 35px;
+          border: none;
+          bottom: -60px;
+          z-index: 2;
+          &.slick-prev {
+            background: url("../images/icons/icon-arrow-prev.png") no-repeat;
+            left: 44%;
+            @include sm(left, 41%);
+            @include xs(left, 36%);
+          }
+          &.slick-next {
+            background: url("../images/icons/icon-arrow-next.png") no-repeat;
+            right: 46%;
+            @include sm(right, 43%);
+            @include xs(right, 38%);
+          }
+        }
+      }
+    }
+    .filter-products {
+      @include md-block() {
+        max-width: 300px;
+        margin-top: 10px;
+      }
+      @include sm(padding, 0 15px);
+      @include xs-block() {
+        background: $bg;
+        margin-top: 0;
+        max-width: 100%;
+        padding: 14px 15px;
+      }
+      ul {
+        display: flex;
+        justify-content: space-between;
+        @include xs(max-width, 300px);
+        li {
+          padding-right: 30px;
+          a {
+            padding: 4px 7px;
+            color: $black;
+            font-size: 16px;
+            font-weight: 600;
+            @include md(padding, 0)
+          }
+        }
+      }
+    }
+  }
+}

@@ -4,7 +4,6 @@
 
   @include sm(background, $bg);
   .container {
-    padding: 10px 0;
 
     @include sm(padding, 0);
     .row__aic {
@@ -126,91 +125,112 @@
         }
       }
     }
+    .top {
+      padding: 15px 0;
+
+    }
   }
 }
 
 .drop-menu, .menu-header {
-  position: absolute;
-  display: none;
-  top: 0;
-  left: 0;
+  display: block;
   width: 100%;
   z-index: 3;
   background: $grey;
-  box-shadow: 3px 66px 124px -7px rgba(0, 0, 0, 0.59);
+  .bg-grey {
+    padding-left: 100px;
+    @include md-block() {
+      position: absolute;
+      top: 62px;
+      left: 0;
+      z-index: 101;
+      width: 100%;
+      background: $grey;
+      padding-left: 0;
+    }
+    @include sm-block() {
+      position: fixed;
+    }
+  }
+  .block-with-menu {
+    display: none;
+    font-family: 'Manrope', sans-serif;
+    padding-bottom: 40px;
+    padding-top: 10px;
+    width: 100%;
+
+    @include md-block() {
+      padding-left: 32px;
+    }
+    @include sm(padding-left, 15px);
+    .menu {
+      display: flex;
+      flex-direction: column;
+      li {
+        margin: 5px 0;
+        a {
+          padding: 6px 0;
+          color: $dark;
+          text-transform: uppercase;
+          font-weight: 600;
+          display: block;
+          &:hover {
+            background: $yellow;
+          }
+        }
+      }
+    }
+    .telephone {
+      display: flex;
+      align-items: center;
+      font-weight: 600;
+      img {
+        padding-right: 10px;
+      }
+      p {
+        color: $dark;
+      }
+    }
+  }
   &.menu-header {
+    @include md(background, $bg);
     @include sm-block() {
       display: block;
       position: inherit;
       box-shadow: none;
       background: $bg;
-      margin-top: 64px;
+      margin-top: 31px;
     }
   }
   &.is-open {
     display: block;
-
-  }
-  > .row {
-    justify-content: center;
   }
   .menu-bg {
     background: $grey;
   }
   .description-bg {
     background: $bg;
+    flex-basis: 50%;
+    @include md-block() {
+      flex-basis: 0;
+    }
   }
   .left-block {
     margin-top: 60px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 50%;
+    flex-basis: 50%;
 
     @include xs(width, 100%);
-    .block-with-menu {
-      font-family: 'Manrope';
-      padding-bottom: 40px;
-      padding-left: 110px;
-      width: 100%;
 
-      @include md(padding-left, 32px);
-      @include sm(padding-left, 15px);
-      .menu {
-        display: flex;
-        flex-direction: column;
-        li {
-          margin: 5px 0;
-          a {
-            padding: 6px 0;
-            color: $dark;
-            text-transform: uppercase;
-            font-weight: 600;
-            display: block;
-            &:hover {
-              background: $yellow;
-            }
-          }
-        }
-      }
-      .telephone {
-        display: flex;
-        align-items: center;
-        font-weight: 600;
-        img {
-          padding-right: 10px;
-        }
-        p {
-          color: $dark;
-        }
-      }
-    }
   }
   .description-site {
-    padding-left: 110px;
-    padding-bottom: 50px;
+    margin-left: auto;
+    padding-left: 30px;
+    max-width: 495px;
     padding-top: 10px;
-    max-width: 550px;
+    padding-right: 30px;
 
     @include lg-block() {
       text-align: center;
@@ -218,6 +238,7 @@
       padding-left: 0;
       padding-bottom: 15px;
     }
+    @include xs(padding-left, 15px);
     .logo {
       @include xs-block() {
         max-width: 160px;
@@ -241,9 +262,11 @@
     }
   }
   .right-block {
-
-    @include lg(margin-top, 60px);
-    @include xs(margin-top, 0);
+    margin-top: -70px;
+    @include lg(margin-top, 0);
+    @include md-block() {
+      margin: 0 auto;
+    }
     .row {
       &:nth-child(1) {
         max-height: 206px;
@@ -266,7 +289,7 @@
         left: 20px;
         top: 20px;
         text-transform: uppercase;
-        font-family: 'Manrope';
+        font-family: 'Manrope', sans-serif;
         font-weight: 600;
         font-size: 24px;
         color: $white;

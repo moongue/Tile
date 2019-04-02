@@ -1,115 +1,126 @@
 #discounts {
-  margin-top: 23px;
   margin-bottom: 50px;
 
   @include sm(margin-top, 0);
   .cap-menu {
     background: $grey;
     padding: 17px 0;
+    margin-bottom: 20px;
     .row {
       justify-content: flex-start;
     }
     ul {
       li {
-        padding-right: 35px;
-        a {
-          color: $dark;
-          font-size: 14px;
-          font-weight: 600;
+        margin-right: 35px;
+        color: $dark;
+        font-size: 16px;
+        font-weight: 600;
+        cursor: pointer;
+        padding: 7px 20px;
+        &.active {
+          background: $yellow;
+        }
+        &:hover {
+          background: $yellow;
         }
       }
     }
   }
   .block-full {
     flex-basis: 440px;
-    max-width: 460px;
+    max-width: 440px;
 
     @include md-block() {
       max-width: 100%;
       margin-top: 15px;
     }
-     .col {
+    .col {
       height: 580px;
       justify-content: space-between;
-       @include md(height, auto);
+      @include md(height, auto);
     }
   }
   .container {
-    > .row {
-      @include md-block() {
-        flex-direction: column;
-        align-items: center;
+    .one-tab {
+      display: none;
+      &.active {
+        display: block;
       }
-    }
-    .block {
-      width: 505px;
-
-      @include md(width, 100%);
-      h1 {
-
-        @include sm(margin-top, 10px);
-        @include xs(font-weight, 600);
-        span {
-          padding-left: 80px;
-        }
-      }
-      .discount-image {
-        > img {
-          margin-top: 25px;
-          width: 100%;
-          height: auto;
-        }
-      }
-    }
-    .block-slider {
-      max-width: 440px;
-
-      @include md-block() {
-        max-width: 100%;
-        width: 100%;
-      }
-      .row {
-        &:nth-child(-n + 100) {
-          margin-top: 10px;
-        }
+      > .row {
         @include md-block() {
-          justify-content: space-around;
-        }
-        @include xs-block() {
-          justify-content: space-between;
+          flex-direction: column;
+          align-items: center;
         }
       }
-    }
-    .slider {
-      .slick-arrow {
-        position: absolute;
-        outline: none;
-        font-size: 0;
-        height: 35px;
-        width: 35px;
-        border: none;
-        top: calc((100% - 35px) / 2);
-        z-index: 2;
-        @include sm-block() {
-          top: inherit;
-          bottom: -38px;
-        }
-        &.slick-prev {
-          background: url("../images/icons/icon-arrow-prev.png") no-repeat;
-          left: -10%;
+      .block {
+        width: 505px;
 
-          @include fix(left, 0);
-          @include sm(left, 42%);
-          @include xs(left, 35%);
-        }
-        &.slick-next {
-          background: url("../images/icons/icon-arrow-next.png") no-repeat;
-          right: -10%;
+        @include md(width, 100%);
+        h1 {
 
-          @include fix(right, 18px);
-          @include md(right, 0);
-          @include sm(right, 42%);
-          @include xs(right, 35%);
+          @include sm(margin-top, 10px);
+          @include xs(font-weight, 600);
+          span {
+            padding-left: 80px;
+          }
+        }
+        .discount-image {
+          > img {
+            margin-top: 25px;
+            width: 100%;
+            height: auto;
+          }
+        }
+      }
+      .block-slider {
+        max-width: 440px;
+        @include md-block() {
+          max-width: 100%;
+          width: 100%;
+        }
+        .row {
+          &:nth-child(-n + 100) {
+            margin-top: 10px;
+          }
+          @include md-block() {
+            justify-content: space-around;
+          }
+          @include xs-block() {
+            justify-content: space-between;
+          }
+        }
+      }
+      .slider {
+        .slick-arrow {
+          position: absolute;
+          outline: none;
+          font-size: 0;
+          height: 35px;
+          width: 35px;
+          border: none;
+          top: calc((100% - 35px) / 2);
+          z-index: 2;
+          @include sm-block() {
+            top: inherit;
+            bottom: -38px;
+          }
+          &.slick-prev {
+            background: url("../images/icons/icon-arrow-prev.png") no-repeat;
+            left: -10%;
+
+            @include fix(left, 0);
+            @include sm(left, 42%);
+            @include xs(left, 35%);
+          }
+          &.slick-next {
+            background: url("../images/icons/icon-arrow-next.png") no-repeat;
+            right: -10%;
+
+            @include fix(right, 18px);
+            @include md(right, 0);
+            @include sm(right, 42%);
+            @include xs(right, 35%);
+          }
         }
       }
     }

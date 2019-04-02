@@ -40,6 +40,11 @@ function mainTabs() {
             .addClass('active').siblings().removeClass('active')
             .closest('#discounts').find('.one-tab').removeClass('active').eq($(this).index()).addClass('active');
     });
+    $('.main-tabs').on('click', 'li:not(.active)', function () {
+        $(this)
+            .addClass('active').siblings().removeClass('active')
+            .closest('#discounts').find('.slider').slick('setPosition');
+    });
 }
 
 function dropdown() {
@@ -267,15 +272,15 @@ function activeScript() {
 }
 
 function sliderProducts() {
-    var slider = $('.list-products');
 
-    if (slider.length) {
-        slider.slick({
+
+
+        $('.list-products').slick({
             infinity: true,
             dots: false,
             arrows: true
         })
-    }
+
 }
 
 function smoothJumpUp() {
@@ -293,13 +298,16 @@ function smoothJumpUp() {
 }
 
 function slider() {
-    $('.slider').slick({
-        infinite: true,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        arrows: true,
-        speed: 1000
-    });
+
+
+        $('.slider').slick({
+            infinite: true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: true,
+            speed: 1000
+        });
+
 }
 
 function sidebarMenu() {
@@ -333,6 +341,11 @@ function tabProducts() {
         $(this)
             .addClass('active').siblings().removeClass('active')
             .closest('div.products').find('div.list-products').removeClass('active').eq($(this).index()).addClass('active');
+    });
+    $('.filter-products ul').on('click', 'li:not(.active)', function () {
+        $(this)
+            .addClass('active').siblings().removeClass('active')
+            .closest('.products').find('.list-products').slick('setPosition');
     });
 }
 

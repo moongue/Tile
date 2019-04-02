@@ -1,10 +1,14 @@
 #header {
   position: relative;
   background: $grey;
-
+&.bg {
+  background: $bg;
+}
   @include sm(background, $bg);
   .container {
-
+    max-width: 1280px;
+    padding: 0 30px;
+    margin: 0 auto;
     @include sm(padding, 0);
     .row__aic {
       justify-content: flex-start;
@@ -127,7 +131,7 @@
     }
     .top {
       padding: 15px 0;
-
+      background: $grey;
     }
   }
 }
@@ -138,7 +142,7 @@
   z-index: 3;
   background: $grey;
   .bg-grey {
-    padding-left: 100px;
+    padding-left: 30px;
     @include md-block() {
       position: absolute;
       top: 62px;

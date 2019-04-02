@@ -124,54 +124,62 @@ h2 {
     color: $grey-two;
   }
 }
-
-.sidebar {
+.sidebar-bg {
   position: fixed;
-  left: 109px;
-  top: 375px;
-  z-index: 2;
-  @include menu(left, 10px);
-  ul {
-    display: flex;
-    flex-direction: column;
-    li {
-      margin-top: 5px;
-      z-index: 9;
+  left: 8.1%;
+  &.top-sidebar {
+    top: 10%;
+    left: 6.2%;
+  }
+  &.top-down {
+    transition: all .4s;
+    top: 400px;
+  }
+  .sidebar {
+    z-index: 2;
+    @include menu(left, 10px);
+    ul {
       display: flex;
-      &.last-item {
-        margin-top: 70px;
-        .hide-click {
-          display: none;
-        }
-        .search-area {
-          width: 100px;
-          height: 40px;
-          box-sizing: border-box;
-          border: 1px solid $black;
-          border-left: none;
-          padding: 0 5px;
-        }
-      }
-      a {
+      flex-direction: column;
+      li {
+        margin-top: 5px;
+        z-index: 9;
         display: flex;
-        .description {
-          display: none;
-          box-sizing: border-box;
-          height: 40px;
-          width: 100px;
-          align-items: center;
-          justify-content: center;
-          color: $black;
-          font-size: 12px;
-          border: 1px solid $black;
-          border-left: none;
+        &.last-item {
+          margin-top: 70px;
+          .hide-click {
+            display: none;
+          }
+          .search-area {
+            width: 100px;
+            height: 40px;
+            box-sizing: border-box;
+            border: 1px solid $black;
+            border-left: none;
+            padding: 0 5px;
+          }
         }
-        .description:hover {
+        a {
           display: flex;
-        }
-        img {
-          &:hover + .description {
+          .description {
+            display: none;
+            box-sizing: border-box;
+            height: 40px;
+            width: 100px;
+            align-items: center;
+            justify-content: center;
+            color: $black;
+            font-size: 12px;
+            border: 1px solid $black;
+            border-left: none;
+          }
+          .description:hover {
             display: flex;
+          }
+          img {
+            &:hover + .description {
+              display: flex;
+            }
           }
         }
       }

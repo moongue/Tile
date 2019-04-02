@@ -240,20 +240,34 @@ h2 {
   color: #a2a2a2;
 }
 
-.sidebar {
+.sidebar-bg {
   position: fixed;
-  left: 109px;
-  top: 375px;
+  left: 8.1%;
+}
+
+.sidebar-bg.top-sidebar {
+  top: 10%;
+  left: 6.2%;
+}
+
+.sidebar-bg.top-down {
+  -webkit-transition: all .4s;
+  -o-transition: all .4s;
+  transition: all .4s;
+  top: 400px;
+}
+
+.sidebar-bg .sidebar {
   z-index: 2;
 }
 
 @media screen and (max-width: 1456px) {
-  .sidebar {
+  .sidebar-bg .sidebar {
     left: 10px;
   }
 }
 
-.sidebar ul {
+.sidebar-bg .sidebar ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -263,7 +277,7 @@ h2 {
   flex-direction: column;
 }
 
-.sidebar ul li {
+.sidebar-bg .sidebar ul li {
   margin-top: 5px;
   z-index: 9;
   display: -webkit-box;
@@ -271,15 +285,15 @@ h2 {
   display: flex;
 }
 
-.sidebar ul li.last-item {
+.sidebar-bg .sidebar ul li.last-item {
   margin-top: 70px;
 }
 
-.sidebar ul li.last-item .hide-click {
+.sidebar-bg .sidebar ul li.last-item .hide-click {
   display: none;
 }
 
-.sidebar ul li.last-item .search-area {
+.sidebar-bg .sidebar ul li.last-item .search-area {
   width: 100px;
   height: 40px;
   -webkit-box-sizing: border-box;
@@ -289,13 +303,13 @@ h2 {
   padding: 0 5px;
 }
 
-.sidebar ul li a {
+.sidebar-bg .sidebar ul li a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.sidebar ul li a .description {
+.sidebar-bg .sidebar ul li a .description {
   display: none;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -313,13 +327,13 @@ h2 {
   border-left: none;
 }
 
-.sidebar ul li a .description:hover {
+.sidebar-bg .sidebar ul li a .description:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.sidebar ul li a img:hover + .description {
+.sidebar-bg .sidebar ul li a img:hover + .description {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -854,10 +868,20 @@ label:before {
   background: #d9d4c9;
 }
 
+#header.bg {
+  background: #f6f4ed;
+}
+
 @media screen and (max-width: 780px) {
   #header {
     background: #f6f4ed;
   }
+}
+
+#header .container {
+  max-width: 1280px;
+  padding: 0 30px;
+  margin: 0 auto;
 }
 
 @media screen and (max-width: 780px) {
@@ -1040,6 +1064,7 @@ label:before {
 
 #header .container .top {
   padding: 15px 0;
+  background: #d9d4c9;
 }
 
 .drop-menu,
@@ -1052,7 +1077,7 @@ label:before {
 
 .drop-menu .bg-grey,
 .menu-header .bg-grey {
-  padding-left: 100px;
+  padding-left: 30px;
 }
 
 @media screen and (max-width: 960px) {

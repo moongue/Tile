@@ -1,6 +1,8 @@
 function smoothMenu() {
     $(".mobile-menu-toggle").click(function () {
-        $(".block-with-menu").slideToggle(400);
+        $(".block-with-menu").slideToggle(400, function() {
+            $(".sidebar-bg").toggleClass('top-down')
+        });
     });
 }
 
@@ -311,12 +313,12 @@ function slider() {
 }
 
 function sidebarMenu() {
-    var h_hght = 350; // высота шапки
+    var h_hght = 100; // высота шапки
     var h_mrg = 80;    // отступ когда шапка уже не видна
 
     $(function(){
 
-        var elem = $('.sidebar');
+        var elem = $('.sidebar_bg');
         var top = $(this).scrollTop();
 
         if(top > h_hght){

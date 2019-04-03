@@ -8,21 +8,7 @@
     @include sm(padding, 0);
   }
   .container {
-    h1 {
-      font-family: 'Roboto', sans-serif;
-      font-weight: 600;
-      padding: 4px;
-      border: 1px solid $grey;
 
-      @include sm(padding, 4px 15px);
-      @include xs-block() {
-        border: none;
-        border-bottom: 1px solid $grey;
-      }
-    }
-    .way {
-      @include sm(padding, 0 15px)
-    }
     .style-btn-basket {
       width: 190px;
       height: 30px;

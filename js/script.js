@@ -1,8 +1,9 @@
 function smoothMenu() {
     $(".mobile-menu-toggle").click(function () {
         $(".block-with-menu").slideToggle(400, function() {
-            $(".sidebar-bg").toggleClass('top-down')
-        });
+            $('.sidebar-other-page').toggleClass('top-offset');
+            $('.top-sidebar').toggleClass('offset-top-main')
+        })
     });
 }
 

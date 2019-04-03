@@ -44,11 +44,21 @@ input[type=text] {
 }
 
 h1 {
-  font-size: 24px;
-  line-height: 24px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+  padding: 4px;
   color: $black-two;
+  font-size: 24px;
+  border: 1px solid $grey;
 
-  @include xs(font-size, 16px)
+  @include sm(padding, 4px 15px);
+  @include xs-block() {
+    border: none;
+    border-bottom: 1px solid $grey;
+  }
+}
+.way {
+  @include sm(padding, 0 15px)
 }
 
 h2 {
@@ -125,16 +135,6 @@ h2 {
   }
 }
 .sidebar-bg {
-  position: fixed;
-  left: 8.1%;
-  &.top-sidebar {
-    top: 10%;
-    left: 6.2%;
-  }
-  &.top-down {
-    transition: all .4s;
-    top: 400px;
-  }
   .sidebar {
     z-index: 2;
     @include menu(left, 10px);
@@ -145,6 +145,9 @@ h2 {
         margin-top: 5px;
         z-index: 9;
         display: flex;
+        &.burger {
+          margin-bottom: 50px;
+        }
         &.last-item {
           margin-top: 70px;
           .hide-click {

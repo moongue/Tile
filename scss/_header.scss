@@ -2,13 +2,41 @@
   position: relative;
   background: $grey;
 &.bg {
-  background: $bg;
+  background: #fff;
 }
+  &.bg-white {
+    background: $bg;
+  }
   @include sm(background, $bg);
   .container {
     max-width: 1280px;
     padding: 0 30px;
     margin: 0 auto;
+    position: relative;
+    .wrapper-big {
+      &.offset-none {
+        @include lg-block() {
+          padding: 0;
+        }
+      }
+    }
+    .sidebar-bg {
+      position: fixed;
+      top: 300px;
+      width: 4em;
+      margin-left: -30px;
+      &.sidebar-other-page {
+        top: 10px;
+        &.top-offset {
+          transition: all .4s;
+          top: 300px;
+        }
+      }
+      &.offset-top-main {
+        top: 380px;
+        transition: all .4s;
+      }
+    }
     @include sm(padding, 0);
     .row__aic {
       justify-content: flex-start;
@@ -132,6 +160,13 @@
     .top {
       padding: 15px 0;
       background: $grey;
+      &.bg-none {
+        background: #fff;
+      }
+      &.other-none {
+        padding: 0;
+        @include lg(padding, 10px 0);
+      }
     }
   }
 }
@@ -197,6 +232,17 @@
     }
   }
   &.menu-header {
+    &.other-page {
+      position: fixed;
+      top: 0;
+      width: 1280px;
+      margin: 0 auto;
+      box-shadow: 17px 17px 40px -4px rgba(0,0,0,0.75);
+      @include lg-block() {
+        position: static;
+        width: 100%;
+      }
+    }
     @include md(background, $bg);
     @include sm-block() {
       display: block;

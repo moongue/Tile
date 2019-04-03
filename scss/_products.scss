@@ -4,7 +4,7 @@
   color: $black;
   padding-bottom: 80px;
 
-  @include sm(padding-top, 62px);
+  @include sm(padding-top, 42px);
   .wrapper {
     @include xs-block() {
       padding-left: 0;
@@ -222,7 +222,7 @@
         max-width: 300px;
         margin-top: 10px;
       }
-      @include sm(padding, 0 15px);
+      //@include sm(padding, 0 15px);
       @include xs-block() {
         background: $bg;
         margin-top: 0;

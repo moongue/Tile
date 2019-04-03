@@ -102,14 +102,30 @@ input[type=text] {
 }
 
 h1 {
-  font-size: 24px;
-  line-height: 24px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+  padding: 4px;
   color: #040404;
+  font-size: 24px;
+  border: 1px solid #d9d4c9;
+}
+
+@media screen and (max-width: 780px) {
+  h1 {
+    padding: 4px 15px;
+  }
 }
 
 @media screen and (max-width: 560px) {
   h1 {
-    font-size: 16px;
+    border: none;
+    border-bottom: 1px solid #d9d4c9;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .way {
+    padding: 0 15px;
   }
 }
 
@@ -240,23 +256,6 @@ h2 {
   color: #a2a2a2;
 }
 
-.sidebar-bg {
-  position: fixed;
-  left: 8.1%;
-}
-
-.sidebar-bg.top-sidebar {
-  top: 10%;
-  left: 6.2%;
-}
-
-.sidebar-bg.top-down {
-  -webkit-transition: all .4s;
-  -o-transition: all .4s;
-  transition: all .4s;
-  top: 400px;
-}
-
 .sidebar-bg .sidebar {
   z-index: 2;
 }
@@ -283,6 +282,10 @@ h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.sidebar-bg .sidebar ul li.burger {
+  margin-bottom: 50px;
 }
 
 .sidebar-bg .sidebar ul li.last-item {
@@ -869,6 +872,10 @@ label:before {
 }
 
 #header.bg {
+  background: #fff;
+}
+
+#header.bg-white {
   background: #f6f4ed;
 }
 
@@ -882,6 +889,38 @@ label:before {
   max-width: 1280px;
   padding: 0 30px;
   margin: 0 auto;
+  position: relative;
+}
+
+@media screen and (max-width: 1100px) {
+  #header .container .wrapper-big.offset-none {
+    padding: 0;
+  }
+}
+
+#header .container .sidebar-bg {
+  position: fixed;
+  top: 300px;
+  width: 4em;
+  margin-left: -30px;
+}
+
+#header .container .sidebar-bg.sidebar-other-page {
+  top: 10px;
+}
+
+#header .container .sidebar-bg.sidebar-other-page.top-offset {
+  -webkit-transition: all .4s;
+  -o-transition: all .4s;
+  transition: all .4s;
+  top: 300px;
+}
+
+#header .container .sidebar-bg.offset-top-main {
+  top: 380px;
+  -webkit-transition: all .4s;
+  -o-transition: all .4s;
+  transition: all .4s;
 }
 
 @media screen and (max-width: 780px) {
@@ -1067,6 +1106,20 @@ label:before {
   background: #d9d4c9;
 }
 
+#header .container .top.bg-none {
+  background: #fff;
+}
+
+#header .container .top.other-none {
+  padding: 0;
+}
+
+@media screen and (max-width: 1100px) {
+  #header .container .top.other-none {
+    padding: 10px 0;
+  }
+}
+
 .drop-menu,
 .menu-header {
   display: block;
@@ -1172,6 +1225,24 @@ label:before {
 .drop-menu .block-with-menu .telephone p,
 .menu-header .block-with-menu .telephone p {
   color: #282122;
+}
+
+.drop-menu.menu-header.other-page,
+.menu-header.menu-header.other-page {
+  position: fixed;
+  top: 0;
+  width: 1280px;
+  margin: 0 auto;
+  -webkit-box-shadow: 17px 17px 40px -4px rgba(0, 0, 0, 0.75);
+  box-shadow: 17px 17px 40px -4px rgba(0, 0, 0, 0.75);
+}
+
+@media screen and (max-width: 1100px) {
+  .drop-menu.menu-header.other-page,
+  .menu-header.menu-header.other-page {
+    position: static;
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 960px) {
@@ -1599,6 +1670,12 @@ label:before {
 #to-designers {
   background: #fff;
   padding-top: 15px;
+}
+
+@media screen and (max-width: 780px) {
+  #to-designers {
+    padding-top: 80px;
+  }
 }
 
 #to-designers .container h1 {
@@ -3390,32 +3467,6 @@ label:before {
   }
 }
 
-#basket .container h1 {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 600;
-  padding: 4px;
-  border: 1px solid #d9d4c9;
-}
-
-@media screen and (max-width: 780px) {
-  #basket .container h1 {
-    padding: 4px 15px;
-  }
-}
-
-@media screen and (max-width: 560px) {
-  #basket .container h1 {
-    border: none;
-    border-bottom: 1px solid #d9d4c9;
-  }
-}
-
-@media screen and (max-width: 780px) {
-  #basket .container .way {
-    padding: 0 15px;
-  }
-}
-
 #basket .container .style-btn-basket {
   width: 190px;
   height: 30px;
@@ -3760,7 +3811,7 @@ label:before {
 
 @media screen and (max-width: 780px) {
   #products {
-    padding-top: 62px;
+    padding-top: 42px;
   }
 }
 
@@ -4099,12 +4150,6 @@ label:before {
   #products .container .filter-products {
     max-width: 300px;
     margin-top: 10px;
-  }
-}
-
-@media screen and (max-width: 780px) {
-  #products .container .filter-products {
-    padding: 0 15px;
   }
 }
 

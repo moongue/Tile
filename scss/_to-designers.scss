@@ -1,6 +1,7 @@
 #to-designers {
   background: #fff;
   padding-top: 15px;
+  @include sm(padding-top, 80px);
   .container {
     h1 {
       padding: 4px;

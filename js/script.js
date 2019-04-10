@@ -1,6 +1,6 @@
 function smoothMenu() {
     $(".mobile-menu-toggle").click(function () {
-        $(".block-with-menu").slideToggle(400, function() {
+        $(".block-with-menu").slideToggle(400, function () {
             $('.sidebar-other-page').toggleClass('top-offset');
             $('.top-sidebar').toggleClass('offset-top-main')
         })
@@ -16,10 +16,34 @@ function showFilterCountry() {
     });
 }
 
-function showSearchInput() {
-    $(".show-search-input").click(function () {
-        $(".search-input").slideToggle(400);
+function focusInput() {
+    var input = $('.input-search-head');
+    var activeBlock = $('.block-input');
+
+    input.focus(function () {
+        activeBlock.addClass('active');
     });
+
+    input.focusout(function () {
+        activeBlock.removeClass('active');
+    })
+
+}
+
+function showSearchInput() {
+    var div = $('.block-input');
+
+    if(document.documentElement.clientWidth <= 780) {
+        $(".show-search-input").click(function () {
+            div.show(400);
+        });
+        $(document).mouseup(function (e){ // событие клика по веб-документу
+            if (!div.is(e.target) // если клик был не по нашему блоку
+                && div.has(e.target).length === 0) { // и не по его дочерним элементам
+                div.hide(400); // скрываем его
+            }
+        });
+    }
 }
 
 function showSearch() {
@@ -277,12 +301,11 @@ function activeScript() {
 function sliderProducts() {
 
 
-
-        $('.list-products').slick({
-            infinity: true,
-            dots: false,
-            arrows: true
-        })
+    $('.list-products').slick({
+        infinity: true,
+        dots: false,
+        arrows: true
+    })
 
 }
 
@@ -303,13 +326,13 @@ function smoothJumpUp() {
 function slider() {
 
 
-        $('.slider').slick({
-            infinite: true,
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            arrows: true,
-            speed: 1000
-        });
+    $('.slider').slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: true,
+        speed: 1000
+    });
 
 }
 
@@ -317,20 +340,20 @@ function sidebarMenu() {
     var h_hght = 100; // высота шапки
     var h_mrg = 80;    // отступ когда шапка уже не видна
 
-    $(function(){
+    $(function () {
 
         var elem = $('.sidebar_bg');
         var top = $(this).scrollTop();
 
-        if(top > h_hght){
+        if (top > h_hght) {
             elem.css('top', h_mrg);
         }
 
-        $(window).scroll(function(){
+        $(window).scroll(function () {
             top = $(this).scrollTop();
 
-            if (top+h_mrg < h_hght) {
-                elem.css('top', (h_hght-top));
+            if (top + h_mrg < h_hght) {
+                elem.css('top', (h_hght - top));
             } else {
                 elem.css('top', h_mrg);
             }
@@ -371,4 +394,5 @@ $(window).on('load', function () {
     showSearch();
     showMoreInf();
     tabProducts();
+    focusInput();
 });

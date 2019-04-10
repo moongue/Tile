@@ -1,11 +1,25 @@
 #header {
   position: relative;
   background: $grey;
-&.bg {
-  background: #fff;
-}
+  &.bg {
+    background: #fff;
+  }
   &.bg-white {
     background: $bg;
+  }
+  .telephone {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    margin-left: 8px;
+    width: 106px;
+    flex-shrink: 0;
+    img {
+      padding-right: 10px;
+    }
+    p {
+      color: $dark;
+    }
   }
   @include sm(background, $bg);
   .container {
@@ -20,10 +34,61 @@
         }
       }
     }
+    .menu-txt {
+      text-transform: uppercase;
+      font-weight: 600;
+      font-size: 16px;
+    }
+    .block-input {
+      max-width: 964px;
+      width: 100%;
+      position: relative;
+      margin-left: 8px;
+      @include sm-block() {
+        display: none;
+        position: absolute;
+        left: 0;
+        width: 98%;
+        z-index: 69;
+        margin-right: 8px;
+      }
+      &.active:before {
+        filter: brightness(0.1)
+      }
+      &:before {
+        content: '';
+        position: absolute;
+        background: url("../images/icons/icon-lens.png") no-repeat;
+        width: 29px;
+        height: 28px;
+        right: 17px;
+        top: 10px;
+      }
+      .input-search-head {
+        height: 48px;
+        width: 100%;
+        box-sizing: border-box;
+        border: none;
+        padding: 0 80px 0 25px;
+        font-size: 16px;
+        color: $dark;
+        margin-right: 8px;
+        &::-webkit-input-placeholder {
+          font-size: 16px;
+          text-transform: uppercase;
+          font-weight: 500;
+          color: $grey;
+        }
+        @include sm-block() {
+          padding-right: 55px;
+          width: 98%;
+          background: $bg;
+        }
+      }
+    }
     .sidebar-bg {
       position: fixed;
       top: 300px;
-      width: 4em;
       margin-left: -30px;
       &.sidebar-other-page {
         top: 10px;
@@ -39,7 +104,6 @@
     }
     @include sm(padding, 0);
     .row__aic {
-      justify-content: flex-start;
       @include sm-block() {
         justify-content: space-between;
         position: fixed;
@@ -48,7 +112,7 @@
         padding: 10px 15px;
         width: 100%;
         box-sizing: border-box;
-        z-index: 9;
+        z-index: 999;
         background: $grey;
       }
     }
@@ -56,8 +120,6 @@
       width: 40px;
       height: 40px;
       box-sizing: border-box;
-      border: 1px solid $black;
-      background: $white;
       z-index: 4;
       //HAMBURGER BUTTON
       .ham {
@@ -79,7 +141,7 @@
         fill: none;
         transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
         stroke: $black;
-        stroke-width: 4;
+        stroke-width: 5;
         stroke-linecap: round;
       }
       .ham-burger {
@@ -112,7 +174,6 @@
     }
     .menu-chose {
       z-index: 4;
-      margin-left: auto;
       ul {
         display: flex;
         align-items: center;
@@ -128,7 +189,7 @@
         left: 0;
         display: none;
         box-sizing: border-box;
-        padding:0 15px;
+        padding: 0 15px;
         border: none;
         border-top: 1px solid $bg;
         background: $grey;
@@ -167,6 +228,85 @@
         padding: 0;
         @include lg(padding, 10px 0);
       }
+    }
+  }
+}
+
+.interactive-menu-first {
+  margin-top: 3px;
+  .row {
+    > .col:nth-child(1) {
+      img {
+        max-width: 630px;
+        width: 100%;
+      }
+    }
+    > .col:nth-child(2) {
+      .block-image {
+        img {
+          max-width: 645px;
+          width: 100%;
+        }
+      }
+      > .row {
+        img {
+          max-width: 325px;
+          width: 100%;
+        }
+      }
+    }
+    .block-image {
+      position: relative;
+      .name-block {
+        position: absolute;
+        top: 18px;
+        left: 33px;
+        font-size: 24px;
+        color: $white;
+        font-weight: 600;
+        text-transform: uppercase;
+        @include md-block() {
+          font-size: 18px;
+          left: 15px;
+        }
+      }
+    }
+  }
+}
+
+.description-site {
+  padding-left: 30px;
+  margin-top: 65px;
+  max-width: 495px;
+  padding-top: 10px;
+  padding-right: 30px;
+
+  @include lg-block() {
+    text-align: center;
+    margin: 0 auto;
+    padding-left: 0;
+    padding-bottom: 15px;
+  }
+  @include xs(padding-left, 15px);
+  .logo {
+    @include xs-block() {
+      max-width: 160px;
+      height: auto;
+    }
+  }
+  p {
+    margin-top: 20px;
+    font-size: 16px;
+    line-height: 24px;
+    max-width: 428px;
+
+    @include lg-block() {
+      text-align: center;
+      max-width: 100%;
+    }
+    @include xs-block() {
+      text-align: left;
+      font-size: 10px;
     }
   }
 }
@@ -219,25 +359,16 @@
         }
       }
     }
-    .telephone {
-      display: flex;
-      align-items: center;
-      font-weight: 600;
-      img {
-        padding-right: 10px;
-      }
-      p {
-        color: $dark;
-      }
-    }
+
   }
   &.menu-header {
+    z-index: 123;
     &.other-page {
       position: fixed;
       top: 0;
       width: 1280px;
       margin: 0 auto;
-      box-shadow: 17px 17px 40px -4px rgba(0,0,0,0.75);
+      box-shadow: 17px 17px 40px -4px rgba(0, 0, 0, 0.75);
       @include lg-block() {
         position: static;
         width: 100%;
@@ -275,42 +406,7 @@
     @include xs(width, 100%);
 
   }
-  .description-site {
-    margin-left: auto;
-    padding-left: 30px;
-    max-width: 495px;
-    padding-top: 10px;
-    padding-right: 30px;
 
-    @include lg-block() {
-      text-align: center;
-      margin: 0 auto;
-      padding-left: 0;
-      padding-bottom: 15px;
-    }
-    @include xs(padding-left, 15px);
-    .logo {
-      @include xs-block() {
-        max-width: 160px;
-        height: auto;
-      }
-    }
-    p {
-      margin-top: 20px;
-      font-size: 16px;
-      line-height: 24px;
-      max-width: 428px;
-
-      @include lg-block() {
-        text-align: center;
-        max-width: 100%;
-      }
-      @include xs-block() {
-        text-align: left;
-        font-size: 10px;
-      }
-    }
-  }
   .right-block {
     margin-top: -70px;
     @include lg(margin-top, 0);

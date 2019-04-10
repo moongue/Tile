@@ -3,7 +3,7 @@
 
   @include sm(margin-top, 0);
   .cap-menu {
-    background: $grey;
+    border-bottom: 2px solid $grey;
     padding: 17px 0;
     margin-bottom: 20px;
     .row {
@@ -26,16 +26,20 @@
       }
     }
   }
+  h1 {
+    border: none;
+    font-weight: 400;
+  }
   .block-full {
     flex-basis: 440px;
     max-width: 440px;
-
+    margin-top: 83px;
     @include md-block() {
       max-width: 100%;
       margin-top: 15px;
     }
     .col {
-      height: 580px;
+      height: 533px;
       justify-content: space-between;
       @include md(height, auto);
     }
@@ -60,9 +64,6 @@
 
           @include sm(margin-top, 10px);
           @include xs(font-weight, 600);
-          span {
-            padding-left: 80px;
-          }
         }
         .discount-image {
           > img {
@@ -79,9 +80,9 @@
           width: 100%;
         }
         .row {
-          &:nth-child(-n + 100) {
-            margin-top: 10px;
-          }
+          //&:nth-child(-n + 100) {
+          //  margin-top: 10px;
+          //}
           @include md-block() {
             justify-content: space-around;
           }

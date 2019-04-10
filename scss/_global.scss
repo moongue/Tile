@@ -135,14 +135,19 @@ h2 {
   }
 }
 .sidebar-bg {
+  width: 100px;
+  box-sizing: border-box;
+  background: $grey;
   .sidebar {
     z-index: 2;
     @include menu(left, 10px);
     ul {
+      padding: 20px 0;
       display: flex;
       flex-direction: column;
+      align-items: center;
       li {
-        margin-top: 5px;
+        margin: 20px 0;
         z-index: 9;
         display: flex;
         &.burger {
@@ -150,40 +155,6 @@ h2 {
         }
         &.last-item {
           margin-top: 70px;
-          .hide-click {
-            display: none;
-          }
-          .search-area {
-            width: 100px;
-            height: 40px;
-            box-sizing: border-box;
-            border: 1px solid $black;
-            border-left: none;
-            padding: 0 5px;
-          }
-        }
-        a {
-          display: flex;
-          .description {
-            display: none;
-            box-sizing: border-box;
-            height: 40px;
-            width: 100px;
-            align-items: center;
-            justify-content: center;
-            color: $black;
-            font-size: 12px;
-            border: 1px solid $black;
-            border-left: none;
-          }
-          .description:hover {
-            display: flex;
-          }
-          img {
-            &:hover + .description {
-              display: flex;
-            }
-          }
         }
       }
     }
@@ -341,6 +312,9 @@ h2 {
       background: $red;
       color: $white;
       @include xs(padding, 5px 5px);
+      &.yellow {
+        background: $yellow-two;
+      }
     }
   }
   &.bigger {

@@ -37,36 +37,30 @@
                                     d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20"/>
                         </svg>
                     </div>
+                    <div class="menu-txt sm-hide">Меню</div>
+                    <div class="block-input">
+                        <input type="text" class="input-search-head" placeholder="Поиск по каталогу">
+                    </div>
+                    <div class="telephone sm-hide">
+                        <img src="images/icons/icon-telephone.png" alt="Tel">
+                        <p>922-56-68</p>
+                    </div>
                     <div class="menu-chose lg-show">
                         <ul>
-                            <li><a href="#"><img src="images/icons/icon-personal-area.png" alt="ЛК"> </a>
-                            </li>
                             <li><a href="#"><img src="images/icons/icon-basket.png" alt="Корзина"></a>
                             </li>
-                            <li><a href="#"><img src="images/icons/icon-comparison.png" alt="Сравнение"></a>
-                            </li>
-                            <li class="search"><a href="#" class="show-search-input"><img
+                            <li class="search sm-show"><a href="#" class="show-search-input"><img
                                     src="images/icons/icon-search.png"
                                     alt="Поиск"></a></li>
                         </ul>
-                        <input type="text" class="search-input" placeholder="Поиск">
                     </div>
                 </div>
                 <div class="sidebar-bg wrapper-big top-sidebar ">
                     <div class="sidebar lg-hide">
                         <ul>
-                            <li><a href="#"><img src="images/icons/icon-personal-area.png" alt="ЛК"> <span class="description">Личный кабинет</span></a>
+                            <li><a href="#"><img src="images/icons/icon-basket.png" alt="Корзина"></a>
                             </li>
-                            <li><a href="#"><img src="images/icons/icon-basket.png" alt="Корзина"> <span
-                                    class="description">Корзина</span></a>
-                            </li>
-                            <li><a href="#"><img src="images/icons/icon-comparison.png" alt="Сравнение"> <span
-                                    class="description">Сравнение</span></a></li>
-                            <li class="last-item">
-                                <div class="search"><img src="images/icons/icon-search.png" alt="Поиск"></div>
-                                <span
-                                        class="description hide-click"><input
-                                        type="text" class="search-area" placeholder="Поиск"></span></li>
+                            <li><a href="#"><img src="images/icons/icon-comparison.png" alt="Сравнение"></a></li>
                         </ul>
                     </div>
                 </div>
@@ -94,7 +88,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="description-site md-hide">
+                    <div class="description-site md-hide sm-show">
                         <div class="logo">
                             <img src="images/icons/icon-logo.png" alt="Logo">
                         </div>
@@ -106,7 +100,7 @@
                             российских, польских, итальянских, испанских и других производителей.</p>
                     </div>
                 </div>
-                <div class="right-block">
+                <div class="right-block sm-show">
                     <div class="description-site md-show">
                         <div class="logo">
                             <img src="images/icons/icon-logo.png" alt="Logo">
@@ -163,9 +157,52 @@
                     </div>
                 </div>
             </div>
-
         </div>
-
+        <div class="interactive-menu-first sm-hide">
+            <div class="row">
+                <div class="col">
+                    <a href="#" class="block-image">
+                        <img src="images/images/image-floors.jpg" alt="Полы">
+                        <span class="name-block">Полы</span>
+                    </a>
+                    <a href="#" class="block-image">
+                        <img src="images/images/image-walls.jpg" alt="Стены">
+                        <span class="name-block">Стены</span>
+                    </a>
+                    <a href="#" class="block-image">
+                        <img src="images/images/image-steps-two.jpg" alt="Ступени">
+                        <span class="name-block">Ступени</span>
+                    </a>
+                </div>
+                <div class="col">
+                    <div class="row">
+                        <a href="#" class="block-image">
+                            <img src="images/images/image-street.jpg" alt="Улица">
+                            <span class="name-block">Улица</span>
+                        </a>
+                        <a href="#" class="block-image">
+                            <img src="images/images/image-related-product.jpg" alt="Сопутствующие товары">
+                            <span class="name-block">Сопутствующие <br> товары</span>
+                        </a>
+                    </div>
+                    <a href="#" class="block-image">
+                        <img src="images/images/image-mosaic-two.jpg" alt="Мозаика">
+                        <span class="name-block">Мозаика</span>
+                    </a>
+                    <div class="description-site md-hide">
+                        <div class="logo">
+                            <img src="images/icons/icon-logo.png" alt="Logo">
+                        </div>
+                        <p> Компания «КафельСклад» - это один из крупнейших поставщиков облицовочной
+                            плитки в
+                            Санкт-Петербурге.
+                            Мы предлагаем современные коллекции керамической плитки и износостойкого
+                            керамогранита от
+                            российских, польских, итальянских, испанских и других производителей.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </header>
 <!--END HEADER-->
@@ -313,7 +350,7 @@
                                                 <div class="without-discount">
                                                     3 500руб.
                                                 </div>
-                                                <div class="with-discount">
+                                                <div class="with-discount yellow">
                                                     от 1 500руб
                                                 </div>
                                             </div>
@@ -1072,7 +1109,32 @@
                 </div>
             </div>
         </div>
+    </div>
 </section>
 <!--END DISCOUNT-->
+
+<!--FOOTER-->
+<footer id="footer">
+    <div class="wrapper">
+        <div class="title">
+            Кафельсклад
+        </div>
+        <div class="row">
+            <ul class="navigation">
+                <li><a href="#">О компании</a></li>
+                <li><a href="#">Каталог</a></li>
+                <li><a href="#">Дизайнеры</a></li>
+                <li><a href="#">Проекты</a></li>
+                <li><a href="#">Оплата и возврат</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
+            <div class="telephone">
+                <img src="images/icons/icon-telephone.png" alt="Tel">
+                <p>922-56-68</p>
+            </div>
+        </div>
+    </div>
+</footer>
+<!--END FOOTER-->
 </body>
 </html>

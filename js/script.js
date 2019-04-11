@@ -52,6 +52,67 @@ function showSearch() {
     });
 }
 
+function interactiveMenu() {
+    var back = $('.btn-exit');
+
+    $('.script-walls').click(function(){
+        $('.interactive-menu-first').fadeOut(400, function() {
+            $('.interactive-menu-two').fadeIn(400)
+        })
+    });
+    $('.script-street').click(function(){
+        $('.interactive-menu-first').fadeOut(400, function() {
+            $('.interactive-menu-three').fadeIn(400)
+        })
+    });
+    $('.script-floors').click(function(){
+        $('.interactive-menu-first').fadeOut(400, function() {
+            $('.interactive-menu-four').fadeIn(400)
+        })
+    });
+    $('.script-related-products').click(function(){
+        $('.interactive-menu-first').fadeOut(400, function() {
+            $('.interactive-menu-five').fadeIn(400)
+        })
+    });
+    $('.script-mosaic').click(function(){
+        $('.interactive-menu-first').fadeOut(400, function() {
+            $('.interactive-menu-six').fadeIn(400)
+        })
+    });
+    back.click(function () {
+       $('.interactive-menu-two, .interactive-menu-three, .interactive-menu-four, .interactive-menu-five, .interactive-menu-six').fadeOut(400, function () {
+           $('.interactive-menu-first').fadeIn(400)
+       })
+    })
+}
+
+function scrollSidebar() {
+    $(window).scroll(function() {
+        /*----------------------------------
+        sticky block script by makeasite.ru
+        ----------------------------------*/
+        var sb_m = 400; /* отступ сверху и снизу */
+        var mb = 300; /* высота подвала с запасом */
+        var st = $(window).scrollTop();
+        var sb = $(".sidebar-bg");
+        var sbi = $(".sidebar-bg .sidebar");
+        var sb_ot = sb.offset().top;
+        var sbi_ot = sbi.offset().top;
+        var sb_h = sb.height();
+
+        if(sb_h + $(document).scrollTop() + sb_m + mb < $(document).height()) {
+            if(st > sb_ot) {
+                var h = Math.round(st - sb_ot) + sb_m;
+                sb.css({"paddingTop" : h});
+            }
+            else {
+                sb.css({"paddingTop" : 0});
+            }
+        }
+    });
+}
+
 function tabs() {
     $('ul.filter').on('click', 'li:not(.active)', function () {
         $(this)
@@ -395,4 +456,6 @@ $(window).on('load', function () {
     showMoreInf();
     tabProducts();
     focusInput();
+    interactiveMenu();
+    scrollSidebar();
 });

@@ -6,6 +6,7 @@
     border-bottom: 2px solid $grey;
     padding: 17px 0;
     margin-bottom: 20px;
+    @include xs(background, $grey);
     .row {
       justify-content: flex-start;
     }
@@ -22,6 +23,10 @@
         }
         &:hover {
           background: $yellow;
+        }
+        @include xs-block() {
+          font-size: 14px;
+          margin-right: 25px;
         }
       }
     }
@@ -96,8 +101,8 @@
           position: absolute;
           outline: none;
           font-size: 0;
-          height: 35px;
-          width: 35px;
+          height: 17px;
+          width: 10px;
           border: none;
           top: calc((100% - 35px) / 2);
           z-index: 2;

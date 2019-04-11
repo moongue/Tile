@@ -1,10 +1,18 @@
 #footer {
   padding: 66px 0;
   background: $grey;
+  margin-top: 50px;
+  @include xs-block() {
+    padding: 85px 0;
+    margin-top: 100px;
+  }
   .title {
     font-size: 24px;
     text-transform: uppercase;
     font-weight: 600;
+    @include xs-block() {
+      text-align: center;
+    }
   }
   .row {
     align-items: flex-end;
@@ -15,6 +23,7 @@
     flex-direction: column;
     flex-wrap: wrap;
     height: 100px;
+    @include xs(display, none);
     li {
       margin-top: 14px;
       margin-right: 83px;
@@ -31,8 +40,14 @@
     display: flex;
     align-items: center;
     font-size: 24px;
+    @include xs-block() {
+      display: inline-block;
+      margin: 0 auto;
+      margin-top: 25px;
+    }
     img {
       padding-right: 6px;
+      @include xs(display, none)
     }
   }
 }

@@ -325,15 +325,11 @@ h2 {
       flex-basis: 315px;
       margin: 10px 10px 0 10px;
     }
-    @include xs(margin, 0);
     &:nth-child(even) {
       @include xs(margin-left, 5px);
     }
     &:nth-child(odd) {
       @include xs(margin-right, 5px);
-    }
-    > * {
-      font-size: 12px;
     }
     .name,
     .materials-block,

@@ -27,6 +27,7 @@
     padding: 0 30px;
     margin: 0 auto;
     position: relative;
+    @include sm(padding, 0 15px);
     .wrapper-big {
       &.offset-none {
         @include lg-block() {
@@ -49,7 +50,7 @@
         position: absolute;
         left: 0;
         width: 98%;
-        z-index: 69;
+        z-index: 222;
         margin-right: 8px;
       }
       &.active:before {
@@ -81,7 +82,7 @@
         }
         @include sm-block() {
           padding-right: 55px;
-          width: 98%;
+          width: 100%;
           background: $bg;
         }
       }
@@ -90,6 +91,26 @@
       position: fixed;
       top: 300px;
       margin-left: -30px;
+      ul {
+        li {
+          a {
+            position: relative;
+            .alert-count {
+              width: 26px;
+              height: 20px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              color: $white;
+              position: absolute;
+              top: 0;
+              right: -5px;
+              border-radius: 16px;
+              background: $red-four;
+            }
+          }
+        }
+      }
       &.sidebar-other-page {
         top: 10px;
         &.top-offset {
@@ -112,7 +133,7 @@
         padding: 10px 15px;
         width: 100%;
         box-sizing: border-box;
-        z-index: 999;
+        z-index: 540;
         background: $grey;
       }
     }
@@ -120,7 +141,7 @@
       width: 40px;
       height: 40px;
       box-sizing: border-box;
-      z-index: 4;
+      z-index: 200;
       //HAMBURGER BUTTON
       .ham {
         cursor: pointer;
@@ -239,6 +260,9 @@
       img {
         max-width: 630px;
         width: 100%;
+        &.max-width {
+
+        }
       }
     }
     > .col:nth-child(2) {
@@ -255,25 +279,73 @@
         }
       }
     }
-    .block-image {
-      position: relative;
-      .name-block {
-        position: absolute;
-        top: 18px;
-        left: 33px;
-        font-size: 24px;
-        color: $white;
-        font-weight: 600;
-        text-transform: uppercase;
-        @include md-block() {
-          font-size: 18px;
-          left: 15px;
-        }
-      }
+  }
+}
+.interactive-menu-two, .interactive-menu-three, .interactive-menu-four, .interactive-menu-five, .interactive-menu-six {
+  position: relative;
+  margin-top: 3px;
+  .btn-exit {
+    width: 205px;
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background: $grey;
+    position: absolute;
+    z-index: 3;
+    left: 0;
+    top: 0;
+    @include md(width, 140px);
+    p {
+      font-size: 16px;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+    span {
+      font-size: 12px;
+    }
+   img {
+     padding-right: 35px;
+   }
+  }
+}
+.interactive-menu-two, .interactive-menu-three, .interactive-menu-four, .interactive-menu-five, .interactive-menu-six {
+  display: none;
+  .row {
+    &.start {
+      justify-content: flex-start;
     }
   }
 }
-
+.block-image {
+  position: relative;
+  img {
+    width: 100%;
+    height: auto;
+  }
+  .name-block {
+    position: absolute;
+    top: 18px;
+    left: 33px;
+    font-size: 24px;
+    color: $white;
+    font-weight: 600;
+    text-transform: uppercase;
+    @include md-block() {
+      font-size: 18px;
+      left: 15px;
+    }
+    &.right {
+      right: 33px;
+      left: inherit;
+    }
+    &.bottom {
+      bottom: 18px;
+      top: inherit;
+    }
+  }
+}
 .description-site {
   padding-left: 30px;
   margin-top: 65px;
@@ -288,6 +360,9 @@
     padding-bottom: 15px;
   }
   @include xs(padding-left, 15px);
+  &.margin-fix {
+    margin-top: -40px;
+  }
   .logo {
     @include xs-block() {
       max-width: 160px;
@@ -329,6 +404,8 @@
     }
     @include sm-block() {
       position: fixed;
+      background: $dark-80;
+      top: 0;
     }
   }
   .block-with-menu {
@@ -341,12 +418,18 @@
     @include md-block() {
       padding-left: 32px;
     }
-    @include sm(padding-left, 15px);
+   @include sm-block() {
+     padding-left: 15px;
+     margin-top: 60px;
+     height: 515px;
+   }
     .menu {
       display: flex;
       flex-direction: column;
       li {
         margin: 5px 0;
+
+        @include sm(margin-top, 20px);
         a {
           padding: 6px 0;
           color: $dark;
@@ -356,6 +439,7 @@
           &:hover {
             background: $yellow;
           }
+          @include sm(color, $white);
         }
       }
     }
@@ -414,11 +498,13 @@
       margin: 0 auto;
     }
     .row {
+      padding: 0 15px;
       &:nth-child(1) {
         max-height: 206px;
       }
       &:nth-child(2) {
         max-height: 190px;
+
       }
       &:nth-child(3) {
         max-height: 216px;
@@ -429,6 +515,9 @@
       > img {
         width: 100%;
         height: auto;
+        &.max-width {
+          height: 99%;
+        }
       }
       .name {
         position: absolute;

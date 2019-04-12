@@ -1,6 +1,6 @@
 body {
   font-family: 'Source Sans Pro', sans-serif;
-  background: $bg;
+  background: $white-four;
 }
 
 .wrapper {
@@ -134,10 +134,72 @@ h2 {
     color: $grey-two;
   }
 }
+
+.mobile-menu-toggle {
+  width: 40px;
+  height: 40px;
+  box-sizing: border-box;
+  z-index: 200;
+  //HAMBURGER BUTTON
+  .ham {
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    transition: transform 400ms;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  .hamRotate.active {
+    transform: rotate(45deg);
+  }
+  .hamRotate180.active {
+    transform: rotate(180deg);
+  }
+  .line {
+    fill: none;
+    transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+    stroke: $black;
+    stroke-width: 5;
+    stroke-linecap: round;
+  }
+  .ham-burger {
+    .top {
+      stroke-dasharray: 40 160;
+    }
+    .middle {
+      stroke-dasharray: 40 142;
+      transform-origin: 50%;
+      transition: transform 400ms;
+    }
+    .bottom {
+      stroke-dasharray: 40 85;
+      transform-origin: 50%;
+      transition: transform 400ms, stroke-dashoffset 400ms;
+    }
+    &.active {
+      .top {
+        stroke-dashoffset: -64px;
+      }
+      .middle {
+        transform: rotate(90deg);
+      }
+      .bottom {
+        stroke-dashoffset: -64px;
+      }
+    }
+  }
+  //END HAMBURGER BUTTON
+}
+
 .sidebar-bg {
   width: 100px;
   box-sizing: border-box;
   background: $grey;
+  &.top-offset {
+    top: 430px !important;
+    transition: all .4s;
+  }
   .sidebar {
     z-index: 2;
     @include menu(left, 10px);
@@ -153,8 +215,21 @@ h2 {
         &.burger {
           margin-bottom: 50px;
         }
-        &.last-item {
-          margin-top: 70px;
+        a {
+          position: relative;
+          .alert-count {
+            width: 26px;
+            height: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: $white;
+            position: absolute;
+            top: 0;
+            right: -5px;
+            border-radius: 16px;
+            background: $red-four;
+          }
         }
       }
     }
@@ -290,6 +365,7 @@ h2 {
   }
   .name {
     padding: 8px 5px;
+    font-weight: 600;
     border-bottom: 2px solid $white-two;
   }
   .block-price {
@@ -335,11 +411,16 @@ h2 {
     .materials-block,
     .block-factory,
     .block-type {
+      font-size: 12px;
       padding-left: 10px;
       padding-right: 10px;
+    @include xs(font-size, 8px);
     }
     .name {
       padding: 25px 10px 8px;
+    }
+    .sale-alert {
+      font-size: 12px;
     }
     .block-price {
       margin-top: 17px;
@@ -347,8 +428,7 @@ h2 {
     }
   }
   &.main-page {
-    background: $white-four;
-    padding-bottom: 20px;
+    background: $white;
     flex-basis: 220px;
     margin-top: 30px;
 
@@ -369,6 +449,41 @@ h2 {
 
       @include xs-block() {
         font-size: 8px;
+      }
+    }
+    .block-price {
+      @include xs(display, none);
+      .without-discount {
+        text-decoration: none;
+        font-size: 14px;
+      }
+      .add-to-compare {
+        padding: 15px;
+        border: none;
+        flex-basis: 45%;
+        display: flex;
+        align-items: center;
+        background: $grey;
+        font-weight: 600;
+        img {
+          transform: rotate(180deg);
+          padding-right: 15px;
+        }
+      }
+      .add-to-compare-two {
+        border: 1px solid $black;
+        font-size: 12px;
+        background: inherit;
+        padding: 9px;
+        .col {
+          align-items: flex-end;
+        }
+        .bold {
+          font-weight: 600;
+        }
+        img {
+          padding-left: 15px;
+        }
       }
     }
     .materials-block, .block-factory, .block-type {

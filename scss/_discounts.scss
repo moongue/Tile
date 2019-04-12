@@ -1,7 +1,16 @@
 #discounts {
   margin-bottom: 50px;
-
   @include sm(margin-top, 0);
+  .wrapper-big {
+    position: relative;
+    .sidebar-bg {
+      position: absolute;
+      top: -20px;
+      left: 0;
+      //margin-left: -30px;
+
+    }
+  }
   .cap-menu {
     border-bottom: 2px solid $grey;
     padding: 17px 0;

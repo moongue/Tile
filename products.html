@@ -40,8 +40,6 @@
                     </div>
                     <div class="menu-chose lg-show">
                         <ul>
-                            <li><a href="#"><img src="images/icons/icon-personal-area.png" alt="ЛК"> </a>
-                            </li>
                             <li><a href="#"><img src="images/icons/icon-basket.png" alt="Корзина"></a>
                             </li>
                             <li><a href="#"><img src="images/icons/icon-comparison.png" alt="Сравнение"></a>
@@ -51,42 +49,6 @@
                                     alt="Поиск"></a></li>
                         </ul>
                         <input type="text" class="search-input" placeholder="Поиск">
-                    </div>
-                </div>
-                <div class="sidebar-bg top-sidebar sidebar-other-page">
-                    <div class="sidebar lg-hide">
-                        <ul>
-                            <li class="burger">
-                                <div class="mobile-menu-toggle">
-                                    <svg class="ham hamRotate ham-burger" viewBox="0 0 100 100" width="40"
-                                         onclick="this.classList.toggle('active')">
-                                        <path
-                                                class="line top"
-                                                d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20"/>
-                                        <path
-                                                class="line middle"
-                                                d="m 30,50 h 40"/>
-                                        <path
-                                                class="line bottom"
-                                                d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20"/>
-                                    </svg>
-
-                                </div>
-                            </li>
-                            <li><a href="#"><img src="images/icons/icon-personal-area.png" alt="ЛК"> <span
-                                    class="description">Личный кабинет</span></a>
-                            </li>
-                            <li><a href="#"><img src="images/icons/icon-basket.png" alt="Корзина"> <span
-                                    class="description">Корзина</span></a>
-                            </li>
-                            <li><a href="#"><img src="images/icons/icon-comparison.png" alt="Сравнение"> <span
-                                    class="description">Сравнение</span></a></li>
-                            <li class="last-item">
-                                <div class="search"><img src="images/icons/icon-search.png" alt="Поиск"></div>
-                                <span
-                                        class="description hide-click"><input
-                                        type="text" class="search-area" placeholder="Поиск"></span></li>
-                        </ul>
                     </div>
                 </div>
             </div>
@@ -114,17 +76,45 @@
                         </div>
                     </div>
                 </div>
-
             </div>
-
         </div>
     </div>
 </header>
 <!--END HEADER-->
 
 <section id="products">
+    <div class="wrapper-big">
+        <div class="sidebar-bg top-sidebar sidebar-other-page">
+            <div class="sidebar lg-hide">
+                <ul>
+                    <li>
+                        <div class="search"><img src="images/icons/icon-search.png" alt="Поиск"></div>
+                        <span
+                                class="description hide-click"></li>
+
+                    <li><a href="#"><img src="images/icons/icon-basket.png" alt="Корзина"> </a>
+                    </li>
+                    <li><a href="#"><img src="images/icons/icon-comparison.png" alt="Сравнение"> </a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
     <div class="wrapper">
         <div class="container">
+            <div class="mobile-menu-toggle lg-hide">
+                <svg class="ham hamRotate ham-burger" viewBox="0 0 100 100" width="40"
+                     onclick="this.classList.toggle('active')">
+                    <path
+                            class="line top"
+                            d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20"/>
+                    <path
+                            class="line middle"
+                            d="m 30,50 h 40"/>
+                    <path
+                            class="line bottom"
+                            d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20"/>
+                </svg>
+            </div>
             <h1>Товары в категории</h1>
             <div class="way">
                 <a href="#">Полы </a><a href="#">/ Ванная</a>
@@ -491,21 +481,13 @@
                                     <div class="block-factory">
                                         <p>Фабрика: <span>Aparici/Испания</span></p>
                                     </div>
-                                </a>
-                                <a href="#" class="block-product bigger main-page">
-                                    <img src="images/images/image-product-two.jpg" alt="Фото продукта"
-                                         class="image-product">
-                                    <div class="name">
-                                        Бордюр Cenefa Delis Blanco Silver
-                                    </div>
-                                    <div class="block-type">
-                                        <p>Тип: <span>Бордюр</span></p>
-                                    </div>
-                                    <div class="materials-block">
-                                        <p>Материал: <span>Керамогранит</span></p>
-                                    </div>
-                                    <div class="block-factory">
-                                        <p>Фабрика: <span>Aparici/Испания</span></p>
+                                    <div class="block-price row__aic">
+                                        <div class="without-discount">
+                                            от 3 500 руб
+                                        </div>
+                                        <button class="add-to-compare">
+                                            Сравнить <img src="images/icons/icon-arrow-catalog.png" alt="">
+                                        </button>
                                     </div>
                                 </a>
                                 <a href="#" class="block-product bigger main-page">
@@ -523,21 +505,13 @@
                                     <div class="block-factory">
                                         <p>Фабрика: <span>Aparici/Испания</span></p>
                                     </div>
-                                </a>
-                                <a href="#" class="block-product bigger main-page">
-                                    <img src="images/images/image-product-two.jpg" alt="Фото продукта"
-                                         class="image-product">
-                                    <div class="name">
-                                        Бордюр Cenefa Delis Blanco Silver
-                                    </div>
-                                    <div class="block-type">
-                                        <p>Тип: <span>Бордюр</span></p>
-                                    </div>
-                                    <div class="materials-block">
-                                        <p>Материал: <span>Керамогранит</span></p>
-                                    </div>
-                                    <div class="block-factory">
-                                        <p>Фабрика: <span>Aparici/Испания</span></p>
+                                    <div class="block-price row__aic">
+                                        <div class="without-discount">
+                                            от 3 500 руб
+                                        </div>
+                                        <button class="add-to-compare">
+                                            Сравнить <img src="images/icons/icon-arrow-catalog.png" alt="">
+                                        </button>
                                     </div>
                                 </a>
                                 <a href="#" class="block-product bigger main-page">
@@ -555,21 +529,13 @@
                                     <div class="block-factory">
                                         <p>Фабрика: <span>Aparici/Испания</span></p>
                                     </div>
-                                </a>
-                                <a href="#" class="block-product bigger main-page">
-                                    <img src="images/images/image-product-two.jpg" alt="Фото продукта"
-                                         class="image-product">
-                                    <div class="name">
-                                        Бордюр Cenefa Delis Blanco Silver
-                                    </div>
-                                    <div class="block-type">
-                                        <p>Тип: <span>Бордюр</span></p>
-                                    </div>
-                                    <div class="materials-block">
-                                        <p>Материал: <span>Керамогранит</span></p>
-                                    </div>
-                                    <div class="block-factory">
-                                        <p>Фабрика: <span>Aparici/Испания</span></p>
+                                    <div class="block-price row__aic">
+                                        <div class="without-discount">
+                                            от 3 500 руб
+                                        </div>
+                                        <button class="add-to-compare">
+                                            Сравнить <img src="images/icons/icon-arrow-catalog.png" alt="">
+                                        </button>
                                     </div>
                                 </a>
                                 <a href="#" class="block-product bigger main-page">
@@ -587,6 +553,20 @@
                                     <div class="block-factory">
                                         <p>Фабрика: <span>Aparici/Испания</span></p>
                                     </div>
+                                    <div class="block-price row__aic">
+                                        <div class="without-discount">
+                                            от 3 500 руб
+                                        </div>
+                                        <button class="add-to-compare-two">
+                                            <div class="row__aic">
+                                                <div class="col">
+                                                    <span class="bold">Добавить</span>
+                                                    <span>к сравнению</span>
+                                                </div>
+                                                <img src="images/icons/icon-plus.png" alt="">
+                                            </div>
+                                        </button>
+                                    </div>
                                 </a>
                                 <a href="#" class="block-product bigger main-page">
                                     <img src="images/images/image-product-two.jpg" alt="Фото продукта"
@@ -603,8 +583,22 @@
                                     <div class="block-factory">
                                         <p>Фабрика: <span>Aparici/Испания</span></p>
                                     </div>
+                                    <div class="block-price row__aic">
+                                        <div class="without-discount">
+                                            от 3 500 руб
+                                        </div>
+                                        <button class="add-to-compare-two">
+                                            <div class="row__aic">
+                                                <div class="col">
+                                                    <span class="bold">Добавить</span>
+                                                    <span>к сравнению</span>
+                                                </div>
+                                                <img src="images/icons/icon-plus.png" alt="">
+                                            </div>
+                                        </button>
+                                    </div>
                                 </a>
-                                <a href="#" class="block-product bigger main-page xs-hide">
+                                <a href="#" class="block-product bigger main-page">
                                     <img src="images/images/image-product-two.jpg" alt="Фото продукта"
                                          class="image-product">
                                     <div class="name">
@@ -619,8 +613,22 @@
                                     <div class="block-factory">
                                         <p>Фабрика: <span>Aparici/Испания</span></p>
                                     </div>
+                                    <div class="block-price row__aic">
+                                        <div class="without-discount">
+                                            от 3 500 руб
+                                        </div>
+                                        <button class="add-to-compare-two">
+                                            <div class="row__aic">
+                                                <div class="col">
+                                                    <span class="bold">Добавить</span>
+                                                    <span>к сравнению</span>
+                                                </div>
+                                                <img src="images/icons/icon-plus.png" alt="">
+                                            </div>
+                                        </button>
+                                    </div>
                                 </a>
-                                <a href="#" class="block-product bigger main-page xs-hide">
+                                <a href="#" class="block-product bigger main-page">
                                     <img src="images/images/image-product-two.jpg" alt="Фото продукта"
                                          class="image-product">
                                     <div class="name">
@@ -635,8 +643,22 @@
                                     <div class="block-factory">
                                         <p>Фабрика: <span>Aparici/Испания</span></p>
                                     </div>
+                                    <div class="block-price row__aic">
+                                        <div class="without-discount">
+                                            от 3 500 руб
+                                        </div>
+                                        <button class="add-to-compare-two">
+                                            <div class="row__aic">
+                                                <div class="col">
+                                                    <span class="bold">Добавить</span>
+                                                    <span>к сравнению</span>
+                                                </div>
+                                                <img src="images/icons/icon-plus.png" alt="">
+                                            </div>
+                                        </button>
+                                    </div>
                                 </a>
-                                <a href="#" class="block-product bigger main-page xs-hide">
+                                <a href="#" class="block-product bigger main-page">
                                     <img src="images/images/image-product-two.jpg" alt="Фото продукта"
                                          class="image-product">
                                     <div class="name">
@@ -651,8 +673,22 @@
                                     <div class="block-factory">
                                         <p>Фабрика: <span>Aparici/Испания</span></p>
                                     </div>
+                                    <div class="block-price row__aic">
+                                        <div class="without-discount">
+                                            от 3 500 руб
+                                        </div>
+                                        <button class="add-to-compare-two">
+                                            <div class="row__aic">
+                                                <div class="col">
+                                                    <span class="bold">Добавить</span>
+                                                    <span>к сравнению</span>
+                                                </div>
+                                                <img src="images/icons/icon-plus.png" alt="">
+                                            </div>
+                                        </button>
+                                    </div>
                                 </a>
-                                <a href="#" class="block-product bigger main-page xs-hide">
+                                <a href="#" class="block-product bigger main-page">
                                     <img src="images/images/image-product-two.jpg" alt="Фото продукта"
                                          class="image-product">
                                     <div class="name">
@@ -667,8 +703,22 @@
                                     <div class="block-factory">
                                         <p>Фабрика: <span>Aparici/Испания</span></p>
                                     </div>
+                                    <div class="block-price row__aic">
+                                        <div class="without-discount">
+                                            от 3 500 руб
+                                        </div>
+                                        <button class="add-to-compare-two">
+                                            <div class="row__aic">
+                                                <div class="col">
+                                                    <span class="bold">Добавить</span>
+                                                    <span>к сравнению</span>
+                                                </div>
+                                                <img src="images/icons/icon-plus.png" alt="">
+                                            </div>
+                                        </button>
+                                    </div>
                                 </a>
-                                <a href="#" class="block-product bigger main-page xs-hide">
+                                <a href="#" class="block-product bigger main-page">
                                     <img src="images/images/image-product-two.jpg" alt="Фото продукта"
                                          class="image-product">
                                     <div class="name">
@@ -683,8 +733,22 @@
                                     <div class="block-factory">
                                         <p>Фабрика: <span>Aparici/Испания</span></p>
                                     </div>
+                                    <div class="block-price row__aic">
+                                        <div class="without-discount">
+                                            от 3 500 руб
+                                        </div>
+                                        <button class="add-to-compare-two">
+                                            <div class="row__aic">
+                                                <div class="col">
+                                                    <span class="bold">Добавить</span>
+                                                    <span>к сравнению</span>
+                                                </div>
+                                                <img src="images/icons/icon-plus.png" alt="">
+                                            </div>
+                                        </button>
+                                    </div>
                                 </a>
-                                <a href="#" class="block-product bigger main-page xs-hide">
+                                <a href="#" class="block-product bigger main-page">
                                     <img src="images/images/image-product-two.jpg" alt="Фото продукта"
                                          class="image-product">
                                     <div class="name">
@@ -699,8 +763,22 @@
                                     <div class="block-factory">
                                         <p>Фабрика: <span>Aparici/Испания</span></p>
                                     </div>
+                                    <div class="block-price row__aic">
+                                        <div class="without-discount">
+                                            от 3 500 руб
+                                        </div>
+                                        <button class="add-to-compare-two">
+                                            <div class="row__aic">
+                                                <div class="col">
+                                                    <span class="bold">Добавить</span>
+                                                    <span>к сравнению</span>
+                                                </div>
+                                                <img src="images/icons/icon-plus.png" alt="">
+                                            </div>
+                                        </button>
+                                    </div>
                                 </a>
-                                <a href="#" class="block-product bigger main-page xs-hide">
+                                <a href="#" class="block-product bigger main-page">
                                     <img src="images/images/image-product-two.jpg" alt="Фото продукта"
                                          class="image-product">
                                     <div class="name">
@@ -714,6 +792,110 @@
                                     </div>
                                     <div class="block-factory">
                                         <p>Фабрика: <span>Aparici/Испания</span></p>
+                                    </div>
+                                    <div class="block-price row__aic">
+                                        <div class="without-discount">
+                                            от 3 500 руб
+                                        </div>
+                                        <button class="add-to-compare-two">
+                                            <div class="row__aic">
+                                                <div class="col">
+                                                    <span class="bold">Добавить</span>
+                                                    <span>к сравнению</span>
+                                                </div>
+                                                <img src="images/icons/icon-plus.png" alt="">
+                                            </div>
+                                        </button>
+                                    </div>
+                                </a>
+                                <a href="#" class="block-product bigger main-page">
+                                    <img src="images/images/image-product-two.jpg" alt="Фото продукта"
+                                         class="image-product">
+                                    <div class="name">
+                                        Бордюр Cenefa Delis Blanco Silver
+                                    </div>
+                                    <div class="block-type">
+                                        <p>Тип: <span>Бордюр</span></p>
+                                    </div>
+                                    <div class="materials-block">
+                                        <p>Материал: <span>Керамогранит</span></p>
+                                    </div>
+                                    <div class="block-factory">
+                                        <p>Фабрика: <span>Aparici/Испания</span></p>
+                                    </div>
+                                    <div class="block-price row__aic">
+                                        <div class="without-discount">
+                                            от 3 500 руб
+                                        </div>
+                                        <button class="add-to-compare-two">
+                                            <div class="row__aic">
+                                                <div class="col">
+                                                    <span class="bold">Добавить</span>
+                                                    <span>к сравнению</span>
+                                                </div>
+                                                <img src="images/icons/icon-plus.png" alt="">
+                                            </div>
+                                        </button>
+                                    </div>
+                                </a>
+                                <a href="#" class="block-product bigger main-page">
+                                    <img src="images/images/image-product-two.jpg" alt="Фото продукта"
+                                         class="image-product">
+                                    <div class="name">
+                                        Бордюр Cenefa Delis Blanco Silver
+                                    </div>
+                                    <div class="block-type">
+                                        <p>Тип: <span>Бордюр</span></p>
+                                    </div>
+                                    <div class="materials-block">
+                                        <p>Материал: <span>Керамогранит</span></p>
+                                    </div>
+                                    <div class="block-factory">
+                                        <p>Фабрика: <span>Aparici/Испания</span></p>
+                                    </div>
+                                    <div class="block-price row__aic">
+                                        <div class="without-discount">
+                                            от 3 500 руб
+                                        </div>
+                                        <button class="add-to-compare-two">
+                                            <div class="row__aic">
+                                                <div class="col">
+                                                    <span class="bold">Добавить</span>
+                                                    <span>к сравнению</span>
+                                                </div>
+                                                <img src="images/icons/icon-plus.png" alt="">
+                                            </div>
+                                        </button>
+                                    </div>
+                                </a>
+                                <a href="#" class="block-product bigger main-page">
+                                    <img src="images/images/image-product-two.jpg" alt="Фото продукта"
+                                         class="image-product">
+                                    <div class="name">
+                                        Бордюр Cenefa Delis Blanco Silver
+                                    </div>
+                                    <div class="block-type">
+                                        <p>Тип: <span>Бордюр</span></p>
+                                    </div>
+                                    <div class="materials-block">
+                                        <p>Материал: <span>Керамогранит</span></p>
+                                    </div>
+                                    <div class="block-factory">
+                                        <p>Фабрика: <span>Aparici/Испания</span></p>
+                                    </div>
+                                    <div class="block-price row__aic">
+                                        <div class="without-discount">
+                                            от 3 500 руб
+                                        </div>
+                                        <button class="add-to-compare-two">
+                                            <div class="row__aic">
+                                                <div class="col">
+                                                    <span class="bold">Добавить</span>
+                                                    <span>к сравнению</span>
+                                                </div>
+                                                <img src="images/icons/icon-plus.png" alt="">
+                                            </div>
+                                        </button>
                                     </div>
                                 </a>
                             </div>
@@ -733,21 +915,13 @@
                                     <div class="block-factory">
                                         <p>Фабрика: <span>Aparici/Испания</span></p>
                                     </div>
-                                </a>
-                                <a href="#" class="block-product bigger main-page">
-                                    <img src="images/images/image-product-two.jpg" alt="Фото продукта"
-                                         class="image-product">
-                                    <div class="name">
-                                        Бордюр Cenefa Delis Blanco Silver
-                                    </div>
-                                    <div class="block-type">
-                                        <p>Тип: <span>Бордюр</span></p>
-                                    </div>
-                                    <div class="materials-block">
-                                        <p>Материал: <span>Керамогранит</span></p>
-                                    </div>
-                                    <div class="block-factory">
-                                        <p>Фабрика: <span>Aparici/Испания</span></p>
+                                    <div class="block-price row__aic">
+                                        <div class="without-discount">
+                                            от 3 500 руб
+                                        </div>
+                                        <button class="add-to-compare">
+                                            Сравнить <img src="images/icons/icon-arrow-catalog.png" alt="">
+                                        </button>
                                     </div>
                                 </a>
                                 <a href="#" class="block-product bigger main-page">
@@ -765,21 +939,13 @@
                                     <div class="block-factory">
                                         <p>Фабрика: <span>Aparici/Испания</span></p>
                                     </div>
-                                </a>
-                                <a href="#" class="block-product bigger main-page">
-                                    <img src="images/images/image-product-two.jpg" alt="Фото продукта"
-                                         class="image-product">
-                                    <div class="name">
-                                        Бордюр Cenefa Delis Blanco Silver
-                                    </div>
-                                    <div class="block-type">
-                                        <p>Тип: <span>Бордюр</span></p>
-                                    </div>
-                                    <div class="materials-block">
-                                        <p>Материал: <span>Керамогранит</span></p>
-                                    </div>
-                                    <div class="block-factory">
-                                        <p>Фабрика: <span>Aparici/Испания</span></p>
+                                    <div class="block-price row__aic">
+                                        <div class="without-discount">
+                                            от 3 500 руб
+                                        </div>
+                                        <button class="add-to-compare">
+                                            Сравнить <img src="images/icons/icon-arrow-catalog.png" alt="">
+                                        </button>
                                     </div>
                                 </a>
                                 <a href="#" class="block-product bigger main-page">
@@ -797,21 +963,13 @@
                                     <div class="block-factory">
                                         <p>Фабрика: <span>Aparici/Испания</span></p>
                                     </div>
-                                </a>
-                                <a href="#" class="block-product bigger main-page">
-                                    <img src="images/images/image-product-two.jpg" alt="Фото продукта"
-                                         class="image-product">
-                                    <div class="name">
-                                        Бордюр Cenefa Delis Blanco Silver
-                                    </div>
-                                    <div class="block-type">
-                                        <p>Тип: <span>Бордюр</span></p>
-                                    </div>
-                                    <div class="materials-block">
-                                        <p>Материал: <span>Керамогранит</span></p>
-                                    </div>
-                                    <div class="block-factory">
-                                        <p>Фабрика: <span>Aparici/Испания</span></p>
+                                    <div class="block-price row__aic">
+                                        <div class="without-discount">
+                                            от 3 500 руб
+                                        </div>
+                                        <button class="add-to-compare">
+                                            Сравнить <img src="images/icons/icon-arrow-catalog.png" alt="">
+                                        </button>
                                     </div>
                                 </a>
                                 <a href="#" class="block-product bigger main-page">
@@ -829,6 +987,20 @@
                                     <div class="block-factory">
                                         <p>Фабрика: <span>Aparici/Испания</span></p>
                                     </div>
+                                    <div class="block-price row__aic">
+                                        <div class="without-discount">
+                                            от 3 500 руб
+                                        </div>
+                                        <button class="add-to-compare-two">
+                                            <div class="row__aic">
+                                                <div class="col">
+                                                    <span class="bold">Добавить</span>
+                                                    <span>к сравнению</span>
+                                                </div>
+                                                <img src="images/icons/icon-plus.png" alt="">
+                                            </div>
+                                        </button>
+                                    </div>
                                 </a>
                                 <a href="#" class="block-product bigger main-page">
                                     <img src="images/images/image-product-two.jpg" alt="Фото продукта"
@@ -845,8 +1017,22 @@
                                     <div class="block-factory">
                                         <p>Фабрика: <span>Aparici/Испания</span></p>
                                     </div>
+                                    <div class="block-price row__aic">
+                                        <div class="without-discount">
+                                            от 3 500 руб
+                                        </div>
+                                        <button class="add-to-compare-two">
+                                            <div class="row__aic">
+                                                <div class="col">
+                                                    <span class="bold">Добавить</span>
+                                                    <span>к сравнению</span>
+                                                </div>
+                                                <img src="images/icons/icon-plus.png" alt="">
+                                            </div>
+                                        </button>
+                                    </div>
                                 </a>
-                                <a href="#" class="block-product bigger main-page xs-hide">
+                                <a href="#" class="block-product bigger main-page">
                                     <img src="images/images/image-product-two.jpg" alt="Фото продукта"
                                          class="image-product">
                                     <div class="name">
@@ -861,8 +1047,22 @@
                                     <div class="block-factory">
                                         <p>Фабрика: <span>Aparici/Испания</span></p>
                                     </div>
+                                    <div class="block-price row__aic">
+                                        <div class="without-discount">
+                                            от 3 500 руб
+                                        </div>
+                                        <button class="add-to-compare-two">
+                                            <div class="row__aic">
+                                                <div class="col">
+                                                    <span class="bold">Добавить</span>
+                                                    <span>к сравнению</span>
+                                                </div>
+                                                <img src="images/icons/icon-plus.png" alt="">
+                                            </div>
+                                        </button>
+                                    </div>
                                 </a>
-                                <a href="#" class="block-product bigger main-page xs-hide">
+                                <a href="#" class="block-product bigger main-page">
                                     <img src="images/images/image-product-two.jpg" alt="Фото продукта"
                                          class="image-product">
                                     <div class="name">
@@ -877,8 +1077,22 @@
                                     <div class="block-factory">
                                         <p>Фабрика: <span>Aparici/Испания</span></p>
                                     </div>
+                                    <div class="block-price row__aic">
+                                        <div class="without-discount">
+                                            от 3 500 руб
+                                        </div>
+                                        <button class="add-to-compare-two">
+                                            <div class="row__aic">
+                                                <div class="col">
+                                                    <span class="bold">Добавить</span>
+                                                    <span>к сравнению</span>
+                                                </div>
+                                                <img src="images/icons/icon-plus.png" alt="">
+                                            </div>
+                                        </button>
+                                    </div>
                                 </a>
-                                <a href="#" class="block-product bigger main-page xs-hide">
+                                <a href="#" class="block-product bigger main-page">
                                     <img src="images/images/image-product-two.jpg" alt="Фото продукта"
                                          class="image-product">
                                     <div class="name">
@@ -893,8 +1107,22 @@
                                     <div class="block-factory">
                                         <p>Фабрика: <span>Aparici/Испания</span></p>
                                     </div>
+                                    <div class="block-price row__aic">
+                                        <div class="without-discount">
+                                            от 3 500 руб
+                                        </div>
+                                        <button class="add-to-compare-two">
+                                            <div class="row__aic">
+                                                <div class="col">
+                                                    <span class="bold">Добавить</span>
+                                                    <span>к сравнению</span>
+                                                </div>
+                                                <img src="images/icons/icon-plus.png" alt="">
+                                            </div>
+                                        </button>
+                                    </div>
                                 </a>
-                                <a href="#" class="block-product bigger main-page xs-hide">
+                                <a href="#" class="block-product bigger main-page">
                                     <img src="images/images/image-product-two.jpg" alt="Фото продукта"
                                          class="image-product">
                                     <div class="name">
@@ -909,8 +1137,22 @@
                                     <div class="block-factory">
                                         <p>Фабрика: <span>Aparici/Испания</span></p>
                                     </div>
+                                    <div class="block-price row__aic">
+                                        <div class="without-discount">
+                                            от 3 500 руб
+                                        </div>
+                                        <button class="add-to-compare-two">
+                                            <div class="row__aic">
+                                                <div class="col">
+                                                    <span class="bold">Добавить</span>
+                                                    <span>к сравнению</span>
+                                                </div>
+                                                <img src="images/icons/icon-plus.png" alt="">
+                                            </div>
+                                        </button>
+                                    </div>
                                 </a>
-                                <a href="#" class="block-product bigger main-page xs-hide">
+                                <a href="#" class="block-product bigger main-page">
                                     <img src="images/images/image-product-two.jpg" alt="Фото продукта"
                                          class="image-product">
                                     <div class="name">
@@ -925,8 +1167,22 @@
                                     <div class="block-factory">
                                         <p>Фабрика: <span>Aparici/Испания</span></p>
                                     </div>
+                                    <div class="block-price row__aic">
+                                        <div class="without-discount">
+                                            от 3 500 руб
+                                        </div>
+                                        <button class="add-to-compare-two">
+                                            <div class="row__aic">
+                                                <div class="col">
+                                                    <span class="bold">Добавить</span>
+                                                    <span>к сравнению</span>
+                                                </div>
+                                                <img src="images/icons/icon-plus.png" alt="">
+                                            </div>
+                                        </button>
+                                    </div>
                                 </a>
-                                <a href="#" class="block-product bigger main-page xs-hide">
+                                <a href="#" class="block-product bigger main-page">
                                     <img src="images/images/image-product-two.jpg" alt="Фото продукта"
                                          class="image-product">
                                     <div class="name">
@@ -941,8 +1197,22 @@
                                     <div class="block-factory">
                                         <p>Фабрика: <span>Aparici/Испания</span></p>
                                     </div>
+                                    <div class="block-price row__aic">
+                                        <div class="without-discount">
+                                            от 3 500 руб
+                                        </div>
+                                        <button class="add-to-compare-two">
+                                            <div class="row__aic">
+                                                <div class="col">
+                                                    <span class="bold">Добавить</span>
+                                                    <span>к сравнению</span>
+                                                </div>
+                                                <img src="images/icons/icon-plus.png" alt="">
+                                            </div>
+                                        </button>
+                                    </div>
                                 </a>
-                                <a href="#" class="block-product bigger main-page xs-hide">
+                                <a href="#" class="block-product bigger main-page">
                                     <img src="images/images/image-product-two.jpg" alt="Фото продукта"
                                          class="image-product">
                                     <div class="name">
@@ -956,985 +1226,151 @@
                                     </div>
                                     <div class="block-factory">
                                         <p>Фабрика: <span>Aparici/Испания</span></p>
+                                    </div>
+                                    <div class="block-price row__aic">
+                                        <div class="without-discount">
+                                            от 3 500 руб
+                                        </div>
+                                        <button class="add-to-compare-two">
+                                            <div class="row__aic">
+                                                <div class="col">
+                                                    <span class="bold">Добавить</span>
+                                                    <span>к сравнению</span>
+                                                </div>
+                                                <img src="images/icons/icon-plus.png" alt="">
+                                            </div>
+                                        </button>
+                                    </div>
+                                </a>
+                                <a href="#" class="block-product bigger main-page">
+                                    <img src="images/images/image-product-two.jpg" alt="Фото продукта"
+                                         class="image-product">
+                                    <div class="name">
+                                        Бордюр Cenefa Delis Blanco Silver
+                                    </div>
+                                    <div class="block-type">
+                                        <p>Тип: <span>Бордюр</span></p>
+                                    </div>
+                                    <div class="materials-block">
+                                        <p>Материал: <span>Керамогранит</span></p>
+                                    </div>
+                                    <div class="block-factory">
+                                        <p>Фабрика: <span>Aparici/Испания</span></p>
+                                    </div>
+                                    <div class="block-price row__aic">
+                                        <div class="without-discount">
+                                            от 3 500 руб
+                                        </div>
+                                        <button class="add-to-compare-two">
+                                            <div class="row__aic">
+                                                <div class="col">
+                                                    <span class="bold">Добавить</span>
+                                                    <span>к сравнению</span>
+                                                </div>
+                                                <img src="images/icons/icon-plus.png" alt="">
+                                            </div>
+                                        </button>
+                                    </div>
+                                </a>
+                                <a href="#" class="block-product bigger main-page">
+                                    <img src="images/images/image-product-two.jpg" alt="Фото продукта"
+                                         class="image-product">
+                                    <div class="name">
+                                        Бордюр Cenefa Delis Blanco Silver
+                                    </div>
+                                    <div class="block-type">
+                                        <p>Тип: <span>Бордюр</span></p>
+                                    </div>
+                                    <div class="materials-block">
+                                        <p>Материал: <span>Керамогранит</span></p>
+                                    </div>
+                                    <div class="block-factory">
+                                        <p>Фабрика: <span>Aparici/Испания</span></p>
+                                    </div>
+                                    <div class="block-price row__aic">
+                                        <div class="without-discount">
+                                            от 3 500 руб
+                                        </div>
+                                        <button class="add-to-compare-two">
+                                            <div class="row__aic">
+                                                <div class="col">
+                                                    <span class="bold">Добавить</span>
+                                                    <span>к сравнению</span>
+                                                </div>
+                                                <img src="images/icons/icon-plus.png" alt="">
+                                            </div>
+                                        </button>
+                                    </div>
+                                </a>
+                                <a href="#" class="block-product bigger main-page">
+                                    <img src="images/images/image-product-two.jpg" alt="Фото продукта"
+                                         class="image-product">
+                                    <div class="name">
+                                        Бордюр Cenefa Delis Blanco Silver
+                                    </div>
+                                    <div class="block-type">
+                                        <p>Тип: <span>Бордюр</span></p>
+                                    </div>
+                                    <div class="materials-block">
+                                        <p>Материал: <span>Керамогранит</span></p>
+                                    </div>
+                                    <div class="block-factory">
+                                        <p>Фабрика: <span>Aparici/Испания</span></p>
+                                    </div>
+                                    <div class="block-price row__aic">
+                                        <div class="without-discount">
+                                            от 3 500 руб
+                                        </div>
+                                        <button class="add-to-compare-two">
+                                            <div class="row__aic">
+                                                <div class="col">
+                                                    <span class="bold">Добавить</span>
+                                                    <span>к сравнению</span>
+                                                </div>
+                                                <img src="images/icons/icon-plus.png" alt="">
+                                            </div>
+                                        </button>
                                     </div>
                                 </a>
                             </div>
                         </div>
-                        <div class="list-products">
-                            <div class="slide row">
-                                <a href="#" class="block-product bigger main-page">
-                                    <img src="images/images/image-product-two.jpg" alt="Фото продукта"
-                                         class="image-product">
-                                    <div class="name">
-                                        Бордюр Cenefa Delis Blanco Silver
-                                    </div>
-                                    <div class="block-type">
-                                        <p>Тип: <span>Бордюр</span></p>
-                                    </div>
-                                    <div class="materials-block">
-                                        <p>Материал: <span>Керамогранит</span></p>
-                                    </div>
-                                    <div class="block-factory">
-                                        <p>Фабрика: <span>Aparici/Испания</span></p>
-                                    </div>
-                                </a>
-                                <a href="#" class="block-product bigger main-page">
-                                    <img src="images/images/image-product-two.jpg" alt="Фото продукта"
-                                         class="image-product">
-                                    <div class="name">
-                                        Бордюр Cenefa Delis Blanco Silver
-                                    </div>
-                                    <div class="block-type">
-                                        <p>Тип: <span>Бордюр</span></p>
-                                    </div>
-                                    <div class="materials-block">
-                                        <p>Материал: <span>Керамогранит</span></p>
-                                    </div>
-                                    <div class="block-factory">
-                                        <p>Фабрика: <span>Aparici/Испания</span></p>
-                                    </div>
-                                </a>
-                                <a href="#" class="block-product bigger main-page">
-                                    <img src="images/images/image-product-two.jpg" alt="Фото продукта"
-                                         class="image-product">
-                                    <div class="name">
-                                        Бордюр Cenefa Delis Blanco Silver
-                                    </div>
-                                    <div class="block-type">
-                                        <p>Тип: <span>Бордюр</span></p>
-                                    </div>
-                                    <div class="materials-block">
-                                        <p>Материал: <span>Керамогранит</span></p>
-                                    </div>
-                                    <div class="block-factory">
-                                        <p>Фабрика: <span>Aparici/Испания</span></p>
-                                    </div>
-                                </a>
-                                <a href="#" class="block-product bigger main-page">
-                                    <img src="images/images/image-product-two.jpg" alt="Фото продукта"
-                                         class="image-product">
-                                    <div class="name">
-                                        Бордюр Cenefa Delis Blanco Silver
-                                    </div>
-                                    <div class="block-type">
-                                        <p>Тип: <span>Бордюр</span></p>
-                                    </div>
-                                    <div class="materials-block">
-                                        <p>Материал: <span>Керамогранит</span></p>
-                                    </div>
-                                    <div class="block-factory">
-                                        <p>Фабрика: <span>Aparici/Испания</span></p>
-                                    </div>
-                                </a>
-                                <a href="#" class="block-product bigger main-page">
-                                    <img src="images/images/image-product-two.jpg" alt="Фото продукта"
-                                         class="image-product">
-                                    <div class="name">
-                                        Бордюр Cenefa Delis Blanco Silver
-                                    </div>
-                                    <div class="block-type">
-                                        <p>Тип: <span>Бордюр</span></p>
-                                    </div>
-                                    <div class="materials-block">
-                                        <p>Материал: <span>Керамогранит</span></p>
-                                    </div>
-                                    <div class="block-factory">
-                                        <p>Фабрика: <span>Aparici/Испания</span></p>
-                                    </div>
-                                </a>
-                                <a href="#" class="block-product bigger main-page">
-                                    <img src="images/images/image-product-two.jpg" alt="Фото продукта"
-                                         class="image-product">
-                                    <div class="name">
-                                        Бордюр Cenefa Delis Blanco Silver
-                                    </div>
-                                    <div class="block-type">
-                                        <p>Тип: <span>Бордюр</span></p>
-                                    </div>
-                                    <div class="materials-block">
-                                        <p>Материал: <span>Керамогранит</span></p>
-                                    </div>
-                                    <div class="block-factory">
-                                        <p>Фабрика: <span>Aparici/Испания</span></p>
-                                    </div>
-                                </a>
-                                <a href="#" class="block-product bigger main-page">
-                                    <img src="images/images/image-product-two.jpg" alt="Фото продукта"
-                                         class="image-product">
-                                    <div class="name">
-                                        Бордюр Cenefa Delis Blanco Silver
-                                    </div>
-                                    <div class="block-type">
-                                        <p>Тип: <span>Бордюр</span></p>
-                                    </div>
-                                    <div class="materials-block">
-                                        <p>Материал: <span>Керамогранит</span></p>
-                                    </div>
-                                    <div class="block-factory">
-                                        <p>Фабрика: <span>Aparici/Испания</span></p>
-                                    </div>
-                                </a>
-                                <a href="#" class="block-product bigger main-page">
-                                    <img src="images/images/image-product-two.jpg" alt="Фото продукта"
-                                         class="image-product">
-                                    <div class="name">
-                                        Бордюр Cenefa Delis Blanco Silver
-                                    </div>
-                                    <div class="block-type">
-                                        <p>Тип: <span>Бордюр</span></p>
-                                    </div>
-                                    <div class="materials-block">
-                                        <p>Материал: <span>Керамогранит</span></p>
-                                    </div>
-                                    <div class="block-factory">
-                                        <p>Фабрика: <span>Aparici/Испания</span></p>
-                                    </div>
-                                </a>
-                                <a href="#" class="block-product bigger main-page xs-hide">
-                                    <img src="images/images/image-product-two.jpg" alt="Фото продукта"
-                                         class="image-product">
-                                    <div class="name">
-                                        Бордюр Cenefa Delis Blanco Silver
-                                    </div>
-                                    <div class="block-type">
-                                        <p>Тип: <span>Бордюр</span></p>
-                                    </div>
-                                    <div class="materials-block">
-                                        <p>Материал: <span>Керамогранит</span></p>
-                                    </div>
-                                    <div class="block-factory">
-                                        <p>Фабрика: <span>Aparici/Испания</span></p>
-                                    </div>
-                                </a>
-                                <a href="#" class="block-product bigger main-page xs-hide">
-                                    <img src="images/images/image-product-two.jpg" alt="Фото продукта"
-                                         class="image-product">
-                                    <div class="name">
-                                        Бордюр Cenefa Delis Blanco Silver
-                                    </div>
-                                    <div class="block-type">
-                                        <p>Тип: <span>Бордюр</span></p>
-                                    </div>
-                                    <div class="materials-block">
-                                        <p>Материал: <span>Керамогранит</span></p>
-                                    </div>
-                                    <div class="block-factory">
-                                        <p>Фабрика: <span>Aparici/Испания</span></p>
-                                    </div>
-                                </a>
-                                <a href="#" class="block-product bigger main-page xs-hide">
-                                    <img src="images/images/image-product-two.jpg" alt="Фото продукта"
-                                         class="image-product">
-                                    <div class="name">
-                                        Бордюр Cenefa Delis Blanco Silver
-                                    </div>
-                                    <div class="block-type">
-                                        <p>Тип: <span>Бордюр</span></p>
-                                    </div>
-                                    <div class="materials-block">
-                                        <p>Материал: <span>Керамогранит</span></p>
-                                    </div>
-                                    <div class="block-factory">
-                                        <p>Фабрика: <span>Aparici/Испания</span></p>
-                                    </div>
-                                </a>
-                                <a href="#" class="block-product bigger main-page xs-hide">
-                                    <img src="images/images/image-product-two.jpg" alt="Фото продукта"
-                                         class="image-product">
-                                    <div class="name">
-                                        Бордюр Cenefa Delis Blanco Silver
-                                    </div>
-                                    <div class="block-type">
-                                        <p>Тип: <span>Бордюр</span></p>
-                                    </div>
-                                    <div class="materials-block">
-                                        <p>Материал: <span>Керамогранит</span></p>
-                                    </div>
-                                    <div class="block-factory">
-                                        <p>Фабрика: <span>Aparici/Испания</span></p>
-                                    </div>
-                                </a>
-                                <a href="#" class="block-product bigger main-page xs-hide">
-                                    <img src="images/images/image-product-two.jpg" alt="Фото продукта"
-                                         class="image-product">
-                                    <div class="name">
-                                        Бордюр Cenefa Delis Blanco Silver
-                                    </div>
-                                    <div class="block-type">
-                                        <p>Тип: <span>Бордюр</span></p>
-                                    </div>
-                                    <div class="materials-block">
-                                        <p>Материал: <span>Керамогранит</span></p>
-                                    </div>
-                                    <div class="block-factory">
-                                        <p>Фабрика: <span>Aparici/Испания</span></p>
-                                    </div>
-                                </a>
-                                <a href="#" class="block-product bigger main-page xs-hide">
-                                    <img src="images/images/image-product-two.jpg" alt="Фото продукта"
-                                         class="image-product">
-                                    <div class="name">
-                                        Бордюр Cenefa Delis Blanco Silver
-                                    </div>
-                                    <div class="block-type">
-                                        <p>Тип: <span>Бордюр</span></p>
-                                    </div>
-                                    <div class="materials-block">
-                                        <p>Материал: <span>Керамогранит</span></p>
-                                    </div>
-                                    <div class="block-factory">
-                                        <p>Фабрика: <span>Aparici/Испания</span></p>
-                                    </div>
-                                </a>
-                                <a href="#" class="block-product bigger main-page xs-hide">
-                                    <img src="images/images/image-product-two.jpg" alt="Фото продукта"
-                                         class="image-product">
-                                    <div class="name">
-                                        Бордюр Cenefa Delis Blanco Silver
-                                    </div>
-                                    <div class="block-type">
-                                        <p>Тип: <span>Бордюр</span></p>
-                                    </div>
-                                    <div class="materials-block">
-                                        <p>Материал: <span>Керамогранит</span></p>
-                                    </div>
-                                    <div class="block-factory">
-                                        <p>Фабрика: <span>Aparici/Испания</span></p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="slide row">
-                                <a href="#" class="block-product bigger main-page">
-                                    <img src="images/images/image-product-two.jpg" alt="Фото продукта"
-                                         class="image-product">
-                                    <div class="name">
-                                        Бордюр Cenefa Delis Blanco Silver
-                                    </div>
-                                    <div class="block-type">
-                                        <p>Тип: <span>Бордюр</span></p>
-                                    </div>
-                                    <div class="materials-block">
-                                        <p>Материал: <span>Керамогранит</span></p>
-                                    </div>
-                                    <div class="block-factory">
-                                        <p>Фабрика: <span>Aparici/Испания</span></p>
-                                    </div>
-                                </a>
-                                <a href="#" class="block-product bigger main-page">
-                                    <img src="images/images/image-product-two.jpg" alt="Фото продукта"
-                                         class="image-product">
-                                    <div class="name">
-                                        Бордюр Cenefa Delis Blanco Silver
-                                    </div>
-                                    <div class="block-type">
-                                        <p>Тип: <span>Бордюр</span></p>
-                                    </div>
-                                    <div class="materials-block">
-                                        <p>Материал: <span>Керамогранит</span></p>
-                                    </div>
-                                    <div class="block-factory">
-                                        <p>Фабрика: <span>Aparici/Испания</span></p>
-                                    </div>
-                                </a>
-                                <a href="#" class="block-product bigger main-page">
-                                    <img src="images/images/image-product-two.jpg" alt="Фото продукта"
-                                         class="image-product">
-                                    <div class="name">
-                                        Бордюр Cenefa Delis Blanco Silver
-                                    </div>
-                                    <div class="block-type">
-                                        <p>Тип: <span>Бордюр</span></p>
-                                    </div>
-                                    <div class="materials-block">
-                                        <p>Материал: <span>Керамогранит</span></p>
-                                    </div>
-                                    <div class="block-factory">
-                                        <p>Фабрика: <span>Aparici/Испания</span></p>
-                                    </div>
-                                </a>
-                                <a href="#" class="block-product bigger main-page">
-                                    <img src="images/images/image-product-two.jpg" alt="Фото продукта"
-                                         class="image-product">
-                                    <div class="name">
-                                        Бордюр Cenefa Delis Blanco Silver
-                                    </div>
-                                    <div class="block-type">
-                                        <p>Тип: <span>Бордюр</span></p>
-                                    </div>
-                                    <div class="materials-block">
-                                        <p>Материал: <span>Керамогранит</span></p>
-                                    </div>
-                                    <div class="block-factory">
-                                        <p>Фабрика: <span>Aparici/Испания</span></p>
-                                    </div>
-                                </a>
-                                <a href="#" class="block-product bigger main-page">
-                                    <img src="images/images/image-product-two.jpg" alt="Фото продукта"
-                                         class="image-product">
-                                    <div class="name">
-                                        Бордюр Cenefa Delis Blanco Silver
-                                    </div>
-                                    <div class="block-type">
-                                        <p>Тип: <span>Бордюр</span></p>
-                                    </div>
-                                    <div class="materials-block">
-                                        <p>Материал: <span>Керамогранит</span></p>
-                                    </div>
-                                    <div class="block-factory">
-                                        <p>Фабрика: <span>Aparici/Испания</span></p>
-                                    </div>
-                                </a>
-                                <a href="#" class="block-product bigger main-page">
-                                    <img src="images/images/image-product-two.jpg" alt="Фото продукта"
-                                         class="image-product">
-                                    <div class="name">
-                                        Бордюр Cenefa Delis Blanco Silver
-                                    </div>
-                                    <div class="block-type">
-                                        <p>Тип: <span>Бордюр</span></p>
-                                    </div>
-                                    <div class="materials-block">
-                                        <p>Материал: <span>Керамогранит</span></p>
-                                    </div>
-                                    <div class="block-factory">
-                                        <p>Фабрика: <span>Aparici/Испания</span></p>
-                                    </div>
-                                </a>
-                                <a href="#" class="block-product bigger main-page">
-                                    <img src="images/images/image-product-two.jpg" alt="Фото продукта"
-                                         class="image-product">
-                                    <div class="name">
-                                        Бордюр Cenefa Delis Blanco Silver
-                                    </div>
-                                    <div class="block-type">
-                                        <p>Тип: <span>Бордюр</span></p>
-                                    </div>
-                                    <div class="materials-block">
-                                        <p>Материал: <span>Керамогранит</span></p>
-                                    </div>
-                                    <div class="block-factory">
-                                        <p>Фабрика: <span>Aparici/Испания</span></p>
-                                    </div>
-                                </a>
-                                <a href="#" class="block-product bigger main-page">
-                                    <img src="images/images/image-product-two.jpg" alt="Фото продукта"
-                                         class="image-product">
-                                    <div class="name">
-                                        Бордюр Cenefa Delis Blanco Silver
-                                    </div>
-                                    <div class="block-type">
-                                        <p>Тип: <span>Бордюр</span></p>
-                                    </div>
-                                    <div class="materials-block">
-                                        <p>Материал: <span>Керамогранит</span></p>
-                                    </div>
-                                    <div class="block-factory">
-                                        <p>Фабрика: <span>Aparici/Испания</span></p>
-                                    </div>
-                                </a>
-                                <a href="#" class="block-product bigger main-page xs-hide">
-                                    <img src="images/images/image-product-two.jpg" alt="Фото продукта"
-                                         class="image-product">
-                                    <div class="name">
-                                        Бордюр Cenefa Delis Blanco Silver
-                                    </div>
-                                    <div class="block-type">
-                                        <p>Тип: <span>Бордюр</span></p>
-                                    </div>
-                                    <div class="materials-block">
-                                        <p>Материал: <span>Керамогранит</span></p>
-                                    </div>
-                                    <div class="block-factory">
-                                        <p>Фабрика: <span>Aparici/Испания</span></p>
-                                    </div>
-                                </a>
-                                <a href="#" class="block-product bigger main-page xs-hide">
-                                    <img src="images/images/image-product-two.jpg" alt="Фото продукта"
-                                         class="image-product">
-                                    <div class="name">
-                                        Бордюр Cenefa Delis Blanco Silver
-                                    </div>
-                                    <div class="block-type">
-                                        <p>Тип: <span>Бордюр</span></p>
-                                    </div>
-                                    <div class="materials-block">
-                                        <p>Материал: <span>Керамогранит</span></p>
-                                    </div>
-                                    <div class="block-factory">
-                                        <p>Фабрика: <span>Aparici/Испания</span></p>
-                                    </div>
-                                </a>
-                                <a href="#" class="block-product bigger main-page xs-hide">
-                                    <img src="images/images/image-product-two.jpg" alt="Фото продукта"
-                                         class="image-product">
-                                    <div class="name">
-                                        Бордюр Cenefa Delis Blanco Silver
-                                    </div>
-                                    <div class="block-type">
-                                        <p>Тип: <span>Бордюр</span></p>
-                                    </div>
-                                    <div class="materials-block">
-                                        <p>Материал: <span>Керамогранит</span></p>
-                                    </div>
-                                    <div class="block-factory">
-                                        <p>Фабрика: <span>Aparici/Испания</span></p>
-                                    </div>
-                                </a>
-                                <a href="#" class="block-product bigger main-page xs-hide">
-                                    <img src="images/images/image-product-two.jpg" alt="Фото продукта"
-                                         class="image-product">
-                                    <div class="name">
-                                        Бордюр Cenefa Delis Blanco Silver
-                                    </div>
-                                    <div class="block-type">
-                                        <p>Тип: <span>Бордюр</span></p>
-                                    </div>
-                                    <div class="materials-block">
-                                        <p>Материал: <span>Керамогранит</span></p>
-                                    </div>
-                                    <div class="block-factory">
-                                        <p>Фабрика: <span>Aparici/Испания</span></p>
-                                    </div>
-                                </a>
-                                <a href="#" class="block-product bigger main-page xs-hide">
-                                    <img src="images/images/image-product-two.jpg" alt="Фото продукта"
-                                         class="image-product">
-                                    <div class="name">
-                                        Бордюр Cenefa Delis Blanco Silver
-                                    </div>
-                                    <div class="block-type">
-                                        <p>Тип: <span>Бордюр</span></p>
-                                    </div>
-                                    <div class="materials-block">
-                                        <p>Материал: <span>Керамогранит</span></p>
-                                    </div>
-                                    <div class="block-factory">
-                                        <p>Фабрика: <span>Aparici/Испания</span></p>
-                                    </div>
-                                </a>
-                                <a href="#" class="block-product bigger main-page xs-hide">
-                                    <img src="images/images/image-product-two.jpg" alt="Фото продукта"
-                                         class="image-product">
-                                    <div class="name">
-                                        Бордюр Cenefa Delis Blanco Silver
-                                    </div>
-                                    <div class="block-type">
-                                        <p>Тип: <span>Бордюр</span></p>
-                                    </div>
-                                    <div class="materials-block">
-                                        <p>Материал: <span>Керамогранит</span></p>
-                                    </div>
-                                    <div class="block-factory">
-                                        <p>Фабрика: <span>Aparici/Испания</span></p>
-                                    </div>
-                                </a>
-                                <a href="#" class="block-product bigger main-page xs-hide">
-                                    <img src="images/images/image-product-two.jpg" alt="Фото продукта"
-                                         class="image-product">
-                                    <div class="name">
-                                        Бордюр Cenefa Delis Blanco Silver
-                                    </div>
-                                    <div class="block-type">
-                                        <p>Тип: <span>Бордюр</span></p>
-                                    </div>
-                                    <div class="materials-block">
-                                        <p>Материал: <span>Керамогранит</span></p>
-                                    </div>
-                                    <div class="block-factory">
-                                        <p>Фабрика: <span>Aparici/Испания</span></p>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="list-products">
-                            <div class="slide row">
-                                <a href="#" class="block-product bigger main-page">
-                                    <img src="images/images/image-product-two.jpg" alt="Фото продукта"
-                                         class="image-product">
-                                    <div class="name">
-                                        Бордюр Cenefa Delis Blanco Silver
-                                    </div>
-                                    <div class="block-type">
-                                        <p>Тип: <span>Бордюр</span></p>
-                                    </div>
-                                    <div class="materials-block">
-                                        <p>Материал: <span>Керамогранит</span></p>
-                                    </div>
-                                    <div class="block-factory">
-                                        <p>Фабрика: <span>Aparici/Испания</span></p>
-                                    </div>
-                                </a>
-                                <a href="#" class="block-product bigger main-page">
-                                    <img src="images/images/image-product-two.jpg" alt="Фото продукта"
-                                         class="image-product">
-                                    <div class="name">
-                                        Бордюр Cenefa Delis Blanco Silver
-                                    </div>
-                                    <div class="block-type">
-                                        <p>Тип: <span>Бордюр</span></p>
-                                    </div>
-                                    <div class="materials-block">
-                                        <p>Материал: <span>Керамогранит</span></p>
-                                    </div>
-                                    <div class="block-factory">
-                                        <p>Фабрика: <span>Aparici/Испания</span></p>
-                                    </div>
-                                </a>
-                                <a href="#" class="block-product bigger main-page">
-                                    <img src="images/images/image-product-two.jpg" alt="Фото продукта"
-                                         class="image-product">
-                                    <div class="name">
-                                        Бордюр Cenefa Delis Blanco Silver
-                                    </div>
-                                    <div class="block-type">
-                                        <p>Тип: <span>Бордюр</span></p>
-                                    </div>
-                                    <div class="materials-block">
-                                        <p>Материал: <span>Керамогранит</span></p>
-                                    </div>
-                                    <div class="block-factory">
-                                        <p>Фабрика: <span>Aparici/Испания</span></p>
-                                    </div>
-                                </a>
-                                <a href="#" class="block-product bigger main-page">
-                                    <img src="images/images/image-product-two.jpg" alt="Фото продукта"
-                                         class="image-product">
-                                    <div class="name">
-                                        Бордюр Cenefa Delis Blanco Silver
-                                    </div>
-                                    <div class="block-type">
-                                        <p>Тип: <span>Бордюр</span></p>
-                                    </div>
-                                    <div class="materials-block">
-                                        <p>Материал: <span>Керамогранит</span></p>
-                                    </div>
-                                    <div class="block-factory">
-                                        <p>Фабрика: <span>Aparici/Испания</span></p>
-                                    </div>
-                                </a>
-                                <a href="#" class="block-product bigger main-page">
-                                    <img src="images/images/image-product-two.jpg" alt="Фото продукта"
-                                         class="image-product">
-                                    <div class="name">
-                                        Бордюр Cenefa Delis Blanco Silver
-                                    </div>
-                                    <div class="block-type">
-                                        <p>Тип: <span>Бордюр</span></p>
-                                    </div>
-                                    <div class="materials-block">
-                                        <p>Материал: <span>Керамогранит</span></p>
-                                    </div>
-                                    <div class="block-factory">
-                                        <p>Фабрика: <span>Aparici/Испания</span></p>
-                                    </div>
-                                </a>
-                                <a href="#" class="block-product bigger main-page">
-                                    <img src="images/images/image-product-two.jpg" alt="Фото продукта"
-                                         class="image-product">
-                                    <div class="name">
-                                        Бордюр Cenefa Delis Blanco Silver
-                                    </div>
-                                    <div class="block-type">
-                                        <p>Тип: <span>Бордюр</span></p>
-                                    </div>
-                                    <div class="materials-block">
-                                        <p>Материал: <span>Керамогранит</span></p>
-                                    </div>
-                                    <div class="block-factory">
-                                        <p>Фабрика: <span>Aparici/Испания</span></p>
-                                    </div>
-                                </a>
-                                <a href="#" class="block-product bigger main-page">
-                                    <img src="images/images/image-product-two.jpg" alt="Фото продукта"
-                                         class="image-product">
-                                    <div class="name">
-                                        Бордюр Cenefa Delis Blanco Silver
-                                    </div>
-                                    <div class="block-type">
-                                        <p>Тип: <span>Бордюр</span></p>
-                                    </div>
-                                    <div class="materials-block">
-                                        <p>Материал: <span>Керамогранит</span></p>
-                                    </div>
-                                    <div class="block-factory">
-                                        <p>Фабрика: <span>Aparici/Испания</span></p>
-                                    </div>
-                                </a>
-                                <a href="#" class="block-product bigger main-page">
-                                    <img src="images/images/image-product-two.jpg" alt="Фото продукта"
-                                         class="image-product">
-                                    <div class="name">
-                                        Бордюр Cenefa Delis Blanco Silver
-                                    </div>
-                                    <div class="block-type">
-                                        <p>Тип: <span>Бордюр</span></p>
-                                    </div>
-                                    <div class="materials-block">
-                                        <p>Материал: <span>Керамогранит</span></p>
-                                    </div>
-                                    <div class="block-factory">
-                                        <p>Фабрика: <span>Aparici/Испания</span></p>
-                                    </div>
-                                </a>
-                                <a href="#" class="block-product bigger main-page xs-hide">
-                                    <img src="images/images/image-product-two.jpg" alt="Фото продукта"
-                                         class="image-product">
-                                    <div class="name">
-                                        Бордюр Cenefa Delis Blanco Silver
-                                    </div>
-                                    <div class="block-type">
-                                        <p>Тип: <span>Бордюр</span></p>
-                                    </div>
-                                    <div class="materials-block">
-                                        <p>Материал: <span>Керамогранит</span></p>
-                                    </div>
-                                    <div class="block-factory">
-                                        <p>Фабрика: <span>Aparici/Испания</span></p>
-                                    </div>
-                                </a>
-                                <a href="#" class="block-product bigger main-page xs-hide">
-                                    <img src="images/images/image-product-two.jpg" alt="Фото продукта"
-                                         class="image-product">
-                                    <div class="name">
-                                        Бордюр Cenefa Delis Blanco Silver
-                                    </div>
-                                    <div class="block-type">
-                                        <p>Тип: <span>Бордюр</span></p>
-                                    </div>
-                                    <div class="materials-block">
-                                        <p>Материал: <span>Керамогранит</span></p>
-                                    </div>
-                                    <div class="block-factory">
-                                        <p>Фабрика: <span>Aparici/Испания</span></p>
-                                    </div>
-                                </a>
-                                <a href="#" class="block-product bigger main-page xs-hide">
-                                    <img src="images/images/image-product-two.jpg" alt="Фото продукта"
-                                         class="image-product">
-                                    <div class="name">
-                                        Бордюр Cenefa Delis Blanco Silver
-                                    </div>
-                                    <div class="block-type">
-                                        <p>Тип: <span>Бордюр</span></p>
-                                    </div>
-                                    <div class="materials-block">
-                                        <p>Материал: <span>Керамогранит</span></p>
-                                    </div>
-                                    <div class="block-factory">
-                                        <p>Фабрика: <span>Aparici/Испания</span></p>
-                                    </div>
-                                </a>
-                                <a href="#" class="block-product bigger main-page xs-hide">
-                                    <img src="images/images/image-product-two.jpg" alt="Фото продукта"
-                                         class="image-product">
-                                    <div class="name">
-                                        Бордюр Cenefa Delis Blanco Silver
-                                    </div>
-                                    <div class="block-type">
-                                        <p>Тип: <span>Бордюр</span></p>
-                                    </div>
-                                    <div class="materials-block">
-                                        <p>Материал: <span>Керамогранит</span></p>
-                                    </div>
-                                    <div class="block-factory">
-                                        <p>Фабрика: <span>Aparici/Испания</span></p>
-                                    </div>
-                                </a>
-                                <a href="#" class="block-product bigger main-page xs-hide">
-                                    <img src="images/images/image-product-two.jpg" alt="Фото продукта"
-                                         class="image-product">
-                                    <div class="name">
-                                        Бордюр Cenefa Delis Blanco Silver
-                                    </div>
-                                    <div class="block-type">
-                                        <p>Тип: <span>Бордюр</span></p>
-                                    </div>
-                                    <div class="materials-block">
-                                        <p>Материал: <span>Керамогранит</span></p>
-                                    </div>
-                                    <div class="block-factory">
-                                        <p>Фабрика: <span>Aparici/Испания</span></p>
-                                    </div>
-                                </a>
-                                <a href="#" class="block-product bigger main-page xs-hide">
-                                    <img src="images/images/image-product-two.jpg" alt="Фото продукта"
-                                         class="image-product">
-                                    <div class="name">
-                                        Бордюр Cenefa Delis Blanco Silver
-                                    </div>
-                                    <div class="block-type">
-                                        <p>Тип: <span>Бордюр</span></p>
-                                    </div>
-                                    <div class="materials-block">
-                                        <p>Материал: <span>Керамогранит</span></p>
-                                    </div>
-                                    <div class="block-factory">
-                                        <p>Фабрика: <span>Aparici/Испания</span></p>
-                                    </div>
-                                </a>
-                                <a href="#" class="block-product bigger main-page xs-hide">
-                                    <img src="images/images/image-product-two.jpg" alt="Фото продукта"
-                                         class="image-product">
-                                    <div class="name">
-                                        Бордюр Cenefa Delis Blanco Silver
-                                    </div>
-                                    <div class="block-type">
-                                        <p>Тип: <span>Бордюр</span></p>
-                                    </div>
-                                    <div class="materials-block">
-                                        <p>Материал: <span>Керамогранит</span></p>
-                                    </div>
-                                    <div class="block-factory">
-                                        <p>Фабрика: <span>Aparici/Испания</span></p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="slide row">
-                                <a href="#" class="block-product bigger main-page">
-                                    <img src="images/images/image-product-two.jpg" alt="Фото продукта"
-                                         class="image-product">
-                                    <div class="name">
-                                        Бордюр Cenefa Delis Blanco Silver
-                                    </div>
-                                    <div class="block-type">
-                                        <p>Тип: <span>Бордюр</span></p>
-                                    </div>
-                                    <div class="materials-block">
-                                        <p>Материал: <span>Керамогранит</span></p>
-                                    </div>
-                                    <div class="block-factory">
-                                        <p>Фабрика: <span>Aparici/Испания</span></p>
-                                    </div>
-                                </a>
-                                <a href="#" class="block-product bigger main-page">
-                                    <img src="images/images/image-product-two.jpg" alt="Фото продукта"
-                                         class="image-product">
-                                    <div class="name">
-                                        Бордюр Cenefa Delis Blanco Silver
-                                    </div>
-                                    <div class="block-type">
-                                        <p>Тип: <span>Бордюр</span></p>
-                                    </div>
-                                    <div class="materials-block">
-                                        <p>Материал: <span>Керамогранит</span></p>
-                                    </div>
-                                    <div class="block-factory">
-                                        <p>Фабрика: <span>Aparici/Испания</span></p>
-                                    </div>
-                                </a>
-                                <a href="#" class="block-product bigger main-page">
-                                    <img src="images/images/image-product-two.jpg" alt="Фото продукта"
-                                         class="image-product">
-                                    <div class="name">
-                                        Бордюр Cenefa Delis Blanco Silver
-                                    </div>
-                                    <div class="block-type">
-                                        <p>Тип: <span>Бордюр</span></p>
-                                    </div>
-                                    <div class="materials-block">
-                                        <p>Материал: <span>Керамогранит</span></p>
-                                    </div>
-                                    <div class="block-factory">
-                                        <p>Фабрика: <span>Aparici/Испания</span></p>
-                                    </div>
-                                </a>
-                                <a href="#" class="block-product bigger main-page">
-                                    <img src="images/images/image-product-two.jpg" alt="Фото продукта"
-                                         class="image-product">
-                                    <div class="name">
-                                        Бордюр Cenefa Delis Blanco Silver
-                                    </div>
-                                    <div class="block-type">
-                                        <p>Тип: <span>Бордюр</span></p>
-                                    </div>
-                                    <div class="materials-block">
-                                        <p>Материал: <span>Керамогранит</span></p>
-                                    </div>
-                                    <div class="block-factory">
-                                        <p>Фабрика: <span>Aparici/Испания</span></p>
-                                    </div>
-                                </a>
-                                <a href="#" class="block-product bigger main-page">
-                                    <img src="images/images/image-product-two.jpg" alt="Фото продукта"
-                                         class="image-product">
-                                    <div class="name">
-                                        Бордюр Cenefa Delis Blanco Silver
-                                    </div>
-                                    <div class="block-type">
-                                        <p>Тип: <span>Бордюр</span></p>
-                                    </div>
-                                    <div class="materials-block">
-                                        <p>Материал: <span>Керамогранит</span></p>
-                                    </div>
-                                    <div class="block-factory">
-                                        <p>Фабрика: <span>Aparici/Испания</span></p>
-                                    </div>
-                                </a>
-                                <a href="#" class="block-product bigger main-page">
-                                    <img src="images/images/image-product-two.jpg" alt="Фото продукта"
-                                         class="image-product">
-                                    <div class="name">
-                                        Бордюр Cenefa Delis Blanco Silver
-                                    </div>
-                                    <div class="block-type">
-                                        <p>Тип: <span>Бордюр</span></p>
-                                    </div>
-                                    <div class="materials-block">
-                                        <p>Материал: <span>Керамогранит</span></p>
-                                    </div>
-                                    <div class="block-factory">
-                                        <p>Фабрика: <span>Aparici/Испания</span></p>
-                                    </div>
-                                </a>
-                                <a href="#" class="block-product bigger main-page">
-                                    <img src="images/images/image-product-two.jpg" alt="Фото продукта"
-                                         class="image-product">
-                                    <div class="name">
-                                        Бордюр Cenefa Delis Blanco Silver
-                                    </div>
-                                    <div class="block-type">
-                                        <p>Тип: <span>Бордюр</span></p>
-                                    </div>
-                                    <div class="materials-block">
-                                        <p>Материал: <span>Керамогранит</span></p>
-                                    </div>
-                                    <div class="block-factory">
-                                        <p>Фабрика: <span>Aparici/Испания</span></p>
-                                    </div>
-                                </a>
-                                <a href="#" class="block-product bigger main-page">
-                                    <img src="images/images/image-product-two.jpg" alt="Фото продукта"
-                                         class="image-product">
-                                    <div class="name">
-                                        Бордюр Cenefa Delis Blanco Silver
-                                    </div>
-                                    <div class="block-type">
-                                        <p>Тип: <span>Бордюр</span></p>
-                                    </div>
-                                    <div class="materials-block">
-                                        <p>Материал: <span>Керамогранит</span></p>
-                                    </div>
-                                    <div class="block-factory">
-                                        <p>Фабрика: <span>Aparici/Испания</span></p>
-                                    </div>
-                                </a>
-                                <a href="#" class="block-product bigger main-page xs-hide">
-                                    <img src="images/images/image-product-two.jpg" alt="Фото продукта"
-                                         class="image-product">
-                                    <div class="name">
-                                        Бордюр Cenefa Delis Blanco Silver
-                                    </div>
-                                    <div class="block-type">
-                                        <p>Тип: <span>Бордюр</span></p>
-                                    </div>
-                                    <div class="materials-block">
-                                        <p>Материал: <span>Керамогранит</span></p>
-                                    </div>
-                                    <div class="block-factory">
-                                        <p>Фабрика: <span>Aparici/Испания</span></p>
-                                    </div>
-                                </a>
-                                <a href="#" class="block-product bigger main-page xs-hide">
-                                    <img src="images/images/image-product-two.jpg" alt="Фото продукта"
-                                         class="image-product">
-                                    <div class="name">
-                                        Бордюр Cenefa Delis Blanco Silver
-                                    </div>
-                                    <div class="block-type">
-                                        <p>Тип: <span>Бордюр</span></p>
-                                    </div>
-                                    <div class="materials-block">
-                                        <p>Материал: <span>Керамогранит</span></p>
-                                    </div>
-                                    <div class="block-factory">
-                                        <p>Фабрика: <span>Aparici/Испания</span></p>
-                                    </div>
-                                </a>
-                                <a href="#" class="block-product bigger main-page xs-hide">
-                                    <img src="images/images/image-product-two.jpg" alt="Фото продукта"
-                                         class="image-product">
-                                    <div class="name">
-                                        Бордюр Cenefa Delis Blanco Silver
-                                    </div>
-                                    <div class="block-type">
-                                        <p>Тип: <span>Бордюр</span></p>
-                                    </div>
-                                    <div class="materials-block">
-                                        <p>Материал: <span>Керамогранит</span></p>
-                                    </div>
-                                    <div class="block-factory">
-                                        <p>Фабрика: <span>Aparici/Испания</span></p>
-                                    </div>
-                                </a>
-                                <a href="#" class="block-product bigger main-page xs-hide">
-                                    <img src="images/images/image-product-two.jpg" alt="Фото продукта"
-                                         class="image-product">
-                                    <div class="name">
-                                        Бордюр Cenefa Delis Blanco Silver
-                                    </div>
-                                    <div class="block-type">
-                                        <p>Тип: <span>Бордюр</span></p>
-                                    </div>
-                                    <div class="materials-block">
-                                        <p>Материал: <span>Керамогранит</span></p>
-                                    </div>
-                                    <div class="block-factory">
-                                        <p>Фабрика: <span>Aparici/Испания</span></p>
-                                    </div>
-                                </a>
-                                <a href="#" class="block-product bigger main-page xs-hide">
-                                    <img src="images/images/image-product-two.jpg" alt="Фото продукта"
-                                         class="image-product">
-                                    <div class="name">
-                                        Бордюр Cenefa Delis Blanco Silver
-                                    </div>
-                                    <div class="block-type">
-                                        <p>Тип: <span>Бордюр</span></p>
-                                    </div>
-                                    <div class="materials-block">
-                                        <p>Материал: <span>Керамогранит</span></p>
-                                    </div>
-                                    <div class="block-factory">
-                                        <p>Фабрика: <span>Aparici/Испания</span></p>
-                                    </div>
-                                </a>
-                                <a href="#" class="block-product bigger main-page xs-hide">
-                                    <img src="images/images/image-product-two.jpg" alt="Фото продукта"
-                                         class="image-product">
-                                    <div class="name">
-                                        Бордюр Cenefa Delis Blanco Silver
-                                    </div>
-                                    <div class="block-type">
-                                        <p>Тип: <span>Бордюр</span></p>
-                                    </div>
-                                    <div class="materials-block">
-                                        <p>Материал: <span>Керамогранит</span></p>
-                                    </div>
-                                    <div class="block-factory">
-                                        <p>Фабрика: <span>Aparici/Испания</span></p>
-                                    </div>
-                                </a>
-                                <a href="#" class="block-product bigger main-page xs-hide">
-                                    <img src="images/images/image-product-two.jpg" alt="Фото продукта"
-                                         class="image-product">
-                                    <div class="name">
-                                        Бордюр Cenefa Delis Blanco Silver
-                                    </div>
-                                    <div class="block-type">
-                                        <p>Тип: <span>Бордюр</span></p>
-                                    </div>
-                                    <div class="materials-block">
-                                        <p>Материал: <span>Керамогранит</span></p>
-                                    </div>
-                                    <div class="block-factory">
-                                        <p>Фабрика: <span>Aparici/Испания</span></p>
-                                    </div>
-                                </a>
-                            </div>
+                        <div class="pagination">
+                            <ul>
+                                <li><a href="#" class="active">1</a></li>
+                                <li><a href="#">2</a></li>
+                                <li><a href="#">3</a></li>
+                                <li><a href="#">4</a></li>
+                                <li><a href="#">5</a></li>
+                            </ul>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 </section>
+
+<!--FOOTER-->
+<footer id="footer">
+    <div class="wrapper">
+        <div class="title">
+            Кафельсклад
+        </div>
+        <div class="row">
+            <ul class="navigation">
+                <li><a href="#">О компании</a></li>
+                <li><a href="#">Каталог</a></li>
+                <li><a href="#">Дизайнеры</a></li>
+                <li><a href="#">Проекты</a></li>
+                <li><a href="#">Оплата и возврат</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
+            <div class="telephone">
+                <img src="images/icons/icon-telephone.png" alt="Tel">
+                <p>922-56-68</p>
+            </div>
+        </div>
+    </div>
+</footer>
+<!--END FOOTER-->
+</body>
+</html>

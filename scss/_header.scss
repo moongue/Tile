@@ -1,6 +1,5 @@
 #header {
   position: relative;
-  background: $grey;
   &.bg {
     background: #fff;
   }
@@ -39,6 +38,9 @@
       text-transform: uppercase;
       font-weight: 600;
       font-size: 16px;
+      &.margin-fix {
+        margin-right: auto;
+      }
     }
     .block-input {
       max-width: 964px;
@@ -91,26 +93,6 @@
       position: fixed;
       top: 300px;
       margin-left: -30px;
-      ul {
-        li {
-          a {
-            position: relative;
-            .alert-count {
-              width: 26px;
-              height: 20px;
-              display: flex;
-              align-items: center;
-              justify-content: center;
-              color: $white;
-              position: absolute;
-              top: 0;
-              right: -5px;
-              border-radius: 16px;
-              background: $red-four;
-            }
-          }
-        }
-      }
       &.sidebar-other-page {
         top: 10px;
         &.top-offset {
@@ -137,62 +119,7 @@
         background: $grey;
       }
     }
-    .mobile-menu-toggle {
-      width: 40px;
-      height: 40px;
-      box-sizing: border-box;
-      z-index: 200;
-      //HAMBURGER BUTTON
-      .ham {
-        cursor: pointer;
-        -webkit-tap-highlight-color: transparent;
-        transition: transform 400ms;
-        -moz-user-select: none;
-        -webkit-user-select: none;
-        -ms-user-select: none;
-        user-select: none;
-      }
-      .hamRotate.active {
-        transform: rotate(45deg);
-      }
-      .hamRotate180.active {
-        transform: rotate(180deg);
-      }
-      .line {
-        fill: none;
-        transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
-        stroke: $black;
-        stroke-width: 5;
-        stroke-linecap: round;
-      }
-      .ham-burger {
-        .top {
-          stroke-dasharray: 40 160;
-        }
-        .middle {
-          stroke-dasharray: 40 142;
-          transform-origin: 50%;
-          transition: transform 400ms;
-        }
-        .bottom {
-          stroke-dasharray: 40 85;
-          transform-origin: 50%;
-          transition: transform 400ms, stroke-dashoffset 400ms;
-        }
-        &.active {
-          .top {
-            stroke-dashoffset: -64px;
-          }
-          .middle {
-            transform: rotate(90deg);
-          }
-          .bottom {
-            stroke-dashoffset: -64px;
-          }
-        }
-      }
-      //END HAMBURGER BUTTON
-    }
+
     .menu-chose {
       z-index: 4;
       ul {
@@ -390,7 +317,6 @@
   display: block;
   width: 100%;
   z-index: 3;
-  background: $grey;
   .bg-grey {
     padding-left: 30px;
     @include md-block() {
@@ -451,11 +377,13 @@
       position: fixed;
       top: 0;
       width: 1280px;
-      margin: 0 auto;
+      margin: 50px auto 0;
       box-shadow: 17px 17px 40px -4px rgba(0, 0, 0, 0.75);
       @include lg-block() {
+        left: 0;
         position: static;
         width: 100%;
+        margin-top: 0;
       }
     }
     @include md(background, $bg);
@@ -475,10 +403,11 @@
   }
   .description-bg {
     background: $bg;
-    flex-basis: 50%;
+    flex-basis: 100%;
     @include md-block() {
       flex-basis: 0;
     }
+
   }
   .left-block {
     margin-top: 60px;

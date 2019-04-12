@@ -33,11 +33,11 @@ function focusInput() {
 function showSearchInput() {
     var div = $('.block-input');
 
-    if(document.documentElement.clientWidth <= 780) {
+    if (document.documentElement.clientWidth <= 780) {
         $(".show-search-input").click(function () {
             div.show(400);
         });
-        $(document).mouseup(function (e){ // событие клика по веб-документу
+        $(document).mouseup(function (e) { // событие клика по веб-документу
             if (!div.is(e.target) // если клик был не по нашему блоку
                 && div.has(e.target).length === 0) { // и не по его дочерним элементам
                 div.hide(400); // скрываем его
@@ -55,62 +55,42 @@ function showSearch() {
 function interactiveMenu() {
     var back = $('.btn-exit');
 
-    $('.script-walls').click(function(){
-        $('.interactive-menu-first').fadeOut(400, function() {
+    $('.script-walls').click(function () {
+        $('.interactive-menu-first').fadeOut(400, function () {
             $('.interactive-menu-two').fadeIn(400)
         })
     });
-    $('.script-street').click(function(){
-        $('.interactive-menu-first').fadeOut(400, function() {
+    $('.script-street').click(function () {
+        $('.interactive-menu-first').fadeOut(400, function () {
             $('.interactive-menu-three').fadeIn(400)
         })
     });
-    $('.script-floors').click(function(){
-        $('.interactive-menu-first').fadeOut(400, function() {
+    $('.script-floors').click(function () {
+        $('.interactive-menu-first').fadeOut(400, function () {
             $('.interactive-menu-four').fadeIn(400)
         })
     });
-    $('.script-related-products').click(function(){
-        $('.interactive-menu-first').fadeOut(400, function() {
+    $('.script-related-products').click(function () {
+        $('.interactive-menu-first').fadeOut(400, function () {
             $('.interactive-menu-five').fadeIn(400)
         })
     });
-    $('.script-mosaic').click(function(){
-        $('.interactive-menu-first').fadeOut(400, function() {
+    $('.script-mosaic').click(function () {
+        $('.interactive-menu-first').fadeOut(400, function () {
             $('.interactive-menu-six').fadeIn(400)
         })
     });
     back.click(function () {
-       $('.interactive-menu-two, .interactive-menu-three, .interactive-menu-four, .interactive-menu-five, .interactive-menu-six').fadeOut(400, function () {
-           $('.interactive-menu-first').fadeIn(400)
-       })
+        $('.interactive-menu-two, .interactive-menu-three, .interactive-menu-four, .interactive-menu-five, .interactive-menu-six').fadeOut(400, function () {
+            $('.interactive-menu-first').fadeIn(400)
+        })
     })
 }
 
 function scrollSidebar() {
-    $(window).scroll(function() {
-        /*----------------------------------
-        sticky block script by makeasite.ru
-        ----------------------------------*/
-        var sb_m = 400; /* отступ сверху и снизу */
-        var mb = 300; /* высота подвала с запасом */
-        var st = $(window).scrollTop();
-        var sb = $(".sidebar-bg");
-        var sbi = $(".sidebar-bg .sidebar");
-        var sb_ot = sb.offset().top;
-        var sbi_ot = sbi.offset().top;
-        var sb_h = sb.height();
-
-        if(sb_h + $(document).scrollTop() + sb_m + mb < $(document).height()) {
-            if(st > sb_ot) {
-                var h = Math.round(st - sb_ot) + sb_m;
-                sb.css({"paddingTop" : h});
-            }
-            else {
-                sb.css({"paddingTop" : 0});
-            }
-        }
-    });
+    (function($) {
+        $.lockfixed(".sidebar-bg",{offset: {top: 610, bottom: 330}});
+    })(jQuery);
 }
 
 function tabs() {
@@ -385,8 +365,6 @@ function smoothJumpUp() {
 }
 
 function slider() {
-
-
     $('.slider').slick({
         infinite: true,
         slidesToShow: 1,
@@ -443,7 +421,7 @@ $(window).on('load', function () {
     sliderProducts();
     showSearchInput();
     showFilterCountry();
-    sidebarMenu();
+    // sidebarMenu();
     tabs();
     sliderFactory();
     smoothJumpUp();
@@ -457,5 +435,5 @@ $(window).on('load', function () {
     tabProducts();
     focusInput();
     interactiveMenu();
-    scrollSidebar();
+    // scrollSidebar();
 });

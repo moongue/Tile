@@ -2,7 +2,23 @@
   background: #fff;
   padding-top: 15px;
   @include sm(padding-top, 80px);
+  .wrapper-big {
+    .sidebar-bg {
+      position: fixed;
+      top: 230px;
+      margin-left: -20px;
+    }
+  }
   .container {
+    .wrapper {
+      position: relative;
+    }
+    .mobile-menu-toggle {
+      display: block;
+      position: absolute;
+      left: -60px;
+      top: 0;
+    }
     h1 {
       padding: 4px;
       border: 1px solid $grey;

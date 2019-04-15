@@ -33,7 +33,7 @@ function focusInput() {
 function showSearchInput() {
     var div = $('.block-input');
 
-    if (document.documentElement.clientWidth <= 780) {
+    if (document.documentElement.clientWidth <= 1100) {
         $(".show-search-input").click(function () {
             div.show(400);
         });

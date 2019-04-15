@@ -1,5 +1,6 @@
 #discounts {
-  margin-bottom: 50px;
+  padding-bottom: 50px;
+  background: $white-four;
   @include sm(margin-top, 0);
   .wrapper-big {
     position: relative;

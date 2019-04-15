@@ -4,7 +4,7 @@
     background: #fff;
   }
   &.bg-white {
-    background: $bg;
+    background: $white-four;
   }
   .telephone {
     display: flex;
@@ -43,17 +43,29 @@
       }
     }
     .block-input {
-      max-width: 964px;
       width: 100%;
       position: relative;
       margin-left: 8px;
-      @include sm-block() {
+      @include lg-block() {
         display: none;
         position: absolute;
         left: 0;
         width: 98%;
         z-index: 222;
         margin-right: 8px;
+      }
+      &.hide {
+        display: none;
+      }
+      &.only-show {
+        display: flex;
+        @include lg-block() {
+          position: sticky;
+        }
+        @include sm-block() {
+          display: none;
+          position: absolute;
+        }
       }
       &.active:before {
         filter: brightness(0.1)

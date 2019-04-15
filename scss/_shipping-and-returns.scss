@@ -2,8 +2,22 @@
   background: $white;
   padding-top: 15px;
   padding-bottom: 60px;
-
-  @include sm(padding-top, 80px);
+  .container {
+    position: relative;
+    .btn-back {
+      position: absolute;
+      top: 6px;
+      left: -70px;
+    }
+  }
+  .wrapper-big {
+    .sidebar-bg {
+      position: fixed;
+      top: 230px;
+      margin-left: -20px;
+    }
+  }
+  @include sm(padding-top, 20px);
   h1 {
     font-family: 'Roboto', sans-serif;
     padding: 4px;

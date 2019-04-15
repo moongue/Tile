@@ -4,8 +4,21 @@
   padding-bottom: 90px;
 
   @include sm(padding-top, 80px);
-
+  .wrapper-big {
+    .sidebar-bg {
+      position: fixed;
+      top: 247px;
+      margin-left: -20px;
+    }
+  }
   .container {
+    position: relative;
+    .mobile-menu-toggle {
+      display: block;
+      position: absolute;
+      left: -85px;
+      top: 0;
+    }
     h1 {
       font-family: 'Roboto', sans-serif;
       padding: 4px;

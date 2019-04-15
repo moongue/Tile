@@ -1,0 +1,124 @@
+#about-company {
+  padding-top: 15px;
+  @include sm(padding-top, 60px);
+  .wrapper-big {
+    .sidebar-bg {
+      position: fixed;
+      top: 247px;
+      margin-left: -20px;
+    }
+  }
+  .bg-white {
+    background: $white-four;
+  }
+  .container {
+    position: relative;
+    .mobile-menu-toggle {
+      display: block;
+      position: absolute;
+      left: -85px;
+      top: 0;
+    }
+    .background {
+      padding-top: 50px;
+      background: url(../images/images/image-bg-about.jpg) no-repeat right top;
+      @include sm-block() {
+        background: none;
+        padding-top: 20px;
+      }
+    }
+    p {
+      line-height: 30px;
+      font-size: 16px;
+      @include sm-block() {
+        font-size: 14px;
+        line-height: 20px;
+      }
+      span {
+        font-weight: 600;
+        font-size: 23px;
+        @include sm(font-size, 18px)
+      }
+    }
+    .bg-grey {
+      max-width: 675px;
+      padding: 22px 40px 22px 15px;
+      @include sm-block() {
+        background: inherit;
+        padding: 10px;
+      }
+    }
+    .bg-white {
+      max-width: 577px;
+      background: $white;
+      padding: 22px 40px 22px 15px;
+      @include sm(display, none);
+    }
+    .company {
+      margin-top: 40px;
+      background: $grey;
+      @include sm(margin-top, 0);
+      .bg-grey {
+        max-width: 100%;
+        position: relative;
+        background: url("../images/images/image-bg-about-three.png") no-repeat 70% 100%;
+        @include sm-block() {
+          background: none;
+          margin-top: 0;
+        }
+        p {
+          max-width: 540px;
+        }
+        img {
+          position: absolute;
+          right: 0;
+          top: -36px;
+        }
+      }
+    }
+    .block-advantage {
+      padding-top: 30px;
+      .title {
+        text-align: center;
+        font-size: 24px;
+        font-weight: 600;
+      @include sm(font-size, 16px);
+      }
+      .advantages {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: 20px;
+        .one-advantage {
+          margin-top: 20px;
+          flex-basis: 33.33%;
+          @include sm(flex-basis, 50%);
+          p {
+            line-height: 24px;
+            font-size: 18px;
+            margin-top: 30px;
+            max-width: 350px;
+            text-align: center;
+            font-weight: 300;
+            @include sm(font-size, 12px);
+            &.offset-fix {
+              margin-top: 0;
+            }
+          }
+        }
+      }
+    }
+    .block-feedback {
+      margin-top: 80px;
+      @include sm(margin-top, 10px);
+      p {
+        text-align: center;
+      }
+      .form-feedback {
+        background: $grey;
+        margin: 40px 0 0;
+      @include sm(margin-top, 10px);
+      }
+    }
+  }
+}
